@@ -10,5 +10,11 @@ export const QuestionsList = () => {
         </article>
     ))
 
+    return(
+        <section>
+            <h3>Questions and Answers</h3>
+            {questionsAnswers}
+        </section>
+    )
 
 }
