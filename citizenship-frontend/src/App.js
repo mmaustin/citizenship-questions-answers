@@ -1,11 +1,12 @@
 import React from 'react'
+import { QuestionsList } from './features/questions/QuestionsList'
 
 const App = () => {
 
     return(
-        <>
-            <h1>Let's put something on the screen!</h1>
-        </>
+        <React.Fragment>
+            <QuestionsList/>
+        </React.Fragment>
     )
 }
 
