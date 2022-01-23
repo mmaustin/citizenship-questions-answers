@@ -7,5 +7,8 @@ answer: [{ans: 'we the people'}]}, {id: nanoid(), question: 'what is an amendmen
 {ans: 'an addition to the constitution'}]}, {id: nanoid(), question: 'what do we call the first amendments to the constitution',
 answer: [{ans: 'the bill of rights'}]}, {id: nanoid(), question: 'what is one right or freedom from the first amendment', answer: [{ans: 'speech'},
 {ans: 'religion'}, {ans: 'assembly'}, {ans: 'press'}, {ans: 'petition the government'}]}, {id: nanoid(), question: 'how many amendments does the constitution have?',
-answer: [{ans: 'twenty-seven(27)'}]}
+answer: [{ans: 'twenty-seven(27)'}]}, {id: nanoid(), question: 'what did the declaration of independence do?', answer: [{ans: 'announced independence from great britain'},
+{ans: 'declared independence from great britain'}, {ans: 'said that the united states is free from great britain'}]}, {id: nanoid(), question: 'what are two rights in the declaration of independence',
+answer: [{ans: 'life'}, {ans: 'liberty'}, {ans: 'pursuit of happiness'}]}, {id: nanoid(), question: 'what is freedom of religion',
+answer: [{ans: 'you can practice any religion or not practice a religion'}]}
 ]
