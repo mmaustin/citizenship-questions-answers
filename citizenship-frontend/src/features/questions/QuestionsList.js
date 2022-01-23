@@ -6,7 +6,11 @@ export const QuestionsList = () => {
     const questionsAnswers = questions.map(question => (
         <article key={question.id}>
             <p>{question.question.substring(0, 100)}</p>
-            <p>{question.answer}</p>
+            {question.answer.map(a => (
+                <>
+                    <p>{a.ans}</p>
+                </>
+            ))}
         </article>
     ))
 
