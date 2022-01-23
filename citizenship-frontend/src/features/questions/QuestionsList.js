@@ -12,6 +12,7 @@ export const QuestionsList = () => {
                 </>
             ))}
         </article>
+    
     ))
 
     return(
