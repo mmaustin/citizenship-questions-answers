@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { nanoid } from '@reduxjs/toolkit'
 
 export const QuestionsList = () => {
     const questions = useSelector(state => state.questions)
@@ -7,7 +8,7 @@ export const QuestionsList = () => {
         <article className="question-excerpt" key={question.id}>
             <p>{question.question}</p>
             {question.answer.map(a => (
-                <div key={a.ans}>
+                <div key={nanoid()}>
                     <p>{a.ans}</p>
                 </div>
             ))}
