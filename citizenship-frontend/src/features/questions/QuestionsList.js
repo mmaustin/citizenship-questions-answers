@@ -18,7 +18,6 @@ export const QuestionsList = () => {
 
     return(
         <section>
-            <h3>Questions and Answers</h3>
             {questionsAnswers}
         </section>
     )
