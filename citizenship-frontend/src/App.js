@@ -1,16 +1,16 @@
 import React from 'react'
 import { QuestionsList } from './features/questions/QuestionsList'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 const App = () => {
 
     return(
         <Router>
-            <Switch>
+            <Routes>
                 <Route exact path='/'>
                     <QuestionsList/>
                 </Route>
-            </Switch>
+            </Routes>
         </Router>
     )
 }
