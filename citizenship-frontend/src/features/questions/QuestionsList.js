@@ -7,9 +7,9 @@ export const QuestionsList = () => {
         <article className="question-excerpt" key={question.id}>
             <p>{question.question}</p>
             {question.answer.map(a => (
-                <>
+                <div key={a.ans}>
                     <p>{a.ans}</p>
-                </>
+                </div>
             ))}
         </article>
     
