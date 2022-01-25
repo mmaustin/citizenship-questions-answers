@@ -7,6 +7,12 @@ export const SingleQuestionPage = ({match}) => {
         state.questions.find(question => question.id === questionId)
     )
 
+    const answers = question.answer.map((answer, idx) => (
+        <div key={idx}>
+            <p>{answer.ans}</p>
+        </div>
+    ))
+
     if (!question){
         return(
             <>
@@ -15,5 +21,9 @@ export const SingleQuestionPage = ({match}) => {
         )
     }
 
-    
+    return(
+        <section>
+
+        </section>
+    )
 }
