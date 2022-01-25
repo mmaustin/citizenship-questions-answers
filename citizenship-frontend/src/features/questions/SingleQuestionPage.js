@@ -1,11 +1,14 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
 
-export const SingleQuestionPage = ({match}) => {
+export const SingleQuestionPage = () => {
     //console.log({match})
-    const {questionId} = match.params
+    //const {questionId} = useParams()
+    //console.log(questionId)
+    let params = useParams()
     const query = useSelector(state => 
-        state.questions.find(question => question.id === questionId)
+        state.questions.find(question => question.id === params.questionId)
     )
 
     const answers = query.answer.map((answer, idx) => (
