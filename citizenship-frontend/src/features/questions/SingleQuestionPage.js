@@ -3,17 +3,17 @@ import { useSelector } from 'react-redux'
 
 export const SingleQuestionPage = ({match}) => {
     const {questionId} = match.params
-    const question = useSelector(state => 
+    const query = useSelector(state => 
         state.questions.find(question => question.id === questionId)
     )
 
-    const answers = question.answer.map((answer, idx) => (
+    const answers = query.answer.map((answer, idx) => (
         <div key={idx}>
             <p>{answer.ans}</p>
         </div>
     ))
 
-    if (!question){
+    if (!query){
         return(
             <>
                 <p>The question was not found.</p>
@@ -23,7 +23,8 @@ export const SingleQuestionPage = ({match}) => {
 
     return(
         <section>
-
+            <h3>{query.question}</h3>
+            {answers}
         </section>
     )
 }
