@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const QuestionsList = () => {
     const questions = useSelector(state => state.questions)
+    
     const questionsAnswers = questions.map(question => (
         <article className="question-excerpt" key={question.id}>
             <p>{question.question}</p>
@@ -14,9 +15,10 @@ export const QuestionsList = () => {
                 </div>
 
             ))}
+            
             <Link to={`/questions/${question.id}`}>
             View Question
-            </Link>    
+            </Link>  
         </article>
     ))
 
