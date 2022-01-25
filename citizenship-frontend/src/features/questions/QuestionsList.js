@@ -14,7 +14,7 @@ export const QuestionsList = () => {
                 </div>
 
             ))}
-            <Link to={`/questions/${question.id}`} className="button muted-button">
+            <Link to={`/questions/${question.id}`}>
             View Question
             </Link>    
         </article>
