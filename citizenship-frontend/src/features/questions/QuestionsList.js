@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { nanoid } from '@reduxjs/toolkit'
+import { Link } from 'react-router-dom'
 
 export const QuestionsList = () => {
     const questions = useSelector(state => state.questions)
@@ -11,9 +12,12 @@ export const QuestionsList = () => {
                 <div key={nanoid()}>
                     <p>{a.ans}</p>
                 </div>
+
             ))}
+            <Link to={`/questions/${question.id}`} className="button muted-button">
+            View Question
+            </Link>    
         </article>
-    
     ))
 
     return(
