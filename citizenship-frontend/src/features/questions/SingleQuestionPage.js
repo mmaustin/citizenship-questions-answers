@@ -7,5 +7,13 @@ export const SingleQuestionPage = ({match}) => {
         state.questions.find(question => question.id === questionId)
     )
 
+    if (!question){
+        return(
+            <>
+                <p>The question was not found.</p>
+            </>
+        )
+    }
+
     
 }
