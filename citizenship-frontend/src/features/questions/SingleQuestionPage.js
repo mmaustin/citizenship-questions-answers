@@ -11,9 +11,9 @@ export const SingleQuestionPage = () => {
         state.questions.find(question => question.id === params.questionId)
     )
 
-    const answers = query.answer.map((answer, idx) => (
+    const answers = query.answer.map((a, idx) => (
         <div key={idx}>
-            <p>{answer.ans}</p>
+            <p>{a.ans}</p>
         </div>
     ))
 
