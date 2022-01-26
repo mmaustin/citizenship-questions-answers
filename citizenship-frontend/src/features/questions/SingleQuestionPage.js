@@ -16,7 +16,7 @@ export const SingleQuestionPage = () => {
             <p>{a.ans}</p>
         </div>
     ))
-
+    
     if (!query){
         return(
             <>
@@ -24,7 +24,7 @@ export const SingleQuestionPage = () => {
             </>
         )
     }
-
+//debugger
     return(
         <section>
             <h3>{query.question}</h3>
