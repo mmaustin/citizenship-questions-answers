@@ -11,7 +11,7 @@ const App = () => {
             <Navbar/>
                 <Routes>
                     <Route exact path='/' element={<QuestionsList/>}/>
-                    <Route exact path="/#/questions/:questionId" element={<SingleQuestionPage/>} />
+                    <Route exact path="/questions/:questionId" element={<SingleQuestionPage/>} />
                 </Routes>
         </Router>
     )
