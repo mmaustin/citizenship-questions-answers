@@ -8,10 +8,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
+    flex-flow: row;
 }
 
 #root {
     width: 100%;
     background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;   
 }
