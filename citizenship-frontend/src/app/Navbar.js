@@ -10,6 +10,7 @@ const Navbar = () => {
                 <div>
                     <div>
                         <Link to='/'>Q's and A's</Link>
+                        <Link to='/questions/dropbox'>Quiz Page (Hopefully)!</Link>
                     </div>
                 </div>
             </section>
