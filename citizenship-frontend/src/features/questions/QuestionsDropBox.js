@@ -12,7 +12,7 @@ export const QuestionsDropBox = () => {
     return(
         <form>
             <select>
-
+                {listQuestions}
             </select>
         </form>
     )
