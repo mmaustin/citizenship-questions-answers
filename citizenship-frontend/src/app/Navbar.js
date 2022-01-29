@@ -9,8 +9,8 @@ const Navbar = () => {
                 <h2>Citizenship Test Practice App</h2>
                 <div>
                     <div>
-                        <Link to='/'>Q's and A's</Link>
-                        <Link to='/questions/dropbox'>Quiz Page (Hopefully)!</Link>
+                        <div><Link to='/'>Q's and A's</Link></div>
+                        <div><Link to='/questions/dropbox'>Quiz Page (Hopefully)!</Link></div>
                     </div>
                 </div>
             </section>
