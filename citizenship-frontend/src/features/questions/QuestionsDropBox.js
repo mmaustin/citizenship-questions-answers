@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux'
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
     const listQuestions = questions.map((q, idx) => (
-        <div key={idx}>
-            <option value={q.question}>{q.question}</option>
-        </div>
+       // <div key={idx}>
+            <option key={idx} value={q.question}>{q.question}</option>
+        //</div>
     ))
 
     return(
