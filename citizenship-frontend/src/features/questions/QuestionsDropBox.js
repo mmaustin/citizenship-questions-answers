@@ -18,3 +18,10 @@ export const QuestionsDropBox = () => {
     )
 
 }
+
+//What has to happen:
+//1) I want to display one random question and have that set to state
+//2) I want all of the possible answers displayed in a dropbox
+//3) If the clicked answer matches the question in state, correct counter goes up by one
+    //if wrong, correct counter stays the same and the incorrect counter goes up by one
+//4) Seven answers must be correct in order to pass the test.
