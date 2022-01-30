@@ -9,7 +9,11 @@ export const QuestionsDropBox = () => {
     ))
 
     const getRandomQuestion = () => {
-        setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)])
+        setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+        if(listQuestions.includes(question)){
+            listQuestions.shift(question);
+            console.log(listQuestions)
+        }
     }
     /*const listQuestions = questions.map((q, idx) => (
             <option key={idx} value={q.question}>{q.question}</option>
