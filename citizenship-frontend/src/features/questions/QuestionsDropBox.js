@@ -3,13 +3,15 @@ import { useSelector } from 'react-redux'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
-    const [question, setQuestion] = useState('');
+    const [question, setQuestion] = useState('what what!');
     /*const listQuestions = questions.map((q, idx) => (
             <option key={idx} value={q.question}>{q.question}</option>
     ))*/
 
     return(
         <>
+            <p>{question}</p>
+            <button>Click to Select a Question</button>
         </>
         /*<form>
             <select>
