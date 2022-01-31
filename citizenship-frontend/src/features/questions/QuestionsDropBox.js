@@ -8,6 +8,7 @@ export const QuestionsDropBox = () => {
         q.question
     ))
 
+
     const getRandomQuestion = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
