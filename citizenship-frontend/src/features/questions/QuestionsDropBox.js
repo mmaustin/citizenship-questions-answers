@@ -13,10 +13,12 @@ export const QuestionsDropBox = () => {
     }
 
     const removeQuestion = () => {
-        if(listQuestions.includes(question)){
-            console.log(true);
-        } 
-        //console.log(listQuestions)
+        listQuestions.map((q, i) => {
+            if(q === question){
+                listQuestions.splice(i,1);
+            }
+        })
+        console.log(listQuestions)
     }
     removeQuestion();
     //console.log(listQuestions)
