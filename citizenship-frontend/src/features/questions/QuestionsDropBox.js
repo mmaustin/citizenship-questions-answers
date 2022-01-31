@@ -13,9 +13,13 @@ export const QuestionsDropBox = () => {
     }
 
     const removeQuestion = () => {
-        console.log(question)
+        if(listQuestions.includes(question)){
+            listQuestions.shift(question)
+        }
+        //console.log(listQuestions)
     }
     removeQuestion();
+    console.log(listQuestions)
     /*const listQuestions = questions.map((q, idx) => (
             <option key={idx} value={q.question}>{q.question}</option>
     ))*/
