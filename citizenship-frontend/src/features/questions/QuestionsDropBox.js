@@ -7,7 +7,7 @@ export const QuestionsDropBox = () => {
     const listQuestions = questions.map(q => (
         q.question
     ))
-
+        console.log(listQuestions)
 
     const getRandomQuestion = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
