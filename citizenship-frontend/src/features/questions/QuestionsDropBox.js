@@ -13,6 +13,7 @@ export const QuestionsDropBox = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
 
+    /*
     const removeQuestion = () => {
         listQuestions.map((q, i) => {
             if(q === question){
@@ -22,6 +23,7 @@ export const QuestionsDropBox = () => {
         console.log(listQuestions)
     }
     removeQuestion();
+    */
     //console.log(listQuestions)
     /*const listQuestions = questions.map((q, idx) => (
             <option key={idx} value={q.question}>{q.question}</option>
