@@ -8,12 +8,16 @@ export const QuestionsDropBox = () => {
     const listQuestions = questions.map(q => (
         q.question
     ))
-        console.log(listQuestions)
+        //console.log(listQuestions)
     
     const dispatch = useDispatch
 
     const getRandomQuestion = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+    }
+
+    const removeRandomQuestion = () => {
+        dispatch(removeQuestion(question))
     }
 
     /*
@@ -36,7 +40,7 @@ export const QuestionsDropBox = () => {
         <>
             <p>{question}</p>
             <button onClick={getRandomQuestion}>Click to Select a Question</button>
-            <button onClick={()=> dispatch(removeQuestion(question))}>Remove Question</button>
+            <button onClick={removeRandomQuestion}>Remove Question</button>
         </>
         /*<form>
             <select>

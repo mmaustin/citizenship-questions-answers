@@ -8,10 +8,10 @@ const initialState = questions
     initialState,
     reducers: {
       removeQuestion(state, action){
-        state.questions.map((q, i) => {
+        state.questions.find((q, i)  => {
           if(q.question === action.payload){
             state.questions.slice(i, 1)
-            //debugger
+            debugger
           }
         })
       }
