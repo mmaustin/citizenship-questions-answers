@@ -11,6 +11,7 @@ const initialState = questions
         state.questions.map((q, i) => {
           if(q.question === action.payload){
             state.questions.slice(i, 1)
+            //debugger
           }
         })
       }

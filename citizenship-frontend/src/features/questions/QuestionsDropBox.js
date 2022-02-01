@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './questionsSlice'
 
 export const QuestionsDropBox = () => {
@@ -9,6 +9,8 @@ export const QuestionsDropBox = () => {
         q.question
     ))
         console.log(listQuestions)
+    
+    const dispatch = useDispatch
 
     const getRandomQuestion = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
@@ -34,7 +36,7 @@ export const QuestionsDropBox = () => {
         <>
             <p>{question}</p>
             <button onClick={getRandomQuestion}>Click to Select a Question</button>
-            <button onClick={()=> removeQuestion(question)}>Remove Question</button>
+            <button onClick={()=> dispatch(removeQuestion(question))}>Remove Question</button>
         </>
         /*<form>
             <select>
