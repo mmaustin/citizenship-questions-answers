@@ -34,7 +34,7 @@ export const QuestionsDropBox = () => {
         <>
             <p>{question}</p>
             <button onClick={getRandomQuestion}>Click to Select a Question</button>
-            <button>Remove Question</button>
+            <button onClick={()=> removeQuestion(question)}>Remove Question</button>
         </>
         /*<form>
             <select>
