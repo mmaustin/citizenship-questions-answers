@@ -6,12 +6,12 @@ import { nanoid } from '@reduxjs/toolkit'
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
     const [question, setQuestion] = useState('');
+    const dispatch = useDispatch
+
     const listQuestions = questions.map(q => (
         q.question
     ))
         console.log(listQuestions)
-    
-    const dispatch = useDispatch
 
     const getRandomQuestion = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
