@@ -9,6 +9,7 @@ const initialState = questions
     reducers: {
       removeQuestion(state, action){
         state.push(action.payload)
+        console.log(state)
       }
     }
   })

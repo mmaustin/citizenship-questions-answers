@@ -20,7 +20,7 @@ export const QuestionsDropBox = () => {
     const removeRandomQuestion = () => {
         dispatch(removeQuestion({id: nanoid(), question: 'alkjksjkj', answer: 'askjflkjlk'}))
     }
-
+debugger
     /*
     const removeQuestion = () => {
         listQuestions.map((q, i) => {
