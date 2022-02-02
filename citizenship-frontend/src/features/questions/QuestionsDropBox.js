@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './questionsSlice'
-//import { nanoid } from '@reduxjs/toolkit'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
@@ -20,34 +19,13 @@ export const QuestionsDropBox = () => {
     const removeRandomQuestion = () => {
         dispatch(removeQuestion(question))
     }
-
-    /*
-    const removeQuestion = () => {
-        listQuestions.map((q, i) => {
-            if(q === question){
-                listQuestions.splice(i,1);
-            }
-        })
-        console.log(listQuestions)
-    }
-    removeQuestion();
-    */
-    //console.log(listQuestions)
-    /*const listQuestions = questions.map((q, idx) => (
-            <option key={idx} value={q.question}>{q.question}</option>
-    ))*/
+    removeRandomQuestion()
 
     return(
         <>
             <p>{question}</p>
             <button onClick={getRandomQuestion}>Click to Select a Question</button>
-            <button onClick={removeRandomQuestion}>Remove Question</button>
         </>
-        /*<form>
-            <select>
-                {listQuestions}
-            </select>
-        </form>*/
     )
 
 }
