@@ -5,7 +5,8 @@ import { useSelector } from 'react-redux'
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
     const [question, setQuestion] = useState('');
-
+    
+    const askedQuestions = []
 
     const listQuestions = questions.map(q => (
         q.question
@@ -15,6 +16,11 @@ export const QuestionsDropBox = () => {
     const getRandomQuestion = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
+
+    const pushAskedQuestions = () => {
+        askedQuestions.push(question)
+    }
+    pushAskedQuestions()
 
     /*
     const removeRandomQuestion = () => {
