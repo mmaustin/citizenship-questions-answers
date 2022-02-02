@@ -21,11 +21,21 @@ export const QuestionsDropBox = () => {
     }
     removeRandomQuestion()
 
+
+    /*const listQuestions = questions.map((q, idx) => (
+            <option key={idx} value={q.question}>{q.question}</option>
+    ))*/
+
     return(
         <>
             <p>{question}</p>
             <button onClick={getRandomQuestion}>Click to Select a Question</button>
         </>
+        /*<form>
+            <select>
+                {listQuestions}
+            </select>
+        </form>*/
     )
 
 }
