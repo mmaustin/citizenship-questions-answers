@@ -6,7 +6,6 @@ export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
     const [question, setQuestion] = useState('');
     
-    const askedQuestions = []
 
     const listQuestions = questions.map(q => (
         q.question
@@ -17,11 +16,6 @@ export const QuestionsDropBox = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
 
-    const pushAskedQuestions = () => {
-        askedQuestions.push(question)
-    }
-    pushAskedQuestions()
-    console.log(askedQuestions)
     /*
     const removeRandomQuestion = () => {
         dispatch(removeQuestion(question))
