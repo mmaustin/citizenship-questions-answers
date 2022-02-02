@@ -21,7 +21,7 @@ export const QuestionsDropBox = () => {
         askedQuestions.push(question)
     }
     pushAskedQuestions()
-
+    console.log(askedQuestions)
     /*
     const removeRandomQuestion = () => {
         dispatch(removeQuestion(question))
