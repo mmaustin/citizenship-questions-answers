@@ -8,8 +8,11 @@ const initialState = questions
     initialState,
     reducers: {
       removeQuestion(state, action){
-        state.push(action.payload)
-        console.log(state)
+        state.map((q, i) => {
+          if(q.question === action.payload){
+            state.splice(i,1)
+          }
+        })
       }
     }
   })
