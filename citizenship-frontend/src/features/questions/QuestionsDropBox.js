@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './questionsSlice'
-import { nanoid } from '@reduxjs/toolkit'
+//import { nanoid } from '@reduxjs/toolkit'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.questions)
@@ -18,7 +18,7 @@ export const QuestionsDropBox = () => {
     }
 
     const removeRandomQuestion = () => {
-        dispatch(removeQuestion({id: nanoid(), question: 'alkjksjkj', answer: 'askjflkjlk'}))
+        dispatch(removeQuestion(question))
     }
 
     /*
