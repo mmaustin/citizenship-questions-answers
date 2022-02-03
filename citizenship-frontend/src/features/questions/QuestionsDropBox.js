@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import { useSelector } from 'react-redux'
-//import { removeQuestion } from './questionsSlice'
+import { useSelector, useDispatch } from 'react-redux'
+import { removeQuestion } from './quizQuestionsSlice'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
     const [question, setQuestion] = useState('');
+    const dispatch = useDispatch()
     
 
     const listQuestions = questions.map(q => (
@@ -16,20 +17,17 @@ export const QuestionsDropBox = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
 
-    //const questionObject = questions.find(q => q.question === question)
-    
-    /*
-    const removeRandomQuestion = () => {
+    const removeSelectedQuestion = () => {
         dispatch(removeQuestion(question))
     }
-    removeRandomQuestion()
-    */
+    removeSelectedQuestion()
+
+    //const questionObject = questions.find(q => q.question === question)
 
     const answers = questions.map((q) => (
         q.answer.map((a, idx) => (
             <option key={idx} value={a.ans}>{a.ans}</option>
         ))
-            //<option key={idx} value={q.question}>{q.question}</option>
     ))
 
     return(
