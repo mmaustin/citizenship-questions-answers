@@ -16,6 +16,8 @@ export const QuestionsDropBox = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
 
+    const questionObject = questions.find(q => q.question === question)
+    
     /*
     const removeRandomQuestion = () => {
         dispatch(removeQuestion(question))
