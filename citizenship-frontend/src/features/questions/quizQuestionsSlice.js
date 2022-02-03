@@ -6,7 +6,7 @@ const initialState = questions
   const quizQuestionsSlice = createSlice({
     name: 'quizQuestions',
     initialState,
-    reducers: {/*
+    reducers: {
       removeQuestion(state, action){
         state.map((q, i) => {
           if(q.question === action.payload){
@@ -14,9 +14,9 @@ const initialState = questions
           }
         })
       }
-    */}
+    }
   })
 
-  //export const {removeQuestion} = questionsSlice.actions
+  export const {removeQuestion} = quizQuestionsSlice.actions
 
   export default quizQuestionsSlice.reducer
