@@ -31,15 +31,15 @@ export const QuestionsDropBox = () => {
         ))
     ))
 
-    const printTargetValue = e => {
+    const handleSubmit = e => {
         e.preventDefault()
-        console.log('something')
+        console.log(selectAnswer)
 
     }
 
     const handleChange = (e) => {
         setSelectAnswer(e.target.value)
-        console.log(e)
+        console.log(e.target.value)
     }
 
     return(
@@ -48,7 +48,7 @@ export const QuestionsDropBox = () => {
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
             </>
-            <form onSubmit={e => printTargetValue(e)}>
+            <form onSubmit={e => handleSubmit(e)}>
                 <label>
                     Select Your Answer
                     <select value={selectAnswer} onChange={e => handleChange(e)}>
