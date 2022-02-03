@@ -33,18 +33,17 @@ export const QuestionsDropBox = () => {
     ))
 
     return(
-        <>
-            <p>{question}</p>
-            <button onClick={getRandomQuestion}>Click to Select a Question</button>
-            <div>
-                {answers}
-            </div>
-        </>
-        /*<form>
-            <select>
-                {listQuestions}
-            </select>
-        </form>*/
+        <div>
+            <>
+                <p>{question}</p>
+                <button onClick={getRandomQuestion}>Click to Select a Question</button>
+            </>
+            <form>
+                <select>
+                    {answers}
+                </select>
+            </form>
+        </div>
     )
 
 }
