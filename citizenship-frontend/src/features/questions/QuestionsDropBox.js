@@ -30,16 +30,26 @@ export const QuestionsDropBox = () => {
         ))
     ))
 
+    const printTargetValue = e => {
+        e.preventDefault()
+        console.log('something')
+
+    }
+
     return(
         <div>
             <>
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
             </>
-            <form>
-                <select>
-                    {answers}
-                </select>
+            <form onSubmit={e => printTargetValue(e)}>
+                <label>
+                    Select Your Answer
+                    <select >
+                        {answers}
+                    </select>
+                </label>
+                <input type="submit" value="Submit" />
             </form>
         </div>
     )
