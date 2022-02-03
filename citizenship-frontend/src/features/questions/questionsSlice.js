@@ -17,6 +17,6 @@ const initialState = questions
     */}
   })
 
-  export const {removeQuestion} = questionsSlice.actions
+  //export const {removeQuestion} = questionsSlice.actions
 
   export default questionsSlice.reducer
