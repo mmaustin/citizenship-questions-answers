@@ -16,7 +16,7 @@ export const QuestionsDropBox = () => {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
     }
 
-    const questionObject = questions.find(q => q.question === question)
+    //const questionObject = questions.find(q => q.question === question)
     
     /*
     const removeRandomQuestion = () => {
@@ -25,14 +25,20 @@ export const QuestionsDropBox = () => {
     removeRandomQuestion()
     */
 
-    /*const listQuestions = questions.map((q, idx) => (
-            <option key={idx} value={q.question}>{q.question}</option>
-    ))*/
+    const answers = questions.map((q) => (
+        q.answer.map((a, idx) => (
+            <option key={idx} value={a.ans}>{a.ans}</option>
+        ))
+            //<option key={idx} value={q.question}>{q.question}</option>
+    ))
 
     return(
         <>
             <p>{question}</p>
             <button onClick={getRandomQuestion}>Click to Select a Question</button>
+            <div>
+                {answers}
+            </div>
         </>
         /*<form>
             <select>
