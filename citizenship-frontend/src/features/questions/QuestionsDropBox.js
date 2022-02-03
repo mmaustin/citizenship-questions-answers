@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 //import { removeQuestion } from './questionsSlice'
 
 export const QuestionsDropBox = () => {
-    const questions = useSelector(state => state.questions)
+    const questions = useSelector(state => state.quizQuestions)
     const [question, setQuestion] = useState('');
     
 
