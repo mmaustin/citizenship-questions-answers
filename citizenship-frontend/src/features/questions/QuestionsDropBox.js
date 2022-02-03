@@ -5,6 +5,7 @@ import { removeQuestion } from './quizQuestionsSlice'
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
     const [question, setQuestion] = useState('');
+    const [selectAnswer, setSelectAnswer] = useState('')
     const dispatch = useDispatch()
     
 
@@ -36,6 +37,11 @@ export const QuestionsDropBox = () => {
 
     }
 
+    const handleChange = (e) => {
+        setSelectAnswer(e.target.value)
+        console.log(e)
+    }
+
     return(
         <div>
             <>
@@ -45,7 +51,7 @@ export const QuestionsDropBox = () => {
             <form onSubmit={e => printTargetValue(e)}>
                 <label>
                     Select Your Answer
-                    <select >
+                    <select value={selectAnswer} onChange={e => handleChange(e)}>
                         {answers}
                     </select>
                 </label>
