@@ -22,7 +22,7 @@ export const QuestionsDropBox = () => {
     const removeSelectedQuestion = () => {
         dispatch(removeQuestion(question))
     }
-    removeSelectedQuestion()
+
 
     //const questionObject = questions.find(q => q.question === question)
 
@@ -32,6 +32,7 @@ export const QuestionsDropBox = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
+        removeSelectedQuestion()
         console.log(selectAnswer)
 
     }
