@@ -13,7 +13,7 @@ answer: [{ans: 'life'}, {ans: 'liberty'}, {ans: 'pursuit of happiness'}]}, {id: 
 answer: [{ans: 'you can practice any religion or not practice a religion'}]}
 ]
 
-export const  quizAnswers = ['the constitution', 'sets up the government', 'defines the government', 'protects basic rights of americans',
-'we the people', 'a change to the constitution', 'an addition to the constitution', 'the bill of rights', 'speech', 'religion', 'assembly',
-'press', 'petition the government', 'twenty-seven(27)', 'announced independence from great britain', 'declared independence from great britain',
-'said that the united states is free from great britain', 'life', 'liberty', 'pursuit of happiness', 'you can practice any religion or not practice a religion']
+export const  quizAnswers = ['a change to the constitution', 'announced independence from great britain', 'liberty', 'press', 'protects basic rights of americans',
+'pursuit of happiness', 'religion', 'the bill of rights', 'twenty-seven(27)', 'speech', 'you can practice any religion or not practice a religion',
+'an addition to the constitution', 'petition the government', 'defines the government', 'declared independence from great britain', 'life', 'we the people',
+'sets up the government', 'assembly', 'said that the united states is free from great britain', 'the constitution']
