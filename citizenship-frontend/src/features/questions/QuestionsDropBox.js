@@ -32,6 +32,12 @@ export const QuestionsDropBox = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
+        console.log(question)
+        /*if(question.answer.includes(e.target.value)){
+            console.log('true')
+        } else {
+            console.log('false')
+        }*/
         removeSelectedQuestion()
         console.log(selectAnswer)
 
