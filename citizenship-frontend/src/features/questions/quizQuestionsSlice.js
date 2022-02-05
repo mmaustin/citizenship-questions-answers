@@ -8,14 +8,9 @@ const initialState = questions
     initialState,
     reducers: {
       removeQuestion(state, action){
-        const remove = state.find(q => q.question === action.payload)
-        state.shift(remove)
-       /* state.map((q, i) => {
-          if(q.question === action.payload){
-            state.splice(i,1)
-          }
-        })
-      */}
+        const remove = state.findIndex(q => q.question === action.payload)
+        state.splice(remove, 1)
+      }
     }
   })
 
