@@ -32,7 +32,8 @@ export const QuestionsDropBox = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        console.log(question)
+        const ques = questions.find(q => q.question === question)
+        console.log(ques)
         /*if(question.answer.includes(e.target.value)){
             console.log('true')
         } else {
