@@ -30,27 +30,28 @@ export const QuestionsDropBox = () => {
             <option key={idx} value={answer}>{answer}</option>
     ))
 
+    const handleChange = (e) => {
+        setSelectAnswer(e.target.value)
+        console.log(e.target.value)
+    }
+
     const handleSubmit = e => {
         e.preventDefault()
         const ques = questions.find(q => q.question === question)
 
         const q = ques.answer.map(a => a.ans)
-        console.log(q)
-        if(q.includes(e.target.value)){
+        //console.log(selectAnswer)
+        if(q.includes(selectAnswer)){
             console.log('true')
         } else {
             console.log('false')
         }
-        debugger
         removeSelectedQuestion()
         console.log(selectAnswer)
 
     }
 
-    const handleChange = (e) => {
-        setSelectAnswer(e.target.value)
-        console.log(e.target.value)
-    }
+
 
     return(
         <div>
