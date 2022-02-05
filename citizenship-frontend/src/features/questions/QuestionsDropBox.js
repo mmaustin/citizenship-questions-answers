@@ -34,12 +34,14 @@ export const QuestionsDropBox = () => {
         e.preventDefault()
         const ques = questions.find(q => q.question === question)
 
-        if(ques.answer.includes(e.target.value)){
+        const q = ques.answer.map(a => a.ans)
+        console.log(q)
+        if(q.includes(e.target.value)){
             console.log('true')
         } else {
             console.log('false')
         }
-        
+        debugger
         removeSelectedQuestion()
         console.log(selectAnswer)
 
