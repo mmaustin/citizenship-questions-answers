@@ -23,9 +23,6 @@ export const QuestionsDropBox = () => {
         dispatch(removeQuestion(question))
     }
 
-
-    //const questionObject = questions.find(q => q.question === question)
-
     const answers = quizAnswers.map((answer, idx) => (
             <option key={idx} value={answer}>{answer}</option>
     ))
@@ -40,7 +37,7 @@ export const QuestionsDropBox = () => {
         const ques = questions.find(q => q.question === question)
 
         const q = ques.answer.map(a => a.ans)
-        //console.log(selectAnswer)
+
         if(q.includes(selectAnswer)){
             console.log('true')
         } else {
