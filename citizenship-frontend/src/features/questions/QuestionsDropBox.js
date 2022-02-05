@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
+import { quizAnswers } from './questions'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
@@ -25,10 +26,8 @@ export const QuestionsDropBox = () => {
 
     //const questionObject = questions.find(q => q.question === question)
 
-    const answers = questions.map((q) => (
-        q.answer.map((a, idx) => (
-            <option key={idx} value={a.ans}>{a.ans}</option>
-        ))
+    const answers = quizAnswers.map((answer, idx) => (
+            <option key={idx} value={answer}>{answer}</option>
     ))
 
     const handleSubmit = e => {
