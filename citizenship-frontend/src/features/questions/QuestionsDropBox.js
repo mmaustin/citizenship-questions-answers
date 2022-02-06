@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
+import AnswerTabulation from '../view/AnswerTabulation'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
@@ -60,10 +61,7 @@ export const QuestionsDropBox = () => {
     return(
         <div>
             <>
-                <div>
-                    <p>Correct Responses: {correctAnswer}</p>
-                    <p>Incorrect Responses: {incorrectAnswer}</p>
-                </div>
+                <AnswerTabulation correctAnswer={correctAnswer} incorrectAnswer={incorrectAnswer}/>
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
             </>
