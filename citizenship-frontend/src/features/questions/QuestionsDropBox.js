@@ -35,7 +35,7 @@ export const QuestionsDropBox = () => {
         console.log(e.target.value)
     }
 
-    const answerTabulation = () => {
+    const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
         if(q.includes(selectAnswer)){
@@ -48,7 +48,7 @@ export const QuestionsDropBox = () => {
     const handleSubmit = e => {
         e.preventDefault()
 
-        answerTabulation()
+        tabulation()
 
         removeSelectedQuestion()
         console.log(selectAnswer)
