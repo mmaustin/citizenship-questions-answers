@@ -7,8 +7,8 @@ export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
-    const [correctAnswer, setCorrectAnswer] = useState(0)
-    const [incorrectAnswer, setIncorrectAnswer] = useState(0)
+    const [correctAnswer, setCorrectAnswer] = useState(2)
+    const [incorrectAnswer, setIncorrectAnswer] = useState(5)
 
     const dispatch = useDispatch()
     
@@ -59,8 +59,8 @@ export const QuestionsDropBox = () => {
         <div>
             <>
                 <div>
-                    <p>Correct Responses: </p>
-                    <p>Incorrect Responses: </p>
+                    <p>Correct Responses: {correctAnswer}</p>
+                    <p>Incorrect Responses: {incorrectAnswer}</p>
                 </div>
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
