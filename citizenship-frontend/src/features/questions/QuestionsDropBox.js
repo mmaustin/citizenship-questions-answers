@@ -35,19 +35,21 @@ export const QuestionsDropBox = () => {
         console.log(e.target.value)
     }
 
-
+    const answerTabulation = () => {
+        const ques = questions.find(q => q.question === question)
+        const q = ques.answer.map(a => a.ans)
+        if(q.includes(selectAnswer)){
+            setCorrectAnswer(correctAnswer + 1)
+        } else {
+            setIncorrectAnswer(incorrectAnswer + 1)
+        }
+    }
 
     const handleSubmit = e => {
         e.preventDefault()
-        const ques = questions.find(q => q.question === question)
 
-        const q = ques.answer.map(a => a.ans)
+        answerTabulation()
 
-        if(q.includes(selectAnswer)){
-            console.log('true')
-        } else {
-            console.log('false')
-        }
         removeSelectedQuestion()
         console.log(selectAnswer)
 
