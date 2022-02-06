@@ -54,8 +54,8 @@ export const QuestionsDropBox = () => {
         <div>
             <>
                 <div>
-                    <p>Handle Right Answer</p>
-                    <p>Handle Wrong Answer</p>
+                    <p>Correct Responses: </p>
+                    <p>Incorrect Responses: </p>
                 </div>
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
