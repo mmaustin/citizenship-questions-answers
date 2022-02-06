@@ -7,8 +7,8 @@ export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
-    const [correctAnswer, setCorrectAnswer] = useState(2)
-    const [incorrectAnswer, setIncorrectAnswer] = useState(5)
+    const [correctAnswer, setCorrectAnswer] = useState(0)
+    const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
     const dispatch = useDispatch()
     
