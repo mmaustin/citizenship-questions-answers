@@ -57,7 +57,9 @@ export const QuestionsDropBox = () => {
     }
 
     const testFunction = () => {
+        if (listQuestions.lenght === 0){
         return 'please work!'
+        }
     }
 
     return(
