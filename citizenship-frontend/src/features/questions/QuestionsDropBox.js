@@ -21,13 +21,19 @@ export const QuestionsDropBox = () => {
     ))
         console.log(listQuestions)
 
-    const getRandomQuestion = () => {
+    const checkListQuestions = () => {
         if (listQuestions.length === 9) {
             navigate('/')
-
-        } else {
-        setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+            //need to use navigate inside of use effect hook
+            //need to figure out the proper time to navigate away from the quiz page to avoid errors
         }
+    }
+    checkListQuestions()
+
+    const getRandomQuestion = () => {
+
+        setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+        
     }
 
     const removeSelectedQuestion = () => {
