@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
 import AnswerTabulation from '../view/AnswerTabulation'
-import {useNavigate} from 'react-router-dom'
+//import {useNavigate} from 'react-router-dom'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
@@ -11,7 +11,7 @@ export const QuestionsDropBox = () => {
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
-    let navigate = useNavigate()
+    //let navigate = useNavigate()
 
     const dispatch = useDispatch()
     
@@ -21,19 +21,19 @@ export const QuestionsDropBox = () => {
     ))
         console.log(listQuestions)
 
-    const checkListQuestions = () => {
+   /* const checkListQuestions = () => {
         if (listQuestions.length === 9) {
             navigate('/')
             //need to use navigate inside of use effect hook
             //need to figure out the proper time to navigate away from the quiz page to avoid errors
         }
     }
-    checkListQuestions()
+    checkListQuestions()*/
 
     const getRandomQuestion = () => {
-
-        setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
-        
+        if (listQuestions.length !== 0){
+            setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+        }
     }
 
     const removeSelectedQuestion = () => {
