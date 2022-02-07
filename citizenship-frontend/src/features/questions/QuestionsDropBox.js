@@ -56,11 +56,11 @@ export const QuestionsDropBox = () => {
 
     }
 
-    const testFunction = () => {
+    /*const testFunction = () => {
         if (listQuestions.lenght === 0){
         return 'please work!'
         }
-    }
+    }*/
 
     return(
         <div>
@@ -79,7 +79,7 @@ export const QuestionsDropBox = () => {
                 <input type="submit" value="Submit" />
             </form>
             <p>
-                {testFunction()}
+                {/*{}*/}
             </p>
         </div>
     )
