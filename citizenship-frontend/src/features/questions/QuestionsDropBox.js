@@ -20,11 +20,7 @@ export const QuestionsDropBox = () => {
         console.log(listQuestions)
 
     const getRandomQuestion = () => {
-        if (listQuestions.length === 0){
-            return <p>your game is over</p>
-        } else {
         setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
-        }
     }
 
     const removeSelectedQuestion = () => {
