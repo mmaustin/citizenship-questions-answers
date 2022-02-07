@@ -56,7 +56,9 @@ export const QuestionsDropBox = () => {
 
     }
 
-
+    const testFunction = () => {
+        return 'please work!'
+    }
 
     return(
         <div>
@@ -75,7 +77,7 @@ export const QuestionsDropBox = () => {
                 <input type="submit" value="Submit" />
             </form>
             <p>
-                
+                {testFunction()}
             </p>
         </div>
     )
