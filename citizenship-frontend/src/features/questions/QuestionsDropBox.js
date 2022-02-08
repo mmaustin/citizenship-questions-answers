@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
 import AnswerTabulation from '../view/AnswerTabulation'
-import {useNavigate} from 'react-router-dom'
+//import {useNavigate} from 'react-router-dom'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
@@ -11,7 +11,7 @@ export const QuestionsDropBox = () => {
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
-    let navigate = useNavigate()
+    //let navigate = useNavigate()
 
     const dispatch = useDispatch()
     
@@ -21,11 +21,11 @@ export const QuestionsDropBox = () => {
     ))
         console.log(listQuestions)
 
-        useEffect(() => {
-            if (listQuestions.length === 0) {
+    /*useEffect(() => {
+            if (listQuestions.length === 9) {
                 navigate('/results')
             }
-        })
+        })*/
 
 
     const getRandomQuestion = () => {
@@ -84,6 +84,9 @@ export const QuestionsDropBox = () => {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
+            {listQuestions.length === 9 &&
+            <p>Yay!</p>
+            }
         </div>
     )
 
