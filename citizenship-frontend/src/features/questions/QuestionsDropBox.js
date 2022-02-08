@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
-import AnswerTabulation from '../view/AnswerTabulation'
+//import AnswerTabulation from '../view/AnswerTabulation'
 //import {useNavigate} from 'react-router-dom'
 
 export const QuestionsDropBox = () => {
@@ -67,11 +67,12 @@ export const QuestionsDropBox = () => {
 
     }
 
+    const questionsAnswered = correctAnswer + incorrectAnswer
 
     return(
         <div>
             <>
-                <AnswerTabulation correctAnswer={correctAnswer} incorrectAnswer={incorrectAnswer}/>
+                {questionsAnswered}
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
             </>
@@ -84,8 +85,11 @@ export const QuestionsDropBox = () => {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
-            {listQuestions.length === 9 &&
-            <p>Yay!</p>
+            {listQuestions.length === 0 &&
+            <>
+                <p>Correct Answers: {correctAnswer}</p>
+                <p>Incorrect Answers: {incorrectAnswer}</p>
+            </>
             }
         </div>
     )

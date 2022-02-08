@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './app/Navbar'
 import { SingleQuestionPage } from './features/questions/SingleQuestionPage'
 import { QuestionsDropBox } from './features/questions/QuestionsDropBox'
-import AnswerTabulation from './features/view/AnswerTabulation'
 
 const App = () => {
 
