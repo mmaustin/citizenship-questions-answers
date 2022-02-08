@@ -22,19 +22,11 @@ export const QuestionsDropBox = () => {
         console.log(listQuestions)
 
         useEffect(() => {
-            if (listQuestions.length === 9) {
+            if (listQuestions.length === 0) {
                 navigate('/')
             }
         })
 
-    /*const checkListQuestions = () => {
-        if (listQuestions.length === 9) {
-            navigate('/')
-            //need to use navigate inside of use effect hook
-            //need to figure out the proper time to navigate away from the quiz page to avoid errors
-        }
-    }
-    checkListQuestions()*/
 
     const getRandomQuestion = () => {
         if (listQuestions.length !== 0){
@@ -75,11 +67,6 @@ export const QuestionsDropBox = () => {
 
     }
 
-    /*const testFunction = () => {
-        if (listQuestions.lenght === 0){
-        return 'please work!'
-        }
-    }*/
 
     return(
         <div>
@@ -97,9 +84,6 @@ export const QuestionsDropBox = () => {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
-            <p>
-                {/*{}*/}
-            </p>
         </div>
     )
 
