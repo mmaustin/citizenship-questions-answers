@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './app/Navbar'
 import { SingleQuestionPage } from './features/questions/SingleQuestionPage'
 import { QuestionsDropBox } from './features/questions/QuestionsDropBox'
+import AnswerTabulation from './features/view/AnswerTabulation'
 
 const App = () => {
 
@@ -14,8 +15,8 @@ const App = () => {
                     <Route exact path='/' element={<QuestionsList/>}/>
                     <Route exact path='/questions/:questionId' element={<SingleQuestionPage/>} />
                     <Route exact path='/questions/dropbox' element={<QuestionsDropBox/>}/>
-                    <Route path="*" element={<p>There's nothing here!</p> }
-    />
+                    <Route exact path='/results' element={<AnswerTabulation/>}/>
+                    <Route path="*" element={<p>There's nothing here!</p> }/>
                 </Routes>
         </Router>
     )
