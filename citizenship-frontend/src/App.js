@@ -15,7 +15,6 @@ const App = () => {
                     <Route exact path='/' element={<QuestionsList/>}/>
                     <Route exact path='/questions/:questionId' element={<SingleQuestionPage/>} />
                     <Route exact path='/questions/dropbox' element={<QuestionsDropBox/>}/>
-                    <Route exact path='/results' element={<AnswerTabulation/>}/>
                     <Route path="*" element={<p>There's nothing here!</p> }/>
                 </Routes>
         </Router>
