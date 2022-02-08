@@ -23,7 +23,7 @@ export const QuestionsDropBox = () => {
 
         useEffect(() => {
             if (listQuestions.length === 0) {
-                navigate('/')
+                navigate('/results')
             }
         })
 
