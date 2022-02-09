@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div>
                     <div>
                         <div><Link to='/'>Q's and A's</Link></div>
-                        <div><Link to='/questions/dropbox'>Quiz Page</Link></div>
+                        <div><Link to='/questions/quizone'>Quiz Page</Link></div>
                     </div>
                 </div>
             </section>

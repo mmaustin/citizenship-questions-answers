@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
 
-export const QuestionsDropBox = () => {
+export const QuizOne = () => {
     const questions = useSelector(state => state.quizQuestions)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
