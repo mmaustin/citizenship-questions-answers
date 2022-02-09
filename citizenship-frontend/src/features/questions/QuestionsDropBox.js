@@ -76,14 +76,14 @@ export const QuestionsDropBox = () => {
                 <input type="submit" value="Submit" />
             </form>
             {listQuestions.length === 0 &&
-            <>
+            <div>
                 <p>Correct Answers: {correctAnswer}</p>
                 <p>Incorrect Answers: {incorrectAnswer}</p>
                 {correctAnswer >= 7 
                     ? <p>Congratulations!! You Passed!</p>
                     : <p>Don't Fret! Keep studying and practicing.</p>
                 }
-            </>
+            </div>
             }
         </div>
     )
