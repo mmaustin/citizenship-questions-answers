@@ -89,10 +89,10 @@ export const QuestionsDropBox = () => {
             <>
                 <p>Correct Answers: {correctAnswer}</p>
                 <p>Incorrect Answers: {incorrectAnswer}</p>
-                {correctAnswer >= 7 &&
-                <>
-                    <p>Congratulations!! You Passed!</p>
-                </>}
+                {correctAnswer >= 7 
+                    ? <p>Congratulations!! You Passed!</p>
+                    : <p>Don't Fret! Keep studying and practicing.</p>
+                }
             </>
             }
         </div>
