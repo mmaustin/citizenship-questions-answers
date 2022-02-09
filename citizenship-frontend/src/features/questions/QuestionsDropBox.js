@@ -61,20 +61,23 @@ export const QuestionsDropBox = () => {
 
     return(
         <div>
-            <>
-                {questionsAnswered}
+            <div>
+                <p>You must correctly answer 7 out of 10 questions to pass this quiz.</p>
+                <p>Number of questions answered: {questionsAnswered}</p>
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
-            </>
-            <form onSubmit={e => handleSubmit(e)}>
-                <label>
-                    Select Your Answer
-                    <select value={selectAnswer} onChange={e => handleChange(e)}>
-                        {answers}
-                    </select>
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
+            </div>
+            <div>
+                <form onSubmit={e => handleSubmit(e)}>
+                    <label>
+                        Select Your Answer
+                        <select value={selectAnswer} onChange={e => handleChange(e)}>
+                            {answers}
+                        </select>
+                    </label>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>    
             {listQuestions.length === 0 &&
             <div>
                 <p>Correct Answers: {correctAnswer}</p>
