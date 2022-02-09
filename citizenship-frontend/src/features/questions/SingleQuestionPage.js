@@ -3,9 +3,6 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 
 export const SingleQuestionPage = () => {
-    //console.log({match})
-    //const {questionId} = useParams()
-    //console.log(questionId)
     let params = useParams()
     const query = useSelector(state => 
         state.questions.find(question => question.id === params.questionId)
@@ -24,7 +21,7 @@ export const SingleQuestionPage = () => {
             </>
         )
     }
-//debugger
+
     return(
         <>
             <section>

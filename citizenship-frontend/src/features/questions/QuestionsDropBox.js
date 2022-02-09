@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
-//import AnswerTabulation from '../view/AnswerTabulation'
-//import {useNavigate} from 'react-router-dom'
 
 export const QuestionsDropBox = () => {
     const questions = useSelector(state => state.quizQuestions)
@@ -11,7 +9,6 @@ export const QuestionsDropBox = () => {
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
-    //let navigate = useNavigate()
 
     const dispatch = useDispatch()
     
@@ -20,13 +17,6 @@ export const QuestionsDropBox = () => {
         q.question
     ))
         console.log(listQuestions)
-
-    /*useEffect(() => {
-            if (listQuestions.length === 9) {
-                navigate('/results')
-            }
-        })*/
-
 
     const getRandomQuestion = () => {
         if (listQuestions.length !== 0){
@@ -99,11 +89,3 @@ export const QuestionsDropBox = () => {
     )
 
 }
-
-//What has to happen:
-//1) I want to display one random question and have that set to state
-    //once a question is displayed, it has to be eliminated from the array
-//2) I want all of the possible answers displayed in a dropbox
-//3) If the clicked answer matches the question in state, correct counter goes up by one
-    //if wrong, correct counter stays the same and the incorrect counter goes up by one
-//4) Seven answers must be correct in order to pass the test.
