@@ -19,3 +19,8 @@ body {
     align-items: center;
     flex-flow: column;   
 }
+
+nav {
+    border: 1px solid red;
+    width: 100%;
+}
