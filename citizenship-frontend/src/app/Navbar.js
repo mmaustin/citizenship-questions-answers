@@ -8,10 +8,8 @@ const Navbar = () => {
             <section id='nav-section'>
                 <h2>Citizenship: Questions, Answers, Quizzes</h2>
                 <div>
-                    <div>
-                        <div><Link to='/'>Quiz One Q & A's</Link></div>
-                        <div><Link to='/questions/quizone'>Quiz One</Link></div>
-                    </div>
+                    <div><Link to='/'>Quiz One Q & A's</Link></div>
+                    <div><Link to='/questions/quizone'>Quiz One</Link></div>
                 </div>
             </section>
         </nav>
