@@ -28,3 +28,8 @@ nav {
     align-items: center;
     flex-flow: row;
 }
+
+#nav-section {
+    border: 1px solid gray;
+    width: 100%;
+}

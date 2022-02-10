@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return(
         <nav>
-            <section>
+            <section id='nav-section'>
                 <h2>Citizenship: Questions, Answers, Quizzes</h2>
                 <div>
                     <div>
