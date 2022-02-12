@@ -23,7 +23,7 @@ export const QuestionsList = () => {
     ))
 
     return(
-        <section>
+        <section className='question-answer-panel'>
             {questionsAnswers}
         </section>
     )
