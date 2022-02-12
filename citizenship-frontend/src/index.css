@@ -72,4 +72,8 @@ h2 {
     margin: 0;
     width: 49%;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
