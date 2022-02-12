@@ -6,7 +6,7 @@ const Navbar = () => {
     return(
         <nav>
             <section id='nav-section'>
-                <h2 id='nav-heading'>Citizenship Test: Questions, Answers, Quizzes</h2>
+                <h2 id='nav-heading'>Citizenship Prep: Questions, Answers, Quizzes</h2>
                 <div id='nav-link-container'>
                     <Link className='nav-link-text' to='/'>Quiz One Q & A's</Link>
                     <Link className='nav-link-text' to='/questions/quizone'>Quiz One</Link>

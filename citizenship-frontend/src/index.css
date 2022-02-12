@@ -3,7 +3,6 @@
 }
 
 body {
-    background-color: bisque;
     font-family: 'open sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -55,12 +54,13 @@ nav {
     flex-flow: column;
 }
 
-a {
-
+.nav-link-text {
     text-decoration: none;
-    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
 }
 
-.nav-link-text {
-    
+h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
