@@ -3,6 +3,7 @@
 }
 
 body {
+    background-color: bisque;
     font-family: 'open sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -52,4 +53,10 @@ nav {
 
 #nav-link-container {
     flex-flow: column;
+}
+
+a {
+
+    text-decoration: none;
+    color: red;
 }
