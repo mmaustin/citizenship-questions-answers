@@ -7,7 +7,7 @@ export const QuestionsList = () => {
     
     const questionsAnswers = questions.map((question, idx) => (
         <article className="question-excerpt" key={question.id}>
-            <p className='question-number'>Question {idx + 1}</p>
+            <p className='question-number'>{idx + 1}</p>
             <p className='question'>{question.question}</p>
             {question.answer.map((a, index) => (
                 <div className='answers' key={index}>

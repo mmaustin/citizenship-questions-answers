@@ -87,7 +87,7 @@ h2 {
     flex-flow: row;
 }
 
-.answers {
+.question-number {
     border: 1px solid red;
-    flex-flow: column;
+    justify-content: flex-start;
 }
