@@ -15,6 +15,7 @@ body {
 }
 
 nav {
+    border-bottom: 2px solid black;
     width: 100%;
     margin-bottom: 50px;
     height: 150px;
@@ -68,9 +69,9 @@ h2 {
 }
 
 .question-excerpt {
-    border: 1px solid blue;
+    border-bottom: 1px solid black;
     margin: 0;
-    width: 49%;
+    width: 50%;
     height: 275px;
     display: flex;
     justify-content: flex-start;
@@ -88,14 +89,14 @@ h2 {
 }
 
 .question-number {
-    border: 1px solid red;
-    justify-content: flex-start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 10px;
 }
 
 .question {
-    text-transform: uppercase;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
