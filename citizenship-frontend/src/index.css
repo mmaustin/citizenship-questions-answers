@@ -129,6 +129,10 @@ nav {
     border: 1px solid blue;
     margin: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 #pass-requirement {
