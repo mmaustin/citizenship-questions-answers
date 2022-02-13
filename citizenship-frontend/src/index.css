@@ -14,6 +14,8 @@ body {
     flex-flow: column;   
 }
 
+/*Navigation Bar CSS*/
+
 nav {
     border-bottom: 2px solid black;
     width: 100%;
@@ -55,9 +57,11 @@ nav {
     font-weight: bold;
 }
 
-h2 {
+#nav-heading {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*Quiz One Questions and Answers CSS*/
 
 .question-answer-panel {
     margin: 0;
@@ -117,3 +121,5 @@ h2 {
     text-decoration: underline;
     color: blue;
 }
+
+/*Quiz One CSS*/
