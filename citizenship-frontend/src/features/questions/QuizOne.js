@@ -62,7 +62,7 @@ export const QuizOne = () => {
     return(
         <div>
             <div>
-                <p>You must correctly answer 7 out of 10 questions to pass this quiz.</p>
+                <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
                 <p>Number of questions answered: {questionsAnswered}</p>
                 <p>{question}</p>
                 <button onClick={getRandomQuestion}>Click to Select a Question</button>
