@@ -67,15 +67,15 @@ export const QuizOne = () => {
                 <p className='selected-question'>{question}</p>
                 <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button>
             </div>
-            <div>
+            <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
                     <label>
                         Select Your Answer
-                        <select value={selectAnswer} onChange={e => handleChange(e)}>
+                        <select className='answer-selector' value={selectAnswer} onChange={e => handleChange(e)}>
                             {answers}
                         </select>
                     </label>
-                    <input type="submit" value="Submit" />
+                    <input className='submit-answer' type="submit" value="Submit" />
                 </form>
             </div>    
             {listQuestions.length === 0 &&
