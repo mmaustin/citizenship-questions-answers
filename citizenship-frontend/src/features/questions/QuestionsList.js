@@ -10,8 +10,8 @@ export const QuestionsList = () => {
             <p className='question-number'>Question {idx + 1}</p>
             <p className='question'>{question.question}</p>
             {question.answer.map((a, index) => (
-                <div className='answers' key={index}>
-                    <p>{index +1}) {a.ans}</p>
+                <div className='answers-div' key={index}>
+                    <p className='answers'>{index +1}) {a.ans}</p>
                 </div>
 
             ))}

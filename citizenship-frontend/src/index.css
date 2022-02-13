@@ -79,7 +79,7 @@ h2 {
     flex-flow: column;
 }
 
-.question-number, .question, .answers {
+.question-number, .question, .answers-div {
     margin: 0;
     width: 100%;
     display: flex;
@@ -103,6 +103,7 @@ h2 {
     flex-flow: row;
 }
 
-.answers {
+.answers-div {
     border: 1px solid blue;
+    height:fit-content;
 }
