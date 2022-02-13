@@ -70,7 +70,7 @@ h2 {
 
 .question-excerpt {
     border-bottom: 1px solid black;
-    margin: 0;
+    margin-bottom: 20px;
     width: 50%;
     height: 275px;
     display: flex;
