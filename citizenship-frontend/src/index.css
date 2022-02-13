@@ -96,18 +96,24 @@ h2 {
 .question {
     font-variant: small-caps;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row;
+    margin-bottom: 15px;
 }
 
 .answers-div {
-    border: 1px solid blue;
     height:fit-content;
 }
 
 .answers {
     margin: 0;
+}
+
+.question-link {
+    margin-top: 10px;
+    text-decoration: underline;
+    color: blue;
 }

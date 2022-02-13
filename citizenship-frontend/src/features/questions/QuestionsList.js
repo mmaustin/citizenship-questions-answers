@@ -16,7 +16,7 @@ export const QuestionsList = () => {
 
             ))}
             
-            <Link to={`/questions/${question.id}`}>
+            <Link className='question-link' to={`/questions/${question.id}`}>
             View Question
             </Link>  
         </article>
