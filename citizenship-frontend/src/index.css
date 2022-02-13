@@ -103,6 +103,6 @@ h2 {
     flex-flow: row;
 }
 
-.answer {
-    height: fit-content;
+.answers {
+    border: 1px solid blue;
 }
