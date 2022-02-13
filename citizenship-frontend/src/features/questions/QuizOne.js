@@ -60,12 +60,12 @@ export const QuizOne = () => {
     const questionsAnswered = correctAnswer + incorrectAnswer
 
     return(
-        <div id='quiz-container'>
-            <div>
+        <div className='quiz-container'>
+            <div className='sub-container-one'>
                 <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
-                <p>Number of questions answered: {questionsAnswered}</p>
-                <p>{question}</p>
-                <button onClick={getRandomQuestion}>Click to Select a Question</button>
+                <p className='questions-answered'>Number of questions answered: {questionsAnswered}</p>
+                <p className='selected-question'>{question}</p>
+                <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button>
             </div>
             <div>
                 <form onSubmit={e => handleSubmit(e)}>
