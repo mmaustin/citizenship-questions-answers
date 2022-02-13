@@ -1,4 +1,5 @@
 body {
+    border: 1px solid red;
     font-family: 'open sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -123,6 +124,12 @@ nav {
 }
 
 /*Quiz One CSS*/
+
+#quiz-container {
+    border: 1px solid blue;
+    margin: 0;
+    width: 100%;
+}
 
 #pass-requirement {
     font-family:Verdana, Geneva, Tahoma, sans-serif;

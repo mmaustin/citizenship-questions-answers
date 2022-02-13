@@ -60,7 +60,7 @@ export const QuizOne = () => {
     const questionsAnswered = correctAnswer + incorrectAnswer
 
     return(
-        <div>
+        <div id='quiz-container'>
             <div>
                 <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
                 <p>Number of questions answered: {questionsAnswered}</p>
