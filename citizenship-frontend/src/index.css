@@ -124,7 +124,7 @@ nav {
 
 /*Quiz One CSS*/
 
-.quiz-container {
+.quiz-container, .sub-container-one {
     border: 1px solid blue;
     margin: 0;
     width: 100%;
