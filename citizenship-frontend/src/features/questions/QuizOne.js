@@ -68,6 +68,7 @@ export const QuizOne = () => {
                     <label>
                         Select Your Answer:&nbsp;&nbsp;&nbsp;
                         <select className='answer-selector' value={selectAnswer} onChange={e => handleChange(e)}>
+                            <option value=""></option>
                             {answers}
                         </select>
                     </label>&nbsp;&nbsp;&nbsp;
