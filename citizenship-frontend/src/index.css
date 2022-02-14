@@ -142,7 +142,7 @@ nav {
     flex-flow: row;
 }
 
-.selected-question, label {
+.selected-question, label, .answer-selector {
     font-weight: bold;
 }
 
