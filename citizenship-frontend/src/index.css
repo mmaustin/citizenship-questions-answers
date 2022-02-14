@@ -134,6 +134,10 @@ nav {
     flex-flow: column;
 }
 
+.selected-question {
+    font-weight: bold;
+}
+
 .pass-requirement {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

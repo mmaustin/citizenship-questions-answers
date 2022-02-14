@@ -59,7 +59,7 @@ export const QuizOne = () => {
         <div className='quiz-container'>
             <div className='sub-container-one'>
                 <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
-                <p className='questions-answered'>Number of questions answered: {questionsAnswered}</p>
+                <p className='questions-answered'>Questions Answered: {questionsAnswered}</p>
                 <p className='selected-question'>{question.toUpperCase()}</p>
                 <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button>
             </div>
