@@ -46,7 +46,7 @@ export const QuizOne = () => {
     }
 
     const clearAnswerField = () => {
-        setSelectAnswer('Please Select An Answer')
+        setSelectAnswer('')
     }
 
     const handleSubmit = e => {
