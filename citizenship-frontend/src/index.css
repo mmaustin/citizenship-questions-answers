@@ -124,7 +124,7 @@ nav {
 
 /*Quiz One CSS*/
 
-.quiz-container, .sub-container-one {
+.quiz-container, .sub-container-one, .sub-container-two {
     border: 1px solid blue;
     margin: 0;
     width: 100%;
@@ -132,6 +132,10 @@ nav {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+}
+
+.sub-container-one {
+    margin-bottom: 25px;
 }
 
 .selected-question {
