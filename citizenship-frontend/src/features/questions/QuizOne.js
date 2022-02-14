@@ -16,7 +16,6 @@ export const QuizOne = () => {
     const listQuestions = questions.map(q => (
         q.question
     ))
-        console.log(listQuestions)
 
     const getRandomQuestion = () => {
         if (listQuestions.length !== 0){
@@ -34,7 +33,6 @@ export const QuizOne = () => {
 
     const handleChange = (e) => {
         setSelectAnswer(e.target.value)
-        console.log(e.target.value)
     }
 
     const tabulation = () => {
@@ -53,8 +51,6 @@ export const QuizOne = () => {
         tabulation()
 
         removeSelectedQuestion()
-        console.log(selectAnswer)
-
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
