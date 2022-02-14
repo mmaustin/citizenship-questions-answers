@@ -125,7 +125,6 @@ nav {
 /*Quiz One CSS*/
 
 .quiz-container, .sub-container-one, .sub-container-two {
-    border: 1px solid blue;
     margin: 0;
     width: 100%;
     display: flex;
@@ -143,7 +142,7 @@ nav {
     flex-flow: row;
 }
 
-.selected-question {
+.selected-question, label {
     font-weight: bold;
 }
 

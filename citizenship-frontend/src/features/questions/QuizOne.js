@@ -66,11 +66,11 @@ export const QuizOne = () => {
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
                     <label>
-                        Select Your Answer
+                        Select Your Answer:&nbsp;&nbsp;&nbsp;
                         <select className='answer-selector' value={selectAnswer} onChange={e => handleChange(e)}>
                             {answers}
                         </select>
-                    </label>
+                    </label>&nbsp;&nbsp;&nbsp;
                     <input className='submit-answer' type="submit" value="Submit" />
                 </form>
             </div>    
