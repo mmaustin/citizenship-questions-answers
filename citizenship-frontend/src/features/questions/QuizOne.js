@@ -45,12 +45,17 @@ export const QuizOne = () => {
         }
     }
 
+    const clearAnswerField = () => {
+        setSelectAnswer('Please Select An Answer')
+    }
+
     const handleSubmit = e => {
         e.preventDefault()
 
         tabulation()
 
         removeSelectedQuestion()
+        clearAnswerField()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
