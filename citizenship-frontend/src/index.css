@@ -146,6 +146,10 @@ nav {
     font-weight: bold;
 }
 
+.selected-question {
+    border-bottom: 2px solid red;
+}
+
 .pass-requirement {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
