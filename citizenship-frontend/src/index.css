@@ -124,7 +124,7 @@ nav {
 
 /*Quiz One CSS*/
 
-.quiz-container, .sub-container-one, .sub-container-two {
+.quiz-container, .sub-container-one, .sub-container-two, .sub-container-three {
     margin: 0;
     width: 100%;
     display: flex;
@@ -156,4 +156,9 @@ nav {
 
 .question-selector, .answer-selector, .submit-answer {
     border: 2px solid black;
+}
+
+.sub-container-three {
+    border: 1px solid blue;
+    margin-top: 30px;
 }
