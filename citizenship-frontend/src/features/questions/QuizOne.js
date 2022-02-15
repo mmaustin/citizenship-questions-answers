@@ -84,12 +84,12 @@ export const QuizOne = () => {
             </div>    
             {listQuestions.length === 0 &&
             <div className='sub-container-three'>
-                <h2 className='results-header'>RESULTS</h2>
+                <h2 className='results-header'>RESULTS:</h2>
                 <p className='answer-count'>Correct Answers: {correctAnswer}</p>
                 <p className='answer-count'>Incorrect Answers: {incorrectAnswer}</p>
                 {correctAnswer >= 7 
-                    ? <p className='result-statement'>Congratulations!! You Passed!</p>
-                    : <p className='result-statement'>Don't Fret! Keep studying and practicing.</p>
+                    ? <h3 className='result-statement'>Congratulations!! You Passed!</h3>
+                    : <h3 className='result-statement'>Don't Fret! Keep studying and practicing.</h3>
                 }
             </div>
             }

@@ -159,6 +159,11 @@ nav {
 }
 
 .sub-container-three {
-    border: 1px solid blue;
+    border: 4px double red;
     margin-top: 30px;
+}
+
+.results-header, .answer-count, .result-statement {
+    margin: 0;
+    margin-bottom: 10px;
 }
