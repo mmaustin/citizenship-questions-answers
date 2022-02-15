@@ -83,12 +83,12 @@ export const QuizOne = () => {
                 </form>
             </div>    
             {listQuestions.length === 0 &&
-            <div>
-                <p>Correct Answers: {correctAnswer}</p>
-                <p>Incorrect Answers: {incorrectAnswer}</p>
+            <div className='sub-container-three'>
+                <p className='answer-count'>Correct Answers: {correctAnswer}</p>
+                <p className='answer-count'>Incorrect Answers: {incorrectAnswer}</p>
                 {correctAnswer >= 7 
-                    ? <p>Congratulations!! You Passed!</p>
-                    : <p>Don't Fret! Keep studying and practicing.</p>
+                    ? <p className='result-statement'>Congratulations!! You Passed!</p>
+                    : <p className='result-statement'>Don't Fret! Keep studying and practicing.</p>
                 }
             </div>
             }
