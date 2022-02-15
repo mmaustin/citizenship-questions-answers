@@ -147,7 +147,7 @@ nav {
 }
 
 .selected-question {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid black;
 }
 
 .pass-requirement {
@@ -159,11 +159,15 @@ nav {
 }
 
 .sub-container-three {
-    border: 4px double red;
+    border: 4px double black;
     margin-top: 30px;
 }
 
 .results-header, .answer-count, .result-statement {
     margin: 0;
     margin-bottom: 10px;
+}
+
+.results-header {
+    margin-top: 10px;
 }
