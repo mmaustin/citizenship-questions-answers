@@ -17,6 +17,8 @@ export const QuizOne = () => {
         q.question
     ))
 
+
+
     const getRandomQuestion = () => {
         if (listQuestions.length !== 0){
             setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
@@ -45,9 +47,9 @@ export const QuizOne = () => {
         }
     }
 
-    const clearAnswerField = () => {
+    /*const clearAnswerField = () => {
         setSelectAnswer('')
-    }
+    }*/
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -55,7 +57,7 @@ export const QuizOne = () => {
         tabulation()
 
         removeSelectedQuestion()
-        clearAnswerField()
+        //clearAnswerField()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
