@@ -84,6 +84,7 @@ export const QuizOne = () => {
             </div>    
             {listQuestions.length === 0 &&
             <div className='sub-container-three'>
+                <h2 className='results-header'>RESULTS</h2>
                 <p className='answer-count'>Correct Answers: {correctAnswer}</p>
                 <p className='answer-count'>Incorrect Answers: {incorrectAnswer}</p>
                 {correctAnswer >= 7 
