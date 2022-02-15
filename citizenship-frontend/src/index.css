@@ -149,3 +149,7 @@ nav {
 .pass-requirement {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.question-selector, .answer-selector, .submit-answer {
+    border: 2px solid black;
+}
