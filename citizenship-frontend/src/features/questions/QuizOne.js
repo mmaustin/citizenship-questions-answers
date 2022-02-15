@@ -88,8 +88,8 @@ export const QuizOne = () => {
                 <p className='answer-count'>Correct Answers: {correctAnswer}</p>
                 <p className='answer-count'>Incorrect Answers: {incorrectAnswer}</p>
                 {correctAnswer >= 7 
-                    ? <h3 className='result-statement'>Congratulations!! You Passed!</h3>
-                    : <h3 className='result-statement'>Don't Fret! Keep studying and practicing.</h3>
+                    ? <h3 className='result-statement'>Congratulations! You Passed!!</h3>
+                    : <h3 className='result-statement'>Don't fret! Keep studying and practicing!</h3>
                 }
             </div>
             }
