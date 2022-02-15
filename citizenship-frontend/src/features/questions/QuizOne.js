@@ -47,9 +47,9 @@ export const QuizOne = () => {
         }
     }
 
-    /*const clearAnswerField = () => {
+    const clearAnswerField = () => {
         setSelectAnswer('')
-    }*/
+    }
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -57,7 +57,7 @@ export const QuizOne = () => {
         tabulation()
 
         removeSelectedQuestion()
-        //clearAnswerField()
+        clearAnswerField()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
