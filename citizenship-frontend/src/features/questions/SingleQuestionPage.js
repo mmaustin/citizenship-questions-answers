@@ -1,11 +1,11 @@
-import React from 'react'
+/*import React from 'react'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 
 export const SingleQuestionPage = () => {
     let params = useParams()
     const query = useSelector(state => 
-        state.questions.find(question => question.id === params.questionId)
+        state.questions.find(question => question.id === params.questionId) 
     )
 
     const answers = query.answer.map((a, idx) => (
@@ -30,4 +30,4 @@ export const SingleQuestionPage = () => {
             </section>
         </>
     )
-}
+}*/

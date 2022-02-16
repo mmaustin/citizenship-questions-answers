@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
 export const QuestionsList = () => {
     const questions = useSelector(state => state.questions)
@@ -16,9 +16,9 @@ export const QuestionsList = () => {
 
             ))}
             
-            <Link className='question-link' to={`/questions/${question.id}`}>
+            {/*<Link className='question-link' to={`/questions/${question.id}`}>
             View Question
-            </Link>  
+            </Link> */}
         </article>
     ))
 
