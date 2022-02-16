@@ -84,7 +84,6 @@ nav {
 }
 
 .question-number, .question, .answers-div {
-    border: 1px solid blue;
     margin: 0;
     width: 100%;
     display: flex;
