@@ -14,3 +14,8 @@ answer: [{ans: 'six (6)'}]}, {id: nanoid(), question: 'the house of representati
 answer: [{ans: 'four hundred thirty-five (435)'}]}
 ]
 //skipped question 20 from official list
+
+export const quizAnswersTwo = ['capitalist economy', 'market economy', 'everyone must follow the law.', 'leaders must obey the law.', 'government must obey the law.',
+'no one is above the law', 'congress', 'legislative', 'president', 'executive', 'the courts', 'judicial', 'checks and balances', 'separation of powers',
+'congress', 'senate and house (of representatives)', '(u.s. or national) legislature', 'the senate and the house of (representatives)', 'one hundred (100)',
+'six (6)', 'four hundred thirty-five (435)']
