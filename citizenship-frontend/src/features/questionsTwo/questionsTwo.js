@@ -1,6 +1,6 @@
 import { nanoid } from '@reduxjs/toolkit'
 
-export const questions = [{id: nanoid(), question: 'what is the economic system in the united states?', answer: [{ans: 'capitalist economy'}, {ans: 'market economy'}]},
+export const questionsTwo = [{id: nanoid(), question: 'what is the economic system in the united states?', answer: [{ans: 'capitalist economy'}, {ans: 'market economy'}]},
 {id: nanoid(), question: 'what is the \'rule of law\'?', answer: [{ans: 'everyone must follow the law.'}, {ans: 'leaders must obey the law.'},
 {ans: 'government must obey the law.'}, {ans: 'no one is above the law'}]}, {id: nanoid(), question: 'name one branch or part of the government?',
 answer: [{ans: 'congress'}, {ans: 'legislative'}, {ans: 'president'}, {ans: 'executive'}, {ans: 'the courts'}, {ans: 'judicial'}]}, 
