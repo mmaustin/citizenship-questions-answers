@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { QuestionsListTwo } from '../questionsTwo/QuestionsListTwo'
 //import { Link } from 'react-router-dom'
 
 export const QuestionsList = () => {
@@ -25,6 +26,7 @@ export const QuestionsList = () => {
     return(
         <section className='question-answer-panel'>
             {questionsAnswers}
+            <QuestionsListTwo/>
         </section>
     )
 

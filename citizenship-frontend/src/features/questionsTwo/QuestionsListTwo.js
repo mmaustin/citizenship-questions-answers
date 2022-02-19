@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 //import { Link } from 'react-router-dom'
 
-export const QuestionsList = () => {
+export const QuestionsListTwo = () => {
     const questions = useSelector(state => state.questionsTwo)
     
     const questionsAnswers = questions.map((question, idx) => (
