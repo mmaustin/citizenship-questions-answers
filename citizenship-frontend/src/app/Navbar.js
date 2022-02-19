@@ -10,6 +10,7 @@ const Navbar = () => {
                 <div id='nav-link-container'>
                     <Link className='nav-link-text' to='/'>Quiz One Q & A's</Link>
                     <Link className='nav-link-text' to='/questions/quizone'>Quiz One</Link>
+                    <Link className='nav-link-text' to='/questions/questions-two'>Quiz Two Q & A's</Link>
                 </div>
             </section>
         </nav>
