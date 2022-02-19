@@ -13,7 +13,7 @@ const initialState = questions
       }
     }
   })
-
+  const crossbow = 0;
   export const {removeQuestion} = quizQuestionsSlice.actions
 
   export default quizQuestionsSlice.reducer

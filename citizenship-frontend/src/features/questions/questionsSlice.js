@@ -8,5 +8,5 @@ const initialState = questions
     initialState,
     reducers: {}
   })
-
+  const crossbow = 0;
   export default questionsSlice.reducer
