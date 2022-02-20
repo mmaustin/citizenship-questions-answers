@@ -1,11 +1,9 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-//import { Link } from 'react-router-dom'
+import { questionsTwo } from './questionsTwo'
 
 export const QuestionsListTwo = () => {
-    const questions = useSelector(state => state.questionsTwo)
     
-    const questionsAnswers = questions.map((question, idx) => (
+    const questionsAnswers = questionsTwo.map((question, idx) => (
         <article className="question-excerpt" key={question.id}>
             <p className='question-number'>Question {idx + 1}</p>
             <p className='question'>{question.question}</p>
@@ -15,10 +13,6 @@ export const QuestionsListTwo = () => {
                 </div>
 
             ))}
-            
-            {/*<Link className='question-link' to={`/questions/${question.id}`}>
-            View Question
-            </Link> */}
         </article>
     ))
 
