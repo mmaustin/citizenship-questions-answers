@@ -5,6 +5,7 @@ import Navbar from './app/Navbar'
 /*import { SingleQuestionPage } from './features/questions/SingleQuestionPage'*/
 import { QuizOne } from './features/questions/QuizOne'
 import { QuestionsListTwo } from './features/questionsTwo/QuestionsListTwo'
+//import { QuizTwo } from './features/questionsTwo/QuizTwo'
 
 const App = () => {
 
@@ -14,8 +15,9 @@ const App = () => {
                 <Routes>
                     <Route exact path='/' element={<QuestionsList/>}/>
                     {/*<Route exact path='/questions/:questionId' element={<SingleQuestionPage/>} />*/}
-                    <Route exact path='/questions/quizone' element={<QuizOne/>}/>
+                    <Route exact path='/questions/quiz-one' element={<QuizOne/>}/>
                     <Route exact path='/questions/questions-two' element={<QuestionsListTwo/>}/>
+                    <Route />
                     <Route path="*" element={<p>There's nothing here!</p> }/>
                 </Routes>
         </Router>
