@@ -11,6 +11,7 @@ const Navbar = () => {
                     <Link className='nav-link-text' to='/'>Quiz One Q & A's</Link>
                     <Link className='nav-link-text' to='/questions/quiz-one'>Quiz One</Link>
                     <Link className='nav-link-text' to='/questions/questions-two'>Quiz Two Q & A's</Link>
+                    <Link className='nav-link-text' to='/questions/quiz-two'>Quiz Two</Link>
                 </div>
             </section>
         </nav>
