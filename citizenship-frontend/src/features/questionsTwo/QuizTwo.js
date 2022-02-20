@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { removeQuestion } from './quizQuestionsSlice'
-import { quizAnswers } from './questions'
+import { removeQuestion } from './quizQuestionsSliceTwo'
+import { quizAnswersTwo } from './questionsTwo'
 
 export const QuizOne = () => {
-    const questions = useSelector(state => state.quizQuestions)
+    const questions = useSelector(state => state.quizQuestionsTwo)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
@@ -29,7 +29,7 @@ export const QuizOne = () => {
         dispatch(removeQuestion(question))
     }
 
-    const answers = quizAnswers.map((answer, idx) => (
+    const answers = quizAnswersTwo.map((answer, idx) => (
             <option key={idx} value={answer}>{answer}</option>
     ))
 
