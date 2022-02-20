@@ -17,7 +17,7 @@ const App = () => {
                     <Route exact path='/questions/quiz-one' element={<QuizOne/>}/>
                     <Route exact path='/questions/questions-two' element={<QuestionsListTwo/>}/>
                     <Route exact path='/questions/quiz-two' element={<QuizTwo/>}/>
-                    <Route path="*" element={<p>There's nothing here!</p> }/>
+                    <Route path="*" element={<p>There's Nothing At This Address!</p> }/>
                 </Routes>
         </Router>
     )
