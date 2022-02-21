@@ -27,7 +27,7 @@ nav {
     flex-flow: row;
 }
 
-#nav-section {
+.nav-section {
     width: 100%;
     height: 100%;
     display: flex;
@@ -36,7 +36,7 @@ nav {
     flex-flow: column;
 }
 
-#nav-heading, #nav-link-container {
+.nav-heading, .nav-link-container {
     margin: 0;
     width: 100%;
     height: 35%;
@@ -46,7 +46,7 @@ nav {
     flex-flow: row;
 }
 
-#nav-link-container {
+.nav-link-container {
     flex-flow: column;
 }
 
@@ -57,7 +57,7 @@ nav {
     font-weight: bold;
 }
 
-#nav-heading {
+.nav-heading {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
