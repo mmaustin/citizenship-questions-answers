@@ -5,10 +5,10 @@ const Navbar = () => {
 
     return(
         <nav>
-            <section id='nav-section'>
-                <h2 id='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
-                <div id='nav-link-container'>
-                    <div>
+            <section className='nav-section'>
+                <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
+                <div className='nav-link-container'>
+                    <div >
                         <Link className='nav-link-text' to='/'>Quiz One Q & A's</Link>
                         <Link className='nav-link-text' to='/questions/quiz-one'>Quiz One</Link>
                     </div>
