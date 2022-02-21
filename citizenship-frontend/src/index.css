@@ -47,7 +47,13 @@ nav {
 }
 
 .nav-link-container {
-    flex-flow: column;
+    border: 1px solid green;
+    /*flex-flow: column;*/
+}
+
+.quiz-pair {
+    border: 1px solid red;
+    height: 100%;
 }
 
 .nav-link-text {
