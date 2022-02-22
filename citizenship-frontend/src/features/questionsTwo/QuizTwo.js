@@ -42,6 +42,7 @@ export const QuizTwo = () => {
         const q = ques.answer.map(a => a.ans)
         console.log(q)
         if(q.includes(selectAnswer)){
+            console.log(selectAnswer)
             setCorrectAnswer(correctAnswer + 1)
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
