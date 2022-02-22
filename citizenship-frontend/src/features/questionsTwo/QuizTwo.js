@@ -45,6 +45,7 @@ export const QuizTwo = () => {
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
+        console.log({qn: ques, ar: selectAnswer})
     }
 
     const clearAnswerField = () => {
