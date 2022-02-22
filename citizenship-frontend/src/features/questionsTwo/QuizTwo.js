@@ -40,6 +40,7 @@ export const QuizTwo = () => {
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
+        console.log(q)
         if(q.includes(selectAnswer)){
             setCorrectAnswer(correctAnswer + 1)
         } else {
