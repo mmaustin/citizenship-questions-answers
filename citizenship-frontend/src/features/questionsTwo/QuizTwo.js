@@ -9,6 +9,7 @@ export const QuizTwo = () => {
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
+    const [questionAnswerPair, setQuestionAnswerPair] = useState([])
 
     const dispatch = useDispatch()
     
@@ -42,7 +43,7 @@ export const QuizTwo = () => {
     }*/
 
     const tabulation = () => {
-        const questionAndAnswerObject = [];
+        //const questionAndAnswerObject = [];
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
         if(q.includes(selectAnswer)){
@@ -50,8 +51,9 @@ export const QuizTwo = () => {
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
-        questionAndAnswerObject.push({question: ques, answer: selectAnswer})
-        console.log(questionAndAnswerObject)
+        //questionAndAnswerObject.push({question: ques, answer: selectAnswer})
+       // console.log(questionAndAnswerObject)
+       setQuestionAnswerPair(questionAnswerPair.push({question: ques, answer: selectAnswer}))
     }
 
     const clearAnswerField = () => {
