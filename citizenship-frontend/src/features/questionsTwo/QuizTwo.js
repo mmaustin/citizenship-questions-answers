@@ -54,6 +54,7 @@ export const QuizTwo = () => {
         //questionAndAnswerObject.push({question: ques, answer: selectAnswer})
        // console.log(questionAndAnswerObject)
        setQuestionAnswerPair(questionAnswerPair.push({question: ques, answer: selectAnswer}))
+       console.log(questionAnswerPair)
     }
 
     const clearAnswerField = () => {
