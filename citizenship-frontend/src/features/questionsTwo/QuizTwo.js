@@ -37,11 +37,10 @@ export const QuizTwo = () => {
         setSelectAnswer(e.target.value)
     }
 
-    const questionAndAnswerObject = (q, a) => {
+    /*const questionAndAnswerObject = (q, a) => {
         <p>`Question: ${q}. Your answer: ${a}`</p>
-    }
-
-    //const questionAndAnswerObject = 'this is it'
+    }*/
+    const questionAndAnswerObject = [];
 
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
@@ -51,7 +50,7 @@ export const QuizTwo = () => {
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
-        questionAndAnswerObject(ques, selectAnswer)
+        //questionAndAnswerObject(ques, selectAnswer)
     }
 
     const clearAnswerField = () => {
