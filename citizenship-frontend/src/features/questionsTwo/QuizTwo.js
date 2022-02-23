@@ -37,16 +37,19 @@ export const QuizTwo = () => {
         setSelectAnswer(e.target.value)
     }
 
+    const questionAndAnswerObject = (q, a) => {
+        console.log({question: q, answer: a})
+    }
+
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
-        console.log(q)
         if(q.includes(selectAnswer)){
-            console.log(selectAnswer)
             setCorrectAnswer(correctAnswer + 1)
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
+        questionAndAnswerObject(ques, selectAnswer)
     }
 
     const clearAnswerField = () => {
