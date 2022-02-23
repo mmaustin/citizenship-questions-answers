@@ -40,9 +40,9 @@ export const QuizTwo = () => {
     /*const questionAndAnswerObject = (q, a) => {
         <p>`Question: ${q}. Your answer: ${a}`</p>
     }*/
-    const questionAndAnswerObject = [];
 
     const tabulation = () => {
+        const questionAndAnswerObject = [];
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
         if(q.includes(selectAnswer)){
@@ -50,7 +50,8 @@ export const QuizTwo = () => {
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
-        //questionAndAnswerObject(ques, selectAnswer)
+        questionAndAnswerObject.push({question: ques, answer: selectAnswer})
+        console.log(questionAndAnswerObject)
     }
 
     const clearAnswerField = () => {
@@ -99,7 +100,7 @@ export const QuizTwo = () => {
                 }
             </div>
             }
-            <p>{questionAndAnswerObject}</p>
+            {/*<p>{questionAndAnswerObject}</p>*/}
         </div>
     )
 
