@@ -54,7 +54,7 @@ export const QuizTwo = () => {
         //questionAndAnswerObject.push({question: ques, answer: selectAnswer})
        // console.log(questionAndAnswerObject)
        setQuestionAnswerPair(questionAnswerPair.push({question: ques, answer: selectAnswer}))
-       console.log(questionAnswerPair)
+       //console.log(questionAnswerPair)
     }
 
     const clearAnswerField = () => {
@@ -71,6 +71,11 @@ export const QuizTwo = () => {
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
+
+    let f = listQuestions.map(q => (
+        <p>{q.question}</p>
+    ))
+
 
     return(
         <div className='quiz-container'>
@@ -103,7 +108,7 @@ export const QuizTwo = () => {
                 }
             </div>
             }
-            {/*<p>{questionAndAnswerObject}</p>*/}
+            {f}
         </div>
     )
 
