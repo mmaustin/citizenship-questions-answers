@@ -15,7 +15,7 @@ answer: [{ans: 'four hundred thirty-five (435)'}]}
 ]
 //skipped question 20 from official list
 
-export const quizAnswersTwo = ['the courts', 'the senate and the house of representatives', '(u.s. or national) legislature', 'leaders must obey the law', 'government must obey the law',
-'no one is above the law', 'congress', 'one hundred (100)', 'the president', 'executive', 'capitalist economy', 'judicial', 'checks and balances', 'separation of powers',
-'congress', 'everyone must follow the law', 'market economy', 'legislative',
-'six (6)', 'four hundred thirty-five (435)']
+export const quizAnswersTwo = ['the courts', 'the senate and the house of representatives', 'leaders must obey the law', 'checks and balances',
+'no one is above the law', 'congress', 'one hundred (100)', 'six (6)', 'executive', 'capitalist economy', 'judicial', 'government must obey the law', 'separation of powers',
+'congress', 'four hundred thirty-five (435)', 'market economy', 'legislative',
+'the president', 'everyone must follow the law', '(u.s. or national) legislature']
