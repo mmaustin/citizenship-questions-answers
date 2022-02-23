@@ -9,7 +9,13 @@ export const QuizTwo = () => {
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
-    const [questionAnswerPair, setQuestionAnswerPair] = useState([])
+    const [questionAnswerPair, setQuestionAnswerPair] = useState('')
+
+    const array = []
+    array.push(questionAnswerPair)
+    let f = array.map(a => (
+        <p>{a}</p>
+    ))
 
     const dispatch = useDispatch()
     
@@ -38,12 +44,7 @@ export const QuizTwo = () => {
         setSelectAnswer(e.target.value)
     }
 
-    /*const questionAndAnswerObject = (q, a) => {
-        <p>`Question: ${q}. Your answer: ${a}`</p>
-    }*/
-
     const tabulation = () => {
-        //const questionAndAnswerObject = [];
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
         if(q.includes(selectAnswer)){
@@ -51,10 +52,7 @@ export const QuizTwo = () => {
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
-        //questionAndAnswerObject.push({question: ques, answer: selectAnswer})
-       // console.log(questionAndAnswerObject)
-       setQuestionAnswerPair(questionAnswerPair.push({question: ques, answer: selectAnswer}))
-       //console.log(questionAnswerPair)
+       setQuestionAnswerPair(`You answered: ${selectAnswer}, to the question: ${question}.`)
     }
 
     const clearAnswerField = () => {
@@ -71,10 +69,6 @@ export const QuizTwo = () => {
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
-
-    let f = listQuestions.map(q => (
-        <p>{q.question}</p>
-    ))
 
 
     return(
