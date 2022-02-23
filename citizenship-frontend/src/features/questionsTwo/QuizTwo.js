@@ -38,8 +38,10 @@ export const QuizTwo = () => {
     }
 
     const questionAndAnswerObject = (q, a) => {
-        return <p>`Question: ${q}. Your answer: ${a}`</p>
+        <p>`Question: ${q}. Your answer: ${a}`</p>
     }
+
+    //const questionAndAnswerObject = 'this is it'
 
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
@@ -96,9 +98,9 @@ export const QuizTwo = () => {
                     ? <h3 className='result-statement'>Congratulations! You Passed!!</h3>
                     : <h3 className='result-statement'>Don't fret! Keep studying and practicing!</h3>
                 }
-                {questionAndAnswerObject}
             </div>
             }
+            <p>{questionAndAnswerObject}</p>
         </div>
     )
 
