@@ -38,7 +38,7 @@ export const QuizTwo = () => {
     }
 
     const questionAndAnswerObject = (q, a) => {
-        console.log({question: q, answer: a})
+        return <p>`Question: ${q}. Your answer: ${a}`</p>
     }
 
     const tabulation = () => {
@@ -96,6 +96,7 @@ export const QuizTwo = () => {
                     ? <h3 className='result-statement'>Congratulations! You Passed!!</h3>
                     : <h3 className='result-statement'>Don't fret! Keep studying and practicing!</h3>
                 }
+                {questionAndAnswerObject}
             </div>
             }
         </div>
