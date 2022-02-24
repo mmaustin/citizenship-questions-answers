@@ -5,12 +5,17 @@ import { quizAnswers } from './questions'
 
 export const QuizOne = () => {
     const questions = useSelector(state => state.quizQuestions)
+    const display = useSelector(state => state.displayQuestions)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
     const dispatch = useDispatch()
+
+    const displayArray = display.map((q, idx) => (
+        <p key={idx}>{q.question}</p>
+    ))
     
 
     const listQuestions = questions.map(q => (
@@ -93,6 +98,9 @@ export const QuizOne = () => {
                 }
             </div>
             }
+            <div>
+                {displayArray}
+            </div>
         </div>
     )
 
