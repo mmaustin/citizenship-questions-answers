@@ -42,6 +42,10 @@ export const QuizOne = () => {
         setSelectAnswer(e.target.value)
     }
 
+    /*const displayAddAnswer = () => {
+        dispatch(addAnswer({question, selectAnswer}))
+    }*/
+
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
@@ -62,6 +66,7 @@ export const QuizOne = () => {
         tabulation()
 
         removeSelectedQuestion()
+        //displayAddAnswer()
         clearAnswerField()
     }
 
