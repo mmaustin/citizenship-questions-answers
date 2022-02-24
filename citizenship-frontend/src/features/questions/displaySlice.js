@@ -6,9 +6,15 @@ const initialState = questionAnswerDisplay
   const displaySlice = createSlice({
     name: 'displayQuestions',
     initialState,
-    reducers: {}
+    reducers: {
+        addAnswer(state, action){
+            const {question, selectAnswer} = action.payload
+            const foundQuestion = state.find(q => q.question === question)
+            foundQuestion.answer = selectAnswer;
+        }
+    }
   })
   
-  //export const {removeQuestion} = quizQuestionsSlice.actions
+  export const {addAnswer} = displaySlice.actions
 
   export default displaySlice.reducer
