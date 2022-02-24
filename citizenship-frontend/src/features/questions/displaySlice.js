@@ -18,7 +18,6 @@ const initialState = questionAnswerDisplay
                 foundQuestion.displayAnswer = selectAnswer;
                 foundQuestion.value = 'Incorrect';
             }
-            //foundQuestion.answer = selectAnswer;
         }
     }
   })

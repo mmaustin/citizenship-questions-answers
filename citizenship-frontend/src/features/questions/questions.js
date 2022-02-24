@@ -28,13 +28,3 @@ answer: [{ans: 'twenty-seven(27)'}], displayAnswer: 'Pending', value: ''}, {id: 
 {ans: 'declared independence from great britain'}, {ans: 'said that the united states is free from great britain'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what are two rights in the declaration of independence?',
 answer: [{ans: 'life'}, {ans: 'liberty'}, {ans: 'pursuit of happiness'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what is freedom of religion?',
 answer: [{ans: 'you can practice any religion or not practice a religion'}], displayAnswer: 'Pending', value: ''}]
-
-
-
-/*[{id: nanoid(), question: 'what is the supreme law of the land?', answer: 'Pending'},
-{id: nanoid(), question: 'what does the constitution do?', answer: 'Pending'}, {id: nanoid(), question: 'the idea of self-government is in the first three words of the constitution. what are these words?',
-answer: 'Pending'}, {id: nanoid(), question: 'what is an amendment?', answer: 'Pending'}, {id: nanoid(), question: 'what do we call the first ten amendments to the constitution?',
-answer: 'Pending'}, {id: nanoid(), question: 'what is one right or freedom from the first amendment?', answer: 'Pending'}, {id: nanoid(), question: 'how many amendments does the constitution have?',
-answer: 'Pending'}, {id: nanoid(), question: 'what did the declaration of independence do?', answer: 'Pending'}, {id: nanoid(), question: 'what are two rights in the declaration of independence?',
-answer: 'Pending'}, {id: nanoid(), question: 'what is freedom of religion?',
-answer: 'Pending'}]*/
