@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
+import { addAnswer } from './displaySlice'
 
 export const QuizOne = () => {
     const questions = useSelector(state => state.quizQuestions)
@@ -42,9 +43,9 @@ export const QuizOne = () => {
         setSelectAnswer(e.target.value)
     }
 
-    /*const displayAddAnswer = () => {
+    const displayAddAnswer = () => {
         dispatch(addAnswer({question, selectAnswer}))
-    }*/
+    }
 
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
@@ -66,7 +67,7 @@ export const QuizOne = () => {
         tabulation()
 
         removeSelectedQuestion()
-        //displayAddAnswer()
+        displayAddAnswer()
         clearAnswerField()
     }
 
