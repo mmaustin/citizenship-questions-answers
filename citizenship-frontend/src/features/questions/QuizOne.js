@@ -15,7 +15,7 @@ export const QuizOne = () => {
     const dispatch = useDispatch()
 
     const displayArray = display.map((q, idx) => (
-        <p key={idx}>{q.question}</p>
+        <p key={idx}>{q.question}: {q.answer}</p>
     ))
     
 
