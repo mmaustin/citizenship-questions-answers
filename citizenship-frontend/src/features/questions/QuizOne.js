@@ -15,9 +15,10 @@ export const QuizOne = () => {
     const dispatch = useDispatch()
 
     const displayArray = display.map((q, idx) => (
-        q.value === 'Correct'
-           ? <p className='right' key={idx}>{idx +1}: {q.question}: {q.displayAnswer}: {q.value}</p>
-           : <p className='wrong' key={idx}>{idx +1}: {q.question}: {q.displayAnswer}: {q.value}</p>
+        //q.value === 'Correct'
+        //   ? <p className='right' key={idx}>{idx +1}: {q.question}: {q.displayAnswer}: {q.value}</p>
+        //   : <p className='wrong' key={idx}>{idx +1}: {q.question}: {q.displayAnswer}: {q.value}</p>
+        <p className='wrong' key={idx}>{idx +1}: {q.question}: {q.displayAnswer}: {q.value}</p>
     ))
     
 
