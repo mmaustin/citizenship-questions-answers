@@ -180,3 +180,10 @@ nav {
 
 /* Question & Answer display*/
 
+.right {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
