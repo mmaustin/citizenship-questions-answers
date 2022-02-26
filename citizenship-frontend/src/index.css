@@ -181,9 +181,9 @@ nav {
 /* Question & Answer display*/
 
 .right {
-    background-color: green;
+    color: green;
 }
 
 .wrong {
-    background-color: red;
+    color: red;
 }
