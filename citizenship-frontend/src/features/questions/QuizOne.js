@@ -16,8 +16,8 @@ export const QuizOne = () => {
 
     const displayArray = display.map((q, idx) => (
         q.value === 'Correct'
-           ? <p className='right' key={idx}>{q.question}: {q.displayAnswer}: {q.value}</p>
-           : <p className='wrong' key={idx}>{q.question}: {q.displayAnswer}: {q.value}</p>
+           ? <p key={idx}>{q.question}: {q.displayAnswer}: <span className='right'>{q.value}</span></p>
+           : <p key={idx}>{q.question}: {q.displayAnswer}: <span className='wrong'>{q.value}</span></p>
     ))
     
 
