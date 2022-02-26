@@ -14,9 +14,13 @@ export const QuizOne = () => {
 
     const dispatch = useDispatch()
 
-    const displayArray = display.map((q, idx) => (
-        <p key={idx}>{q.question}: {q.displayAnswer}: {q.value}</p>
-    ))
+    const displayArray = display.map((q, idx) => {
+        if (q.value === 'Correct'){
+           return <p className='right' key={idx}>{q.question}: {q.displayAnswer}: {q.value}</p>
+        } else {
+           return <p className='wrong' key={idx}>{q.question}: {q.displayAnswer}: {q.value}</p>
+        }
+    })
     
 
     const listQuestions = questions.map(q => (
