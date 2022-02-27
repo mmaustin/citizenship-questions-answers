@@ -16,18 +16,18 @@ export const QuizOne = () => {
 
     const displayArray = display.map((q, idx) => (
         q.value === 'Correct'
-        ? <article>
+        ? <>
             <p key={idx}>{q.question}: {q.displayAnswer}: <span className='right'>{q.value}</span></p>
             {q.answer.map(a => (
                 <p>{a.ans}</p>
             ))}
-        </article>
-        : <article>
+        </>
+        : <>
         <p key={idx}>{q.question}: {q.displayAnswer}: <span className='wrong'>{q.value}</span></p>
         {q.answer.map(a => (
             <p>{a.ans}</p>
         ))}
-    </article>
+    </>
     ))
     
 
