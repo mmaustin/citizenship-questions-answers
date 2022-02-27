@@ -130,17 +130,21 @@ nav {
 
 /*Quiz One CSS*/
 
-.quiz-container, .sub-container-one, .sub-container-two, .sub-container-three {
+.quiz-container, .sub-container-one, .sub-container-two, .sub-container-three,
+.sub-container-four {
     margin: 0;
-    width: 100%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
 }
 
-.sub-container-one {
+.quiz-container {
     width: 100%;
+}
+
+.sub-container-one {
     margin-bottom: 25px;
 }
 
@@ -148,8 +152,8 @@ nav {
     flex-flow: row;
 }
 
-.sub-container-three {
-    width: 80%;
+.sub-container-four {
+    border: 1px solid green;
 }
 
 .selected-question, label, .answer-selector {

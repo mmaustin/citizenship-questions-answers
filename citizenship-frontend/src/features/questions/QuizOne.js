@@ -116,7 +116,7 @@ export const QuizOne = () => {
                         : <h3 className='result-statement'>Don't fret! Keep studying and practicing!</h3>
                     }
                 </div>
-                <div>
+                <div className='sub-container-four'>
                     {displayArray}
                 </div>
             </>
