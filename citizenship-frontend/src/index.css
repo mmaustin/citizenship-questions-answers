@@ -145,7 +145,8 @@ nav {
 }
 
 .ternary-container {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .sub-container-one {
