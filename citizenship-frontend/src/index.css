@@ -148,6 +148,10 @@ nav {
     flex-flow: row;
 }
 
+.sub-container-three {
+    width: 80%;
+}
+
 .selected-question, label, .answer-selector {
     font-weight: bold;
 }
