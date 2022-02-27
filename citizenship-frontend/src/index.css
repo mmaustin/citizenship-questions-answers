@@ -131,7 +131,7 @@ nav {
 /*Quiz One CSS*/
 
 .quiz-container, .sub-container-one, .sub-container-two, .sub-container-three,
-.sub-container-four, .wrong-answers-container {
+.sub-container-four, .wrong-answers-container, .ternary-container {
     margin: 0;
     width: 55%;
     display: flex;
@@ -140,8 +140,12 @@ nav {
     flex-flow: column;
 }
 
-.quiz-container {
+.quiz-container, .ternary-container {
     width: 100%;
+}
+
+.ternary-container {
+    margin-bottom: 10px;
 }
 
 .sub-container-one {
