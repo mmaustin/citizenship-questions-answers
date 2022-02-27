@@ -201,3 +201,7 @@ nav {
 .wrong {
     color: red;
 }
+
+.display-right-answer, .display-wrong-answer, .quiz-answers-display {
+    margin: 0;
+}
