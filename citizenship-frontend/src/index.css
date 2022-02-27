@@ -194,8 +194,7 @@ nav {
 }
 
 .display-right-answer, .display-wrong-answer {
-    border: 1px solid black;
-    margin-top: 0px;
+    margin: 0;
 }
 
 .quiz-answers-display {
@@ -207,7 +206,6 @@ nav {
 }
 
 .wrong-answers-container {
-    border: 1px solid red;
     width: 100%;
-    justify-content: flex-start;
+    margin-bottom: 5px;
 }
