@@ -205,3 +205,7 @@ nav {
 .display-right-answer, .display-wrong-answer, .quiz-answers-display {
     margin: 0;
 }
+
+.sub-container-four {
+    align-items: flex-start;
+}
