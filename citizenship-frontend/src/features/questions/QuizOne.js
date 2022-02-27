@@ -106,7 +106,7 @@ export const QuizOne = () => {
                 </form>
             </div>    
             {listQuestions.length === 0 &&
-            <div>
+            <>
                 <div className='sub-container-three'>
                     <h2 className='results-header'>RESULTS:</h2>
                     <p className='answer-count'>Correct Answers: {correctAnswer}</p>
@@ -119,7 +119,7 @@ export const QuizOne = () => {
                 <div>
                     {displayArray}
                 </div>
-            </div>
+            </>
             }
         </div>
     )
