@@ -158,16 +158,11 @@ nav {
 }
 
 .wrong-answers-container {
-    border: 1px solid black;
     width: 100%;
 }
 
 .selected-question, label, .answer-selector {
     font-weight: bold;
-}
-
-.selected-question {
-    border-bottom: 2px solid black;
 }
 
 .pass-requirement {
@@ -202,7 +197,12 @@ nav {
     color: red;
 }
 
-.display-right-answer, .display-wrong-answer, .quiz-answers-display {
+.display-right-answer, .display-wrong-answer {
+    border: 1px solid red;
+    margin-top: 1px;
+}
+
+.quiz-answers-display {
     margin: 0;
 }
 
