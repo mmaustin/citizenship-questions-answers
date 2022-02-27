@@ -19,9 +19,9 @@ export const QuizOne = () => {
         ? <>
             <p className='display-right-answer' key={idx}><span className='right'>Question:</span> {q.question} <span className='right'>Your Answer:</span> {q.displayAnswer} <span className='right'>Result: {q.value}</span></p>
             <div className='correct-answers-container'>
-                {q.answer.map((a, idx) => (
+                {/*{q.answer.map((a, idx) => (
                     <p className='correct-answers' key={idx}>{a.ans}</p>
-                ))}
+                ))}*/}
             </div>    
         </>
         : <>
