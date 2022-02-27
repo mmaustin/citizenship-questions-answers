@@ -131,7 +131,7 @@ nav {
 /*Quiz One CSS*/
 
 .quiz-container, .sub-container-one, .sub-container-two, .sub-container-three,
-.sub-container-four {
+.sub-container-four, .wrong-answers-container {
     margin: 0;
     width: 55%;
     display: flex;
@@ -155,6 +155,11 @@ nav {
 .sub-container-four {
     margin-top: 25px;
     border: 1px solid green;
+}
+
+.wrong-answers-container {
+    border: 1px solid black;
+    width: 100%;
 }
 
 .selected-question, label, .answer-selector {
