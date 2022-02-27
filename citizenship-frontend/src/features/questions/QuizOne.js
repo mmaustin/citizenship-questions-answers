@@ -17,17 +17,21 @@ export const QuizOne = () => {
     const displayArray = display.map((q, idx) => (
         q.value === 'Correct'
         ? <>
-            <p key={idx}>{q.question}: {q.displayAnswer}: <span className='right'>{q.value}</span></p>
-            {q.answer.map(a => (
-                <p>{a.ans}</p>
-            ))}
+            <p className='display-right-answer' key={idx}>{q.question}: {q.displayAnswer}: <span className='right'>{q.value}</span></p>
+            <div className='correct-answers-container'>
+                {q.answer.map((a, idx) => (
+                    <p className='correct-answers' key={idx}>{a.ans}</p>
+                ))}
+            </div>    
         </>
         : <>
-        <p key={idx}>{q.question}: {q.displayAnswer}: <span className='wrong'>{q.value}</span></p>
-        {q.answer.map(a => (
-            <p>{a.ans}</p>
-        ))}
-    </>
+            <p className='display-wrong-answer' key={idx}>{q.question}: {q.displayAnswer}: <span className='wrong'>{q.value}</span></p>
+            <div className='wrong-answers-container'>
+                {q.answer.map(a => (
+                    <p>{a.ans}</p>
+                ))}
+            </div>
+        </>
     ))
     
 
