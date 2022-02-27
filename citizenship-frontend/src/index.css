@@ -157,10 +157,6 @@ nav {
     border: 1px solid green;
 }
 
-.wrong-answers-container {
-    width: 100%;
-}
-
 .selected-question, label, .answer-selector {
     font-weight: bold;
 }
@@ -198,6 +194,7 @@ nav {
 }
 
 .display-right-answer, .display-wrong-answer {
+    border: 1px solid black;
     margin-top: 0px;
 }
 
@@ -210,5 +207,7 @@ nav {
 }
 
 .wrong-answers-container {
+    border: 1px solid red;
+    width: 100%;
     justify-content: flex-start;
 }
