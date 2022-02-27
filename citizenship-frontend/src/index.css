@@ -198,8 +198,7 @@ nav {
 }
 
 .display-right-answer, .display-wrong-answer {
-    border: 1px solid red;
-    margin-top: 1px;
+    margin-top: 0px;
 }
 
 .quiz-answers-display {
@@ -208,4 +207,8 @@ nav {
 
 .sub-container-four {
     align-items: flex-start;
+}
+
+.wrong-answers-container {
+    justify-content: flex-start;
 }
