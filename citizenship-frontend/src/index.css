@@ -200,6 +200,7 @@ nav {
 
 .display-right-answer, .display-wrong-answer {
     margin: 0;
+    font-weight: bold;
 }
 
 .quiz-answers-display {
