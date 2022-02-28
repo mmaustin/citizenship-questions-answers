@@ -159,7 +159,6 @@ nav {
 
 .sub-container-four {
     margin-top: 25px;
-    border: 1px solid green;
 }
 
 .selected-question, label, .answer-selector {
@@ -175,7 +174,7 @@ nav {
 }
 
 .sub-container-three {
-    border: 4px double green;
+    border-bottom: 4px double green;
     margin-top: 30px;
 }
 
