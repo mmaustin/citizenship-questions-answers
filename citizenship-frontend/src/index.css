@@ -214,3 +214,7 @@ nav {
     width: 100%;
     margin-bottom: 5px;
 }
+
+.ternary-container {
+    border-bottom: 4px double green;
+}
