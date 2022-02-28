@@ -17,7 +17,7 @@ export const QuizOne = () => {
     const displayArray = display.map((q, idx) => (
         q.value === 'Correct'
         ? <div className='ternary-container'>
-            <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} <span className='right'>{q.value}</span></p>
+            <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='right'>{q.value}</span></p>
             {/*<div className='correct-answers-container'>
                 {q.answer.map((a, idx) => (
                     <p className='correct-answers' key={idx}>{a.ans}</p>
@@ -25,7 +25,7 @@ export const QuizOne = () => {
             </div>*/}
         </div>
         : <div className='ternary-container'>
-            <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} <span className='wrong'>{q.value}</span></p>
+            <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='wrong'>{q.value}</span></p>
             <div className='wrong-answers-container'>
                 {q.answer.map((a, idx) => (
                     <p key={idx} className='quiz-answers-display'>• {a.ans}</p>
