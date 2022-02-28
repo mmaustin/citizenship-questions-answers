@@ -198,7 +198,7 @@ nav {
 }
 
 .display-right-answer, .display-wrong-answer {
-    margin: 0;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -212,7 +212,7 @@ nav {
 
 .wrong-answers-container {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .ternary-container {
