@@ -89,6 +89,8 @@ export const QuizOne = () => {
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 
+    const allowSubmit = Boolean(selectAnswer)
+
     return(
         <div className='quiz-container'>
             <div className='sub-container-one'>
@@ -101,12 +103,12 @@ export const QuizOne = () => {
                 <form onSubmit={e => handleSubmit(e)}>
                     <label>
                         Select Your Answer:&nbsp;&nbsp;&nbsp;
-                        <select className='answer-selector' value={selectAnswer} onChange={e => handleChange(e)}>
+                        <select className='answer-selector' value={selectAnswer} onChange={handleChange}>
                             <option value=""></option>
                             {answers}
                         </select>
                     </label>&nbsp;&nbsp;&nbsp;
-                    <input className='submit-answer' type="submit" value="Submit" />
+                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
                 </form>
             </div>    
             {listQuestions.length === 0 &&
