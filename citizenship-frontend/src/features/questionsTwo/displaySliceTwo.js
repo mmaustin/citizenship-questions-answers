@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { questionAnswerDisplay } from "./questions";
+import { questionAnswerDisplayTwo } from "./questionsTwo";
 
-const initialState = questionAnswerDisplay
+const initialState = questionAnswerDisplayTwo
   
-  const displaySlice = createSlice({
-    name: 'displayQuestions',
+  const displaySliceTwo = createSlice({
+    name: 'displayQuestionsTwo',
     initialState,
     reducers: {
         addAnswer(state, action){
@@ -22,6 +22,6 @@ const initialState = questionAnswerDisplay
     }
   })
   
-  export const {addAnswer} = displaySlice.actions
+  export const {addAnswer} = displaySliceTwo.actions
 
-  export default displaySlice.reducer
+  export default displaySliceTwo.reducer
