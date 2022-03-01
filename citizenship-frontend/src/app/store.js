@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import quizQuestionsReducer from '../features/questions/quizQuestionsSlice'
 import displaySliceReducer from '../features/questions/displaySlice';
-import quizQuestionsTwoReduceer from '../features/questionsTwo/quizQuestionsSliceTwo';
+import quizQuestionsReducerTwo from '../features/questionsTwo/quizQuestionsSliceTwo';
+import displaySliceReducerTwo from '../features/questionsTwo/displaySliceTwo';
 
 export default configureStore({
   reducer: {
     quizQuestions: quizQuestionsReducer,
     displayQuestions: displaySliceReducer,
-    quizQuestionsTwo: quizQuestionsTwoReduceer
+    quizQuestionsTwo: quizQuestionsReducerTwo,
+    displayQuestionsTwo: displaySliceReducerTwo
   },
 });
