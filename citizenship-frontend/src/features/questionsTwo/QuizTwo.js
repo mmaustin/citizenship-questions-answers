@@ -58,6 +58,10 @@ export const QuizTwo = () => {
         setSelectAnswer(e.target.value)
     }
 
+    const displayAddAnswer = () => {
+        dispatch(addAnswer({question, selectAnswer}))
+    }
+
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
@@ -78,11 +82,13 @@ export const QuizTwo = () => {
         tabulation()
 
         removeSelectedQuestion()
+        displayAddAnswer()
         clearAnswerField()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 
+    const allowSubmit = Boolean(selectAnswer)
 
     return(
         <div className='quiz-container'>
