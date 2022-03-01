@@ -2,23 +2,17 @@ import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSliceTwo'
 import { quizAnswersTwo } from './questionsTwo'
+import { addAnswer } from './displaySliceTwo'
 
 export const QuizTwo = () => {
     const questions = useSelector(state => state.quizQuestionsTwo)
+    const displayTwo = useSelector(state => state.displayQuestionsTwo)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
-    const [questionAnswerPair, setQuestionAnswerPair] = useState('')
-
-    const array = []
-    array.push(questionAnswerPair)
-    let f = array.map(a => (
-        <p>{a}</p>
-    ))
 
     const dispatch = useDispatch()
-    
 
     const listQuestions = questions.map(q => (
         q.question
@@ -52,7 +46,6 @@ export const QuizTwo = () => {
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
         }
-       setQuestionAnswerPair(`You answered: ${selectAnswer}, to the question: ${question}.`)
     }
 
     const clearAnswerField = () => {
@@ -102,7 +95,6 @@ export const QuizTwo = () => {
                 }
             </div>
             }
-            {f}
         </div>
     )
 
