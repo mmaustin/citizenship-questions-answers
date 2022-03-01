@@ -14,6 +14,26 @@ export const QuizTwo = () => {
 
     const dispatch = useDispatch()
 
+    const displayArray = displayTwo.map((q, idx) => (
+        q.value === 'Correct'
+        ? <div className='ternary-container'>
+            <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='right'>{q.value}</span></p>
+            {/*<div className='correct-answers-container'>
+                {q.answer.map((a, idx) => (
+                    <p className='correct-answers' key={idx}>{a.ans}</p>
+                ))}
+            </div>*/}
+        </div>
+        : <div className='ternary-container'>
+            <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='wrong'>{q.value}</span></p>
+            <div className='wrong-answers-container'>
+                {q.answer.map((a, idx) => (
+                    <p key={idx} className='quiz-answers-display'>• {a.ans}</p>
+                ))}
+            </div>
+        </div>
+    ))
+
     const listQuestions = questions.map(q => (
         q.question
     ))
