@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { removeQuestion } from './quizQuestionsSliceTwo'
-import { quizAnswersTwo } from './questionsTwo'
-import { addAnswer } from './displaySliceTwo'
+import { removeQuestion } from './quizQuestionsSliceThree'
+import { quizAnswersThree } from './questionsThree'
+import { addAnswer } from './displaySliceThree'
 
-export const QuizTwo = () => {
-    const questions = useSelector(state => state.quizQuestionsTwo)
-    const displayTwo = useSelector(state => state.displayQuestionsTwo)
+export const QuizThree = () => {
+    const questions = useSelector(state => state.quizQuestionsThree)
+    const displayThree = useSelector(state => state.displayQuestionsThree)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
@@ -14,7 +14,7 @@ export const QuizTwo = () => {
 
     const dispatch = useDispatch()
 
-    const displayArray = displayTwo.map((q, idx) => (
+    const displayArray = displayThree.map((q, idx) => (
         q.value === 'Correct'
         ? <div className='ternary-container'>
             <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='right'>{q.value}</span></p>
@@ -50,7 +50,7 @@ export const QuizTwo = () => {
         dispatch(removeQuestion(question))
     }
 
-    const answers = quizAnswersTwo.map((answer, idx) => (
+    const answers = quizAnswersThree.map((answer, idx) => (
             <option key={idx} value={answer}>{answer}</option>
     ))
 
