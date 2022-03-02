@@ -13,5 +13,5 @@ answer: [{ans: 'the president'}]}]
 
 //skipped questions 23, 28, 29
 
-export const quizAnswersThree = ['two (2)', 'all people of the state', 'because of the state\'s population', 'because they have more people', 'because some states have more people',
-'four (4)', 'november', 'the vice president', 'the speaker of the house', 'the president']
+export const quizAnswersThree = ['because of the state\'s population', 'four (4)', 'the vice president', 'all people of the state', 'two (2)',
+'the speaker of the house', 'because some states have more people', 'november', 'the president', 'because they have more people']
