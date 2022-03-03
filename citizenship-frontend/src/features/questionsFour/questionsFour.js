@@ -1,8 +1,8 @@
 import { nanoid } from "@reduxjs/toolkit";
 
-export const questionsFour = [{id: nanoid(), question: 'we elect a u.s. representative for how many years?', answer: [{ans: 'two (2)'}]},
-{id: nanoid(), question: 'who does a u.s. senator represent?', answer: [{ans: 'all people of the state'}]}, {id: nanoid(), question: 'why do some states have more representatives than other states?',
-answer: [{ans: 'because of the state\'s population'}, {ans: 'because they have more people'}, {ans: 'because some states have more people'}]}, 
+export const questionsFour = [{id: nanoid(), question: 'what does the president\'s Cabinet do?', answer: [{ans: 'advises the president'}]},
+{id: nanoid(), question: 'what does the judicial branch do?', answer: [{ans: 'reviews laws'}, {ans: 'explains laws'}, {ans: 'resolves disputes (disagreements)'}, {ans: 'decides if a law goes against the constitution'}]},
+{id: nanoid(), question: 'what is the highest court in the united states?', answer: [{ans: 'the supreme court'}]}, 
 {id: nanoid(), question: 'we elect a president for how many years?', answer: [{ans: 'four (4)'}]}, {id: nanoid(), question: 'in what month do we vote for president?',
 answer: [{ans: 'november'}]}, {id: nanoid(), question: 'if the president can no longer serve, who becomes president?', answer: [{ans: 'the vice president'}]}, 
 {id: nanoid(), question: 'if both the president and the vice president can no longer serve, who becomes president?',
@@ -10,3 +10,5 @@ answer: [{ans: 'the speaker of the house'}]}, {id: nanoid(), question: 'who is t
 {id: nanoid(), question: 'who signs bills to become laws?',
 answer: [{ans: 'the president'}]}, {id: nanoid(), question: 'who vetoes bills?',
 answer: [{ans: 'the president'}]}]
+
+//skipped question 36
