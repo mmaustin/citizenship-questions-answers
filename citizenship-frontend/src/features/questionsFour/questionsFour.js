@@ -5,11 +5,11 @@ export const questionsFour = [{id: nanoid(), question: 'what does the president\
 {id: nanoid(), question: 'what is the highest court in the united states?', answer: [{ans: 'the supreme court'}]}, 
 {id: nanoid(), question: 'what is the name of the president of the united states now?', answer: [{ans: 'joe biden'}]}, {id: nanoid(), question: 'what is the name of the vice president of the united states now?',
 answer: [{ans: 'Kamala Harris'}]}, {id: nanoid(), question: 'how many justices are on the supreme court?', answer: [{ans: 'nine (9)'}]}, 
-{id: nanoid(), question: 'if both the president and the vice president can no longer serve, who becomes president?',
-answer: [{ans: 'the speaker of the house'}]}, {id: nanoid(), question: 'who is the commander in chief of the military?', answer: [{ans: 'the president'}]}, 
-{id: nanoid(), question: 'who signs bills to become laws?',
-answer: [{ans: 'the president'}]}, {id: nanoid(), question: 'who vetoes bills?',
-answer: [{ans: 'the president'}]}]
+{id: nanoid(), question: 'who is the chief justice of the united states now?',
+answer: [{ans: 'john roberts'}]}, {id: nanoid(), question: 'under our constitution, some powers belong to the federal government. what is one power of the federal government?', answer: [{ans: 'to print money'},
+{ans: 'to declare war'}, {ans: 'to create an army'}, {ans: 'to make treaties'}]}, {id: nanoid(), question: 'under our constitution, some powers belong to the states. what is one power of the states?',
+answer: [{ans: 'provide schooling and education'}, {ans: 'provide protection (police)'}, {ans: 'provide safety (fire departments)'}, {ans: 'give a driver\'s license'}, {ans: 'approve zoing and land use'}]},
+{id: nanoid(), question: 'what are the two major political parties in the united states?', answer: [{ans: 'democratic and republican'}]}]
 
-//skipped question 36
+//skipped questions 36, 43, 44
 //added questions 28, 29
