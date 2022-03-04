@@ -6,6 +6,7 @@ import displaySliceReducerTwo from '../features/questionsTwo/displaySliceTwo';
 import quizQuestionsReducerThree from '../features/questionsThree/quizQuestionsSliceThree';
 import displaySliceReducerThree from '../features/questionsThree/displaySliceThree';
 import quizQuestionsReducerFour from '../features/questionsFour/quizQuestionsSliceFour';
+import displaySliceReducerFour from '../features/questionsFour/displaySliceFour';
 
 export default configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export default configureStore({
     quizQuestionsThree: quizQuestionsReducerThree,
     displayQuestionsThree: displaySliceReducerThree,
     quizQuestionsFour: quizQuestionsReducerFour,
+    displayQuestionsFour: displaySliceReducerFour,
   },
 });
