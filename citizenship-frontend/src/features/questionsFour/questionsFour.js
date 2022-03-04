@@ -13,3 +13,7 @@ answer: [{ans: 'provide schooling and education'}, {ans: 'provide protection (po
 
 //skipped questions 36, 43, 44
 //added questions 28, 29
+
+export const quizAnswersFour = ['provide schooling and education', 'kamala harris', 'decides if a law goes against the constitution', 'give a driver\'s license', 'to make treaties', 'john roberts', 
+'to print money', 'the supreme court', 'reviews laws', 'advises the president', 'provide safety (fire departments)', 'democratic and republican',
+'joe biden', 'to create an army', 'explains laws', 'approve zoing and land use','resolves disputes (disagreements)', 'provide protection (police)', 'to declare war', 'nine (9)']
