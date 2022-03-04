@@ -22,7 +22,7 @@ const Navbar = () => {
                     </div>
                     <div className='quiz-pair'>
                         <Link className='nav-link-text' to='/questions/questions-four'>Quiz Four Q & A's</Link>
-                        {/*<Link className='nav-link-text' to='/questions/quiz-three'>Quiz Three</Link>*/}
+                        <Link className='nav-link-text' to='/questions/quiz-four'>Quiz Four</Link>
                     </div>
                 </div>
             </section>
