@@ -4,7 +4,7 @@ import { questionsFive } from "./questionsFive";
 const initialState = questionsFive
   
   const quizQuestionsSliceFive = createSlice({
-    name: 'quizQuestionsFour',
+    name: 'quizQuestionsFive',
     initialState,
     reducers: {
       removeQuestion(state, action){
