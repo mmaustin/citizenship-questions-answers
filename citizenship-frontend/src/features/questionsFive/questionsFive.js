@@ -17,9 +17,12 @@ answer: [{ans: 'april 15'}]},
 
 //skipped questions 46, 47 displayAnswer: 'Pending', value: ''
 
-export const quizAnswersFive = ['provide schooling and education', 'kamala harris', 'decides if a law goes against the constitution', 'give a driver\'s license', 'to make treaties', 'john roberts', 
-'to print money', 'the supreme court', 'reviews laws', 'advises the president', 'provide safety (fire departments)', 'democratic and republican',
-'joe biden', 'to create an army', 'explains laws', 'approve zoing and land use','resolves disputes (disagreements)', 'provide protection (police)', 'to declare war', 'nine (9)']
+export const quizAnswersFive = ['join a political party', 'freedom of assembly', 'write to a newspaper', 'obey the laws of the united states', 'be loyal to the united states', 'a male citizen of any race can vote', 'freedom of religion', 'call senators and representatives',
+'vote in a federal election', 'citizens eighteen (18) and over can vote', 'freedom of speech', 'between eighteen (18) and twenty-six (26)', 'help with a campaign', 'give an elected offical your opinion on an issue', 'run for office',
+'freedom of expression', 'join a community group', 'at age eighteen (18)', 'serve in the u.s. military if needed','the right to bear arms', 'serve on a jury', 'the flag', 'you don\'t have to pay a poll tax to vote', 'any citizen can vote (men and women can vote)',
+'serve in the u.s. military if needed', 'run for federal office', 'freedom to petition the government', 'be loyal to the united states', 'eighteen (18) and older', 'april 15',
+'the united states', 'give up loyalty to other countries', 'defend the constitution and laws of the united states', 'serve (do important work for) the nation if needed', 'vote', 'join a civic group', 
+'public support or oppose an issue or policy',]
 
 export const questionAnswerDisplayFive = [{id: nanoid(), question: 'there are four amendments to the constitution about who can vote. describe one of them.', answer: [{ans: 'citizens eighteen (18) and over can vote'}, 
 {ans: 'you don\'t have to pay a poll tax to vote'}, {ans: 'any citizen can vote (men and women can vote)'}, {ans: 'a male citizen of any race can vote'}], displayAnswer: 'Pending', value: ''},
