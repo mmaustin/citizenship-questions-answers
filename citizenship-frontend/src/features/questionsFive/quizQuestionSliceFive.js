@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { questionsFour } from "./questionsFour";
+import { questionsFive } from "./questionsFive";
 
-const initialState = questionsFour
+const initialState = questionsFive
   
-  const quizQuestionsSliceFour = createSlice({
+  const quizQuestionsSliceFive = createSlice({
     name: 'quizQuestionsFour',
     initialState,
     reducers: {
@@ -14,6 +14,6 @@ const initialState = questionsFour
     }
   })
   
-  export const {removeQuestion} = quizQuestionsSliceFour.actions
+  export const {removeQuestion} = quizQuestionsSliceFive.actions
 
-  export default quizQuestionsSliceFour.reducer
+  export default quizQuestionsSliceFive.reducer
