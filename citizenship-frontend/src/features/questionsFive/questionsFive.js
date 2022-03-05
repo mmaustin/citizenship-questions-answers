@@ -1,6 +1,6 @@
 import { nanoid } from "@reduxjs/toolkit";
 
-export const questionsFour = [{id: nanoid(), question: 'what does the president\'s cabinet do?', answer: [{ans: 'advises the president'}]},
+export const questionsFive = [{id: nanoid(), question: 'what does the president\'s cabinet do?', answer: [{ans: 'advises the president'}]},
 {id: nanoid(), question: 'what does the judicial branch do?', answer: [{ans: 'reviews laws'}, {ans: 'explains laws'}, {ans: 'resolves disputes (disagreements)'}, {ans: 'decides if a law goes against the constitution'}]},
 {id: nanoid(), question: 'what is the highest court in the united states?', answer: [{ans: 'the supreme court'}]}, 
 {id: nanoid(), question: 'what is the name of the president of the united states now?', answer: [{ans: 'joe biden'}]}, {id: nanoid(), question: 'what is the name of the vice president of the united states now?',
@@ -14,11 +14,11 @@ answer: [{ans: 'provide schooling and education'}, {ans: 'provide protection (po
 //skipped questions 36, 43, 44
 //added questions 28, 29
 
-export const quizAnswersFour = ['provide schooling and education', 'kamala harris', 'decides if a law goes against the constitution', 'give a driver\'s license', 'to make treaties', 'john roberts', 
+export const quizAnswersFive = ['provide schooling and education', 'kamala harris', 'decides if a law goes against the constitution', 'give a driver\'s license', 'to make treaties', 'john roberts', 
 'to print money', 'the supreme court', 'reviews laws', 'advises the president', 'provide safety (fire departments)', 'democratic and republican',
 'joe biden', 'to create an army', 'explains laws', 'approve zoing and land use','resolves disputes (disagreements)', 'provide protection (police)', 'to declare war', 'nine (9)']
 
-export const questionAnswerDisplayFour = [{id: nanoid(), question: 'what does the president\'s cabinet do?', answer: [{ans: 'advises the president'}], displayAnswer: 'Pending', value: ''},
+export const questionAnswerDisplayFive = [{id: nanoid(), question: 'what does the president\'s cabinet do?', answer: [{ans: 'advises the president'}], displayAnswer: 'Pending', value: ''},
 {id: nanoid(), question: 'what does the judicial branch do?', answer: [{ans: 'reviews laws'}, {ans: 'explains laws'}, {ans: 'resolves disputes (disagreements)'}, {ans: 'decides if a law goes against the constitution'}], displayAnswer: 'Pending', value: ''},
 {id: nanoid(), question: 'what is the highest court in the united states?', answer: [{ans: 'the supreme court'}], displayAnswer: 'Pending', value: ''}, 
 {id: nanoid(), question: 'what is the name of the president of the united states now?', answer: [{ans: 'joe biden'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what is the name of the vice president of the united states now?',
