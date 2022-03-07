@@ -32,7 +32,7 @@ const App = () => {
                     <Route exact path='/questions/questions-five' element={<QuestionsListFive/>}/>
                     <Route exact path='/questions/quiz-five' element={<QuizFive/>}/>
                     <Route exact path='/questions/questions-six' element={<QuestionsListSix/>}/>
-                    <Route exact path='/questions/quiz-five' element={<QuizSix/>}/>
+                    <Route exact path='/questions/quiz-six' element={<QuizSix/>}/>
                     <Route path="*" element={<p>There's Nothing At This Address!</p> }/>
                 </Routes>
         </Router>
