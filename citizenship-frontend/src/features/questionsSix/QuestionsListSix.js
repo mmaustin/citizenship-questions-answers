@@ -1,9 +1,9 @@
 import React from 'react'
-import { questionsFive } from './questionsFive'
+import { questionsSix } from './questionsSix'
 
-export const QuestionsListFive = () => {
+export const QuestionsListSix = () => {
     
-    const questionsAnswers = questionsFive.map((question, idx) => (
+    const questionsAnswers = questionsSix.map((question, idx) => (
         <article className="question-excerpt" key={question.id}>
             <p className='question-number'>Question {idx + 1}</p>
             <p className='question'>{question.question}</p>
