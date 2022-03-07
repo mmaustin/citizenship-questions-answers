@@ -30,7 +30,7 @@ const Navbar = () => {
                     </div>
                     <div className='quiz-pair'>
                         <Link className='nav-link-text' to='/questions/questions-six'>Quiz Six Q&A</Link>
-                        {/*<Link className='nav-link-text' to='/questions/quiz-five'>Quiz Five</Link>*/}
+                        <Link className='nav-link-text' to='/questions/quiz-six'>Quiz Six</Link>
                     </div>
                 </div>
             </section>
