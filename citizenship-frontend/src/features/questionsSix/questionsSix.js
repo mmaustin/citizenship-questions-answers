@@ -1,8 +1,8 @@
 import { nanoid } from "@reduxjs/toolkit";
 
-export const questionsSix = [{id: nanoid(), question: 'we elect a u.s. representative for how many years?', answer: [{ans: 'two (2)'}]},
-{id: nanoid(), question: 'who does a u.s. senator represent?', answer: [{ans: 'all people of the state'}]}, {id: nanoid(), question: 'why do some states have more representatives than other states?',
-answer: [{ans: 'because of the state\'s population'}, {ans: 'because they have more people'}, {ans: 'because some states have more people'}]}, 
+export const questionsSix = [{id: nanoid(), question: 'what is one reason colonist came to america?', answer: [{ans: 'freedom'}, {ans: 'political liberty'}, {ans: 'religious freedom'}, {ans: 'economic opportunity'},
+{ans: 'practice their religion'}, {ans: 'escape persecution'}]}, {id: nanoid(), question: 'who lived in america before europeans arrived', answer: [{ans: 'american indians'}, {ans: 'native americans'}]},
+{id: nanoid(), question: 'what group of people was taken to america and sold as slaves?', answer: [{ans: 'africans'}, {ans: 'people from africa'}]}, 
 {id: nanoid(), question: 'we elect a president for how many years?', answer: [{ans: 'four (4)'}]}, {id: nanoid(), question: 'in what month do we vote for president?',
 answer: [{ans: 'november'}]}, {id: nanoid(), question: 'if the president can no longer serve, who becomes president?', answer: [{ans: 'the vice president'}]}, 
 {id: nanoid(), question: 'if both the president and the vice president can no longer serve, who becomes president?',
