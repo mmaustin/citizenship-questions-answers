@@ -2,9 +2,9 @@ import { nanoid } from "@reduxjs/toolkit";
 
 export const questionsSix = [{id: nanoid(), question: 'who is the "father of our country"?', answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'who was the first president?',
 answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'what territory did the u.s. by from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}]}, 
-{id: nanoid(), question: 'why did the colonists fight the british?', answer: [{ans: 'because of high taxes (taxation without representation)'},
-{ans: 'because the british army stayed in their houses (boarding, quartering)'}, {ans: 'because they didn\'t have self-government'}]}, {id: nanoid(), question: 'who wrote the declaration of independence?',
-answer: [{ans: 'thomas jefferson'}]}, {id: nanoid(), question: 'when was the declaration of independence adopted', answer: [{ans: 'july 4, 1776'}]}, 
+{id: nanoid(), question: 'name one war fought by the united states in the 1800s', answer: [{ans: 'war of 1812'},
+{ans: 'mexican-american war'}, {ans: 'civil war'}, {ans: 'spanish-american war'}]}, {id: nanoid(), question: 'name the u.s. war between the north and the south',
+answer: [{ans: 'the civil war'}, {ans: 'the war between the states'}]}, {id: nanoid(), question: 'name one problem that led to the civil war', answer: [{ans: 'slavery'}, {ans: 'economic reasons'}, {ans: 'states\' rights'}]}, 
 {id: nanoid(), question: 'what happened at the constitutional convention?',
 answer: [{ans: 'the constitution was written'}, {ans: 'the founding fathers wrote the constitution'}]}, {id: nanoid(), question: 'when was the constitution written?', answer: [{ans: '1787'}]}, 
 {id: nanoid(), question: 'the federalists papers support the passage of the u.s. constitution. name one of the writers',
