@@ -11,6 +11,8 @@ import quizQuestionReducerFive from '../features/questionsFive/quizQuestionSlice
 import displaySliceFive from '../features/questionsFive/displaySliceFive';
 import quizQuestionReducerSix from '../features/questionsSix/quizQuestionSliceSix';
 import displaySliceSix from '../features/questionsSix/displaySliceSix';
+import quizQuestionReducerSeven from '../features/questionsSeven/quizQuestionSliceSeven';
+import displaySliceSeven from '../features/questionsSeven/displaySliceSeven';
 
 export default configureStore({
   reducer: {
@@ -26,5 +28,7 @@ export default configureStore({
     displayQuestionsFive: displaySliceFive,
     quizQuestionsSix: quizQuestionReducerSix,
     displayQuestionsSix: displaySliceSix,
+    quizQuestionsSeven: quizQuestionReducerSeven,
+    displayQuestionsSeven: displaySliceSeven,
   },
 });
