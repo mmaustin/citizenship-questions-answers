@@ -1,7 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit";
 
 export const questionsSeven = [{id: nanoid(), question: 'who is the "father of our country"?', answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'who was the first president?',
-answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'what territory did the u.s. by from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}]}, 
+answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'what territory did the u.s. buy from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}]}, 
 {id: nanoid(), question: 'name one war fought by the united states in the 1800s', answer: [{ans: 'war of 1812'},
 {ans: 'mexican-american war'}, {ans: 'the civil war'}, {ans: 'spanish-american war'}]}, {id: nanoid(), question: 'name the u.s. war between the north and the south',
 answer: [{ans: 'the civil war'}, {ans: 'the war between the states'}]}, {id: nanoid(), question: 'name one problem that led to the civil war', answer: [{ans: 'slavery'}, {ans: 'economic reasons'}, {ans: 'states\' rights'}]}, 
@@ -16,12 +16,12 @@ answer: [{ans: 'world war I'}, {ans: 'world war II'}, {ans: 'the korean war'},
 //skipped question 64
 
 export const quizAnswersSeven = ['persian gulf war', 'freed slaves in most southern states', 'world war I', 'fought for women\'s rights', 'slavery',
-'mexican-american war', 'freed slaves in the confederacy', 'the korean war', 'the louisiana territory', 'civil war', 'economic reasons', 'saved or preserved the union',
+'mexican-american war', 'freed slaves in the confederacy', 'the korean war', 'the louisiana territory', 'the civil war', 'economic reasons', 'saved or preserved the union',
 'george washington', 'led the united states during the civil war', 'the vietnam war', 'states\' rights', 'spanish-american war', 'world war II',
 'freed the slaves (emancipation proclamation)', 'louisiana', 'fought for civil rights', 'freed slaves in the confederate states', 'war of 1812', 'the war between the states', 'freed the slaves']
 
 export const questionAnswerDisplaySeven = [{id: nanoid(), question: 'who is the "father of our country"?', answer: [{ans: 'george washington'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'who was the first president?',
-answer: [{ans: 'george washington'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what territory did the u.s. by from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}], displayAnswer: 'Pending', value: ''}, 
+answer: [{ans: 'george washington'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what territory did the u.s. buy from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}], displayAnswer: 'Pending', value: ''}, 
 {id: nanoid(), question: 'name one war fought by the united states in the 1800s', answer: [{ans: 'war of 1812'},
 {ans: 'mexican-american war'}, {ans: 'the civil war'}, {ans: 'spanish-american war'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'name the u.s. war between the north and the south',
 answer: [{ans: 'the civil war'}, {ans: 'the war between the states'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'name one problem that led to the civil war', answer: [{ans: 'slavery'}, {ans: 'economic reasons'}, {ans: 'states\' rights'}], displayAnswer: 'Pending', value: ''}, 
