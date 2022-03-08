@@ -1,8 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit";
 
-export const questionsSix = [{id: nanoid(), question: 'what is one reason colonist came to america?', answer: [{ans: 'freedom'}, {ans: 'political liberty'}, {ans: 'religious freedom'}, {ans: 'economic opportunity'},
-{ans: 'practice their religion'}, {ans: 'escape persecution'}]}, {id: nanoid(), question: 'who lived in america before europeans arrived', answer: [{ans: 'american indians'}, {ans: 'native americans'}]},
-{id: nanoid(), question: 'what group of people was taken to america and sold as slaves?', answer: [{ans: 'africans'}, {ans: 'people from africa'}]}, 
+export const questionsSix = [{id: nanoid(), question: 'who is the "father of our country"?', answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'who was the first president?',
+answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'what territory did the u.s. by from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}]}, 
 {id: nanoid(), question: 'why did the colonists fight the british?', answer: [{ans: 'because of high taxes (taxation without representation)'},
 {ans: 'because the british army stayed in their houses (boarding, quartering)'}, {ans: 'because they didn\'t have self-government'}]}, {id: nanoid(), question: 'who wrote the declaration of independence?',
 answer: [{ans: 'thomas jefferson'}]}, {id: nanoid(), question: 'when was the declaration of independence adopted', answer: [{ans: 'july 4, 1776'}]}, 
