@@ -5,12 +5,13 @@ answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'what territory 
 {id: nanoid(), question: 'name one war fought by the united states in the 1800s', answer: [{ans: 'war of 1812'},
 {ans: 'mexican-american war'}, {ans: 'civil war'}, {ans: 'spanish-american war'}]}, {id: nanoid(), question: 'name the u.s. war between the north and the south',
 answer: [{ans: 'the civil war'}, {ans: 'the war between the states'}]}, {id: nanoid(), question: 'name one problem that led to the civil war', answer: [{ans: 'slavery'}, {ans: 'economic reasons'}, {ans: 'states\' rights'}]}, 
-{id: nanoid(), question: 'what happened at the constitutional convention?',
-answer: [{ans: 'the constitution was written'}, {ans: 'the founding fathers wrote the constitution'}]}, {id: nanoid(), question: 'when was the constitution written?', answer: [{ans: '1787'}]}, 
-{id: nanoid(), question: 'the federalists papers support the passage of the u.s. constitution. name one of the writers',
-answer: [{ans: 'james madison'}, {ans: 'alexander hamilton'}, {ans: 'john jay'}, {ans: 'publius'}]}, {id: nanoid(), question: 'what is one thing benjamin franklin is famous for?',
-answer: [{ans: 'u.s diplomat'}, {ans: 'oldest member of the constitutional convention'}, {ans: 'first postmaster general of the united states'}, 
-{ans: 'writer of "poor richard\'s almanac"'}, {ans: 'started the first free libraries'}]}]
+{id: nanoid(), question: 'what was one important thing that abraham lincoln did?',
+answer: [{ans: 'freed the slaves (emancipation proclamation)'}, {ans: 'saved or preserved the union'}, {ans: 'led the united states during the civil war'}]},
+{id: nanoid(), question: 'what did the emancipation proclamation do?', answer: [{ans: 'freed the slaves'}, {ans: 'freed slaves in the confederacy'}, {ans: 'freed slaves in the confederate states'}, {ans: 'freed slaves in most southern states'}]}, 
+{id: nanoid(), question: 'what did susan b. anthony do?',
+answer: [{ans: 'fought for women\'s rights'}, {ans: 'fought for civil rights'}]}, {id: nanoid(), question: 'name one war fought by the united states in the 1900s.',
+answer: [{ans: 'world war I'}, {ans: 'world war II'}, {ans: 'the korean war'}, 
+{ans: 'the vietnam war'}, {ans: 'persian gulf war'}]}]
 
 //skipped question 64
 
