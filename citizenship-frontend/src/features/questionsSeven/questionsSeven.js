@@ -3,7 +3,7 @@ import { nanoid } from "@reduxjs/toolkit";
 export const questionsSix = [{id: nanoid(), question: 'who is the "father of our country"?', answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'who was the first president?',
 answer: [{ans: 'george washington'}]}, {id: nanoid(), question: 'what territory did the u.s. by from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}]}, 
 {id: nanoid(), question: 'name one war fought by the united states in the 1800s', answer: [{ans: 'war of 1812'},
-{ans: 'mexican-american war'}, {ans: 'civil war'}, {ans: 'spanish-american war'}]}, {id: nanoid(), question: 'name the u.s. war between the north and the south',
+{ans: 'mexican-american war'}, {ans: 'the civil war'}, {ans: 'spanish-american war'}]}, {id: nanoid(), question: 'name the u.s. war between the north and the south',
 answer: [{ans: 'the civil war'}, {ans: 'the war between the states'}]}, {id: nanoid(), question: 'name one problem that led to the civil war', answer: [{ans: 'slavery'}, {ans: 'economic reasons'}, {ans: 'states\' rights'}]}, 
 {id: nanoid(), question: 'what was one important thing that abraham lincoln did?',
 answer: [{ans: 'freed the slaves (emancipation proclamation)'}, {ans: 'saved or preserved the union'}, {ans: 'led the united states during the civil war'}]},
@@ -15,10 +15,10 @@ answer: [{ans: 'world war I'}, {ans: 'world war II'}, {ans: 'the korean war'},
 
 //skipped question 64
 
-export const quizAnswersSix = ['james madison', 'oldest member of the constitutional convention', 'because the british army stayed in their houses (boarding, quartering)', 'thomas jefferson', 'economic opportunity', 'africans',
-'escape persecution', 'native americans', 'the founding fathers wrote the constitution', 'john jay', 'first postmaster general of the united states', 'because of high taxes (taxation without representation)', 'july 4, 1776',
-'political liberty', 'writer of "poor richard\'s almanac"', 'publius', 'practice their religion', 'people from africa', 'religious freedom', 'started the first free libraries', 'freedom', 'american indians', 'because they didn\'t have self-government',
-'the constitution was written', '1787', 'alexander hamilton', 'u.s diplomat']
+export const quizAnswersSix = ['persian gulf war', 'freed slaves in most southern states', 'world war I', 'fought for women\'s rights', 'slavery',
+'mexican-american war', 'freed slaves in the confederacy', 'the korean war', 'the louisiana territory', 'civil war', 'economic reasons', 'saved or preserved the union',
+'george washington', 'led the united states during the civil war', 'the vietnam war', 'states\' rights', 'spanish-american war', 'world war II',
+'freed the slaves (emancipation proclamation)', 'louisiana', 'fought for civil rights', 'freed slaves in the confederate states', 'war of 1812', 'the war between the states', 'freed the slaves']
 
 export const questionAnswerDisplaySix = [{id: nanoid(), question: 'what is one reason colonist came to america?', answer: [{ans: 'freedom'}, {ans: 'political liberty'}, {ans: 'religious freedom'}, {ans: 'economic opportunity'},
 {ans: 'practice their religion'}, {ans: 'escape persecution'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'who lived in america before europeans arrived', answer: [{ans: 'american indians'}, {ans: 'native americans'}], displayAnswer: 'Pending', value: ''},
