@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { removeQuestion } from './quizQuestionSliceSeven'
+import { removeQuestion } from './quizQuestionsSliceSeven'
 import { quizAnswersSeven } from './questionsSeven'
 import { addAnswer } from './displaySliceSeven'
 

@@ -7,12 +7,15 @@ import quizQuestionsReducerThree from '../features/questionsThree/quizQuestionsS
 import displaySliceReducerThree from '../features/questionsThree/displaySliceThree';
 import quizQuestionsReducerFour from '../features/questionsFour/quizQuestionsSliceFour';
 import displaySliceReducerFour from '../features/questionsFour/displaySliceFour';
-import quizQuestionReducerFive from '../features/questionsFive/quizQuestionSliceFive';
+import quizQuestionsReducerFive from '../features/questionsFive/quizQuestionsSliceFive';
 import displaySliceFive from '../features/questionsFive/displaySliceFive';
-import quizQuestionReducerSix from '../features/questionsSix/quizQuestionSliceSix';
+import quizQuestionsReducerSix from '../features/questionsSix/quizQuestionsSliceSix';
 import displaySliceSix from '../features/questionsSix/displaySliceSix';
-import quizQuestionReducerSeven from '../features/questionsSeven/quizQuestionSliceSeven';
+import quizQuestionsReducerSeven from '../features/questionsSeven/quizQuestionsSliceSeven';
 import displaySliceSeven from '../features/questionsSeven/displaySliceSeven';
+import quizQuestionsReducerEight from '../features/questionsEight/quizQuestionsSliceEight';
+import displaySliceEight from '../features/questionsEight/displaySliceEight';
+
 
 export default configureStore({
   reducer: {
@@ -24,11 +27,13 @@ export default configureStore({
     displayQuestionsThree: displaySliceReducerThree,
     quizQuestionsFour: quizQuestionsReducerFour,
     displayQuestionsFour: displaySliceReducerFour,
-    quizQuestionsFive: quizQuestionReducerFive,
+    quizQuestionsFive: quizQuestionsReducerFive,
     displayQuestionsFive: displaySliceFive,
-    quizQuestionsSix: quizQuestionReducerSix,
+    quizQuestionsSix: quizQuestionsReducerSix,
     displayQuestionsSix: displaySliceSix,
-    quizQuestionsSeven: quizQuestionReducerSeven,
+    quizQuestionsSeven: quizQuestionsReducerSeven,
     displayQuestionsSeven: displaySliceSeven,
+    quizQuestionsEight: quizQuestionsReducerEight,
+    displaySliceEight: displaySliceEight,
   },
 });
