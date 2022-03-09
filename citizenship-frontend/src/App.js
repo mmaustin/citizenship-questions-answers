@@ -15,6 +15,7 @@ import { QuestionsListSix } from './features/questionsSix/QuestionsListSix'
 import { QuizSix } from './features/questionsSix/QuizSix'
 import { QuestionsListSeven } from './features/questionsSeven/QuestionsListSeven'
 import { QuizSeven } from './features/questionsSeven/QuizSeven'
+import { QuestionsListEight } from './features/questionsEight/QuestionsListEight'
 
 const App = () => {
 
@@ -37,6 +38,8 @@ const App = () => {
                     <Route exact path='/questions/quiz-six' element={<QuizSix/>}/>
                     <Route exact path='/questions/questions-seven' element={<QuestionsListSeven/>}/>
                     <Route exact path='/questions/quiz-seven' element={<QuizSeven/>}/>
+                    <Route exact path='/questions/questions-eight' element={<QuestionsListEight/>}/>
+                    {/*<Route exact path='/questions/quiz-seven' element={<QuizSeven/>}/>*/}
                     <Route path="*" element={<p>There's Nothing At This Address!</p> }/>
                 </Routes>
         </Router>
