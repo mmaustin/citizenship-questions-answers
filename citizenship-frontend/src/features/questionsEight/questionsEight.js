@@ -13,10 +13,11 @@ answer: [{ans: 'pacific ocean'}]}]
 
 //skipped question 87
 
-export const quizAnswersEight = ['persian gulf war', 'freed slaves in most southern states', 'world war I', 'fought for women\'s rights', 'slavery',
-'mexican-american war', 'freed slaves in the confederacy', 'the korean war', 'the louisiana territory', 'the civil war', 'economic reasons', 'saved or preserved the union',
-'george washington', 'led the united states during the civil war', 'the vietnam war', 'states\' rights', 'spanish-american war', 'world war II',
-'freed the slaves (emancipation proclamation)', 'louisiana', 'fought for civil rights', 'freed slaves in the confederate states', 'war of 1812', 'the war between the states', 'freed the slaves']
+export const quizAnswersEight = ['mississippi river', 'woodrow wilson', 'civil rights movement',
+'world war II', 'communism', 'worked for equality for all americans',
+'franklin roosevelt', 'terrorists attacked the united states', 'pacific ocean',
+'japan, germany, and italy', 'fought for civil rights', 'missouri river']
+//, displayAnswer: 'Pending', value: ''
 
 export const questionAnswerDisplayEight = [{id: nanoid(), question: 'who is the "father of our country"?', answer: [{ans: 'george washington'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'who was the first president?',
 answer: [{ans: 'george washington'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what territory did the u.s. buy from france in 1803?', answer: [{ans: 'the louisiana territory'}, {ans: 'louisiana'}], displayAnswer: 'Pending', value: ''}, 
