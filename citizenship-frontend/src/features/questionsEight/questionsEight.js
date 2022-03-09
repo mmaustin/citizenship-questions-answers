@@ -8,7 +8,7 @@ answer: [{ans: 'communism'}]}, {id: nanoid(), question: 'what movement tried to 
 answer: [{ans: 'fought for civil rights'}, {ans: 'worked for equality for all americans'}]},
 {id: nanoid(), question: 'what major event happened on september 11, 2001, in the united states?', answer: [{ans: 'terrorists attacked the united states'}]}, 
 {id: nanoid(), question: 'name one of the two longest rivers in the united states',
-answer: [{ans: 'missouri river'}, {ans: 'mississippi river'}]}, {id: nanoid(), question: 'was ocean is on the west coast of the united states?',
+answer: [{ans: 'missouri river'}, {ans: 'mississippi river'}]}, {id: nanoid(), question: 'what ocean is on the west coast of the united states?',
 answer: [{ans: 'pacific ocean'}]}]
 
 //skipped question 87
@@ -27,6 +27,6 @@ answer: [{ans: 'communism'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(
 answer: [{ans: 'fought for civil rights'}, {ans: 'worked for equality for all americans'}], displayAnswer: 'Pending', value: ''},
 {id: nanoid(), question: 'what major event happened on september 11, 2001, in the united states?', answer: [{ans: 'terrorists attacked the united states'}], displayAnswer: 'Pending', value: ''}, 
 {id: nanoid(), question: 'name one of the two longest rivers in the united states',
-answer: [{ans: 'missouri river'}, {ans: 'mississippi river'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'was ocean is on the west coast of the united states?',
+answer: [{ans: 'missouri river'}, {ans: 'mississippi river'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'what ocean is on the west coast of the united states?',
 answer: [{ans: 'pacific ocean'}], displayAnswer: 'Pending', value: ''}]
 

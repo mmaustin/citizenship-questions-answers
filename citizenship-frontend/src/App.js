@@ -40,7 +40,7 @@ const App = () => {
                     <Route exact path='/questions/questions-seven' element={<QuestionsListSeven/>}/>
                     <Route exact path='/questions/quiz-seven' element={<QuizSeven/>}/>
                     <Route exact path='/questions/questions-eight' element={<QuestionsListEight/>}/>
-                    <Route exact path='/questions/quiz-seven' element={<QuizEight/>}/>
+                    <Route exact path='/questions/quiz-eight' element={<QuizEight/>}/>
                     <Route path="*" element={<p>There's Nothing At This Address!</p> }/>
                 </Routes>
         </Router>

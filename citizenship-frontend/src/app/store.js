@@ -34,6 +34,6 @@ export default configureStore({
     quizQuestionsSeven: quizQuestionsReducerSeven,
     displayQuestionsSeven: displaySliceSeven,
     quizQuestionsEight: quizQuestionsReducerEight,
-    displaySliceEight: displaySliceEight,
+    displayQuestionsEight: displaySliceEight,
   },
 });
