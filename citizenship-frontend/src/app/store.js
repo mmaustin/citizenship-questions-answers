@@ -15,6 +15,8 @@ import quizQuestionsReducerSeven from '../features/questionsSeven/quizQuestionsS
 import displaySliceSeven from '../features/questionsSeven/displaySliceSeven';
 import quizQuestionsReducerEight from '../features/questionsEight/quizQuestionsSliceEight';
 import displaySliceEight from '../features/questionsEight/displaySliceEight';
+import quizQuestionsReducerNine from '../features/questionsNine/quizQuestionsSliceNine';
+import displaySliceNine from '../features/questionsNine/displaySliceNine';
 
 
 export default configureStore({
@@ -35,5 +37,7 @@ export default configureStore({
     displayQuestionsSeven: displaySliceSeven,
     quizQuestionsEight: quizQuestionsReducerEight,
     displayQuestionsEight: displaySliceEight,
+    quizQuestionsNine: quizQuestionsReducerNine,
+    displayQuestionsNine: displaySliceNine,
   },
 });
