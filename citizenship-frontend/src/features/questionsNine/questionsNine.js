@@ -11,10 +11,10 @@ answer: [{ans: 'because there is one star for each state'}, {ans: 'because each 
 
 //skipped questions 92, 100
 
-export const quizAnswersNine = ['mississippi river', 'woodrow wilson', 'civil rights movement',
-'world war II', 'communism', 'worked for equality for all americans',
-'franklin roosevelt', 'terrorists attacked the united states', 'pacific ocean',
-'japan, germany, and italy', 'fought for civil rights', 'missouri river']
+export const quizAnswersNine = ['because there were 13 original colonies', 'u.s. virgin islands', 'liberty island', 'california', 'because there are 50 states',
+'puerto rico', 'arizona', 'guam', 'washington d.c.', 'because each star represents a state',
+'texas', 'northern mariana islands', 'atlantic ocean', 'because the stripes represent the original colonies',
+'new mexico', 'the star spangled banner', 'american somao', 'new york (harbor)', 'because there is one star for each state']
 
 
 export const questionAnswerDisplayNine = [{id: nanoid(), question: 'who was president during world war I?', answer: [{ans: 'woodrow wilson'}], displayAnswer: 'Pending', value: ''}, {id: nanoid(), question: 'who was president during the great drepression and world war II?',
