@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return(
         <nav>
-            <section className='nav-section'>
+            {/*<section className='nav-section'>
                 <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
                 <div className='nav-link-container'>
                     <div className='quiz-pair'>
@@ -45,11 +45,18 @@ const Navbar = () => {
                         <Link className='nav-link-text' to='/questions/quiz-nine'>Quiz Nine</Link>
                     </div>
                 </div>
-            </section>
+            </section>*/}
             <div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
                 <div class="dropdown-content">
-                    <p><Link className='nav-link-text' to='/questions/questions-nine'>Quiz Nine Q&A</Link></p>
+                    <Link className='nav-link-text' to='/'>Quiz One Q&A</Link>
+                    <Link className='nav-link-text' to='/questions/quiz-one'>Quiz One</Link>
+                    <Link className='nav-link-text' to='/questions/questions-two'>Quiz Two Q&A</Link>
+                    <Link className='nav-link-text' to='/questions/quiz-two'>Quiz Two</Link>
+                    <Link className='nav-link-text' to='/questions/questions-three'>Quiz Three Q&A</Link>
+                    <Link className='nav-link-text' to='/questions/quiz-three'>Quiz Three</Link>
+                    <Link className='nav-link-text' to='/questions/questions-four'>Quiz Four Q&A</Link>
+                    <Link className='nav-link-text' to='/questions/quiz-four'>Quiz Four</Link>
                 </div>
             </div>
         </nav>
