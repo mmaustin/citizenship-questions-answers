@@ -49,8 +49,7 @@ const Navbar = () => {
             <div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
                 <div class="dropdown-content">
-                    <Link className='nav-link-text' to='/questions/questions-nine'>Quiz Nine Q&A</Link>
-                    <Link className='nav-link-text' to='/questions/quiz-nine'>Quiz Nine</Link>
+                    <p><Link className='nav-link-text' to='/questions/questions-nine'>Quiz Nine Q&A</Link></p>
                 </div>
             </div>
         </nav>
