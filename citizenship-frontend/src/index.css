@@ -222,3 +222,5 @@ nav {
 .ternary-container {
     border-bottom: 4px double black;
 }
+
+.dropdown:hover .dropdown-content {display: block;}
