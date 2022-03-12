@@ -58,7 +58,7 @@ export const QuizOneTest = () => {
 
     const answers = quizAnswers.map((answer, idx) => (
         <>
-            <input type="checkbox" key={idx} value={answer}/>
+            <input type="checkbox" key={idx} value={answer} onChange={handleChange}/>
             <label for={idx}>{answer}</label>
         </>
     ))
