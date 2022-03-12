@@ -51,8 +51,12 @@ export const QuizOne = () => {
         dispatch(removeQuestion(question))
     }
 
-    const answers = quizAnswers.map((answer, idx) => (
+    /*const answers = quizAnswers.map((answer, idx) => (
             <option key={idx} value={answer}>{answer}</option>
+    ))*/
+
+    const answers = quizAnswers.map((answer, idx) => (
+        <input type="checkbox" key={idx} value={answer}>{answer}</input>
     ))
 
     const handleChange = (e) => {
