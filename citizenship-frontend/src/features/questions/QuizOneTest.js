@@ -9,7 +9,7 @@ export const QuizOneTest = () => {
     const display = useSelector(state => state.displayQuestions)
     //const [isChecked, setIsChecked] = useState(false)
     const [question, setQuestion] = useState('');
-    const [selectAnswer, setSelectAnswer] = useState('')
+    const [selectAnswer, setSelectAnswer] = useState(['what?'])
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
@@ -57,13 +57,15 @@ export const QuizOneTest = () => {
     ))*/
 
     const handleChange = (e) => {
-        setSelectAnswer(e.target.value)
+        setSelectAnswer(selectAnswer.push(e.target.value))
     }
+
+    console.log(selectAnswer)
 
     const answers = quizAnswers.map((answer, idx) => (
         <>
             <input type="checkbox" key={idx} value={answer} onChange={handleChange}/>
-            <label htmlFor={idx}>{answer}</label>
+            <label key={idx + 1} htmlFor={idx}>{answer}</label>
         </>
     ))
 
@@ -82,7 +84,7 @@ export const QuizOneTest = () => {
     }
 
     const clearAnswerField = () => {
-        setSelectAnswer('')
+        setSelectAnswer([])
     }
 
     const handleSubmit = e => {
