@@ -51,12 +51,8 @@ export const QuizOne = () => {
         dispatch(removeQuestion(question))
     }
 
-    /*const answers = quizAnswers.map((answer, idx) => (
-            <option key={idx} value={answer}>{answer}</option>
-    ))*/
-
     const answers = quizAnswers.map((answer, idx) => (
-        <input type="checkbox" key={idx} value={answer}/>
+            <option key={idx} value={answer}>{answer}</option>
     ))
 
     const handleChange = (e) => {
@@ -107,10 +103,10 @@ export const QuizOne = () => {
                 <form onSubmit={e => handleSubmit(e)}>
                     <label>
                         Select Your Answer:&nbsp;&nbsp;&nbsp;
-                        {/*<select className='answer-selector' value={selectAnswer} onChange={handleChange}>*/}
+                        <select className='answer-selector' value={selectAnswer} onChange={handleChange}>
                             <option value=""></option>
                             {answers}
-                        {/*</select>*/}
+                        </select>
                     </label>&nbsp;&nbsp;&nbsp;
                     <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
                 </form>
