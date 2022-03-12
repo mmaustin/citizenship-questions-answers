@@ -4,7 +4,7 @@ import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
 import { addAnswer } from './displaySlice'
 
-export const QuizOne = () => {
+export const QuizOneTest = () => {
     const questions = useSelector(state => state.quizQuestions)
     const display = useSelector(state => state.displayQuestions)
     const [question, setQuestion] = useState('');
