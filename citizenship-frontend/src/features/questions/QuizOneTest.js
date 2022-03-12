@@ -56,16 +56,16 @@ export const QuizOneTest = () => {
             <option key={idx} value={answer}>{answer}</option>
     ))*/
 
-    const answers = quizAnswers.map((answer, idx) => (
-        <>
-            <input type="checkbox" key={idx} value={answer} onChange={handleChange}/>
-            <label for={idx}>{answer}</label>
-        </>
-    ))
-
     const handleChange = (e) => {
         setSelectAnswer(e.target.value)
     }
+
+    const answers = quizAnswers.map((answer, idx) => (
+        <>
+            <input type="checkbox" key={idx} value={answer} onChange={handleChange}/>
+            <label htmlFor={idx}>{answer}</label>
+        </>
+    ))
 
     const displayAddAnswer = () => {
         dispatch(addAnswer({question, selectAnswer}))
