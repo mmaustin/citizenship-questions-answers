@@ -9,7 +9,7 @@ export const QuizOneTest = () => {
     const display = useSelector(state => state.displayQuestions)
     //const [isChecked, setIsChecked] = useState(false)
     const [question, setQuestion] = useState('');
-    const [selectAnswer, setSelectAnswer] = useState(['what?'])
+    const [selectAnswer, setSelectAnswer] = useState([])
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
@@ -57,7 +57,7 @@ export const QuizOneTest = () => {
     ))*/
 
     const handleChange = (e) => {
-        setSelectAnswer(selectAnswer.push(e.target.value))
+        setSelectAnswer(arr => [...arr, e.target.value])
     }
 
     console.log(selectAnswer)
