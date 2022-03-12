@@ -7,6 +7,7 @@ import { addAnswer } from './displaySlice'
 export const QuizOneTest = () => {
     const questions = useSelector(state => state.quizQuestions)
     const display = useSelector(state => state.displayQuestions)
+    //const [isChecked, setIsChecked] = useState(false)
     const [question, setQuestion] = useState('');
     const [selectAnswer, setSelectAnswer] = useState('')
     const [correctAnswer, setCorrectAnswer] = useState(0)
