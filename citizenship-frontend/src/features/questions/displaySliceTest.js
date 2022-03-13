@@ -8,6 +8,7 @@ const initialState = questionAnswerDisplay
     initialState,
     reducers: {
         addAnswer(state, action){
+            debugger
             const {question, selectAnswer} = action.payload
             const foundQuestion = state.find(q => q.question === question)
             const foundQuestionAnswers = foundQuestion.answer.map(q => q.ans)

@@ -82,14 +82,15 @@ export const QuizOneTest = () => {
 
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
-        const a = selectAnswer.find(an => {return !ques.answer.includes(an)})
-        a ? setIncorrectAnswer(incorrectAnswer + 1) : setCorrectAnswer(correctAnswer + 1);
-        /*const q = ques.answer.map(a => a.ans)
+        //const a = selectAnswer.find(an => {return !ques.answer.includes(an)})
+        //a ? setIncorrectAnswer(incorrectAnswer + 1) : setCorrectAnswer(correctAnswer + 1);
+        //debugger
+        const q = ques.answer.map(a => a.ans)
         if(q.includes(selectAnswer)){
             setCorrectAnswer(correctAnswer + 1)
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
-        }*/
+        }
     }
 
     const clearAnswerField = () => {
