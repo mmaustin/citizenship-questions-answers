@@ -86,7 +86,7 @@ export const QuizOneTest = () => {
         //a ? setIncorrectAnswer(incorrectAnswer + 1) : setCorrectAnswer(correctAnswer + 1);
         //debugger
         const q = ques.answer.map(a => a.ans)
-        if(q.includes(selectAnswer)){
+        if(q.includes(selectAnswer[0])){
             setCorrectAnswer(correctAnswer + 1)
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
