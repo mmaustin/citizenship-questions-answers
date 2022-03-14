@@ -22,13 +22,14 @@ const initialState = questionAnswerDisplay
                     foundQuestion.displayAnswer = selectAnswer.join(' and ');
                     foundQuestion.value = 'Correct';
                 }
-            }
-            if (foundQuestionAnswers.includes(selectAnswer[0])){
-                foundQuestion.displayAnswer = selectAnswer[0];
-                foundQuestion.value = 'Correct';
             } else {
-                foundQuestion.displayAnswer = selectAnswer[0];
-                foundQuestion.value = 'Incorrect';
+                if (foundQuestionAnswers.includes(selectAnswer[0])){
+                    foundQuestion.displayAnswer = selectAnswer[0];
+                    foundQuestion.value = 'Correct';
+                } else {
+                    foundQuestion.displayAnswer = selectAnswer[0];
+                    foundQuestion.value = 'Incorrect';
+                }
             }
         }
     }
