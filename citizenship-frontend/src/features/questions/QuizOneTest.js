@@ -4,6 +4,13 @@ import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
 import { addAnswer } from './displaySlice'
 
+/*
+Major remaining issues with checkbox:
+1) how to fill the selectAnswer array with only the answers checked at submission--and not answers
+   previously checked and then unchecked
+2) clearing the checkbox fields on submission
+*/
+
 export const QuizOneTest = () => {
     const questions = useSelector(state => state.quizQuestions)
     const display = useSelector(state => state.displayQuestions)
