@@ -8,15 +8,14 @@ const initialState = questionAnswerDisplay
     initialState,
     reducers: {
         addAnswer(state, action){
-            debugger
             const {question, selectAnswer} = action.payload
             const foundQuestion = state.find(q => q.question === question)
             const foundQuestionAnswers = foundQuestion.answer.map(q => q.ans)
-            if (foundQuestionAnswers.includes(selectAnswer)){
-                foundQuestion.displayAnswer = selectAnswer;
+            if (foundQuestionAnswers.includes(selectAnswer[0])){
+                foundQuestion.displayAnswer = selectAnswer[0];
                 foundQuestion.value = 'Correct';
             } else {
-                foundQuestion.displayAnswer = selectAnswer;
+                foundQuestion.displayAnswer = selectAnswer[0];
                 foundQuestion.value = 'Incorrect';
             }
         }
