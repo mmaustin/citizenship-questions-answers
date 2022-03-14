@@ -16,7 +16,11 @@ const initialState = questionAnswerDisplay
                     return foundQuestionAnswers.includes(answer)
                 })
                 if(multiAnswers.includes(false)){
-                    
+                    foundQuestion.displayAnswer = selectAnswer.join(' and ');
+                    foundQuestion.value = 'Incorrect';
+                } else {
+                    foundQuestion.displayAnswer = selectAnswer.join(' and ');
+                    foundQuestion.value = 'Correct';
                 }
             }
             if (foundQuestionAnswers.includes(selectAnswer[0])){
