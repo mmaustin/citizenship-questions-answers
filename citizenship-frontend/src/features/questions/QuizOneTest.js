@@ -86,11 +86,27 @@ export const QuizOneTest = () => {
         //a ? setIncorrectAnswer(incorrectAnswer + 1) : setCorrectAnswer(correctAnswer + 1);
         //debugger
         const q = ques.answer.map(a => a.ans)
-        if(q.includes(selectAnswer[0])){
+        if(selectAnswer.length > 1){
+            const multiAnswers = selectAnswer.map(answer => {
+                return q.includes(answer)
+            })
+            if(multiAnswers.includes(false)){
+                setIncorrectAnswer(incorrectAnswer + 1)
+            } else {
+                setCorrectAnswer(correctAnswer + 1)
+            }
+        } else {
+            if (q.includes(selectAnswer[0])){
+                setCorrectAnswer(correctAnswer + 1)
+            } else {
+                setIncorrectAnswer(incorrectAnswer + 1)
+            }
+        }
+        /*if(q.includes(selectAnswer[0])){
             setCorrectAnswer(correctAnswer + 1)
         } else {
             setIncorrectAnswer(incorrectAnswer + 1)
-        }
+        }*/
     }
 
     const clearAnswerField = () => {
