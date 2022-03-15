@@ -6,6 +6,7 @@ export const PracticeComponent = () => {
         new Array(quizAnswers.length).fill(false)
     )
 
+
     const handleChange = (position) => {
         const updatedCheckedState = checkedState.map((item, index) =>
           index === position ? !item : item
@@ -13,8 +14,25 @@ export const PracticeComponent = () => {
     
         setCheckedState(updatedCheckedState);
     }
+
+    const indices = checkedState.map((c,i)=>{
+        if(c === true){
+            return i;
+          } else {
+            return c
+          }
+    })
+
+    let w = indices.filter(i=> typeof i === 'number')
+        const f = () => {
+            let s = []
+            for(let num of w){
+                s.push(quizAnswers[num])
+            }
+                return s
+        }
+    console.log(f())
     
-    console.log(checkedState)
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
