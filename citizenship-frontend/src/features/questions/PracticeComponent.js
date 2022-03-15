@@ -5,7 +5,7 @@ export const PracticeComponent = () => {
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
-    //const [getAnswer, setGetAnswer] = useState([])
+    const [getAnswer, setGetAnswer] = useState([])
 
 
     const handleChange = (position) => {
@@ -27,12 +27,14 @@ export const PracticeComponent = () => {
     let w = indices.filter(i=> typeof i === 'number')
         const f = () => {
             let s = []
-            for(let num of w){
+           for(let num of w){
                 s.push(quizAnswers[num])
             }
                 return s
         }
-        console.log(f())
+        let g = f()
+        getAnswer.concat(g)
+        console.log(getAnswer)
     
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
