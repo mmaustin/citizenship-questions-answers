@@ -9,6 +9,8 @@ export const PracticeComponent = () => {
 
 
     return(
-        <></>
+        <>
+            <p>Let's Practice Some Checkboxes!!!</p>
+        </>
     )
 }

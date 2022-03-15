@@ -29,7 +29,7 @@ const App = () => {
             <Navbar/>
                 <Routes>
                     <Route exact path='/' element={<QuestionsList/>}/>
-                    <Route path='/practice-code' element={<PracticeComponent/>}/>
+                    <Route path='/questions/practice-code' element={<PracticeComponent/>}/>
                     {/*<Route exact path='/questions/:questionId' element={<SingleQuestionPage/>} />*/}
                     <Route exact path='/questions/quiz-one-test' element={<QuizOneTest/>}/>
                     {/*<Route exact path='/questions/quiz-one-test' element={<QuizOneTest/>}/>*/}
