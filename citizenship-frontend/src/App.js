@@ -20,6 +20,7 @@ import { QuestionsListEight } from './features/questionsEight/QuestionsListEight
 import { QuizEight } from './features/questionsEight/QuizEight'
 import { QuestionsListNine } from './features/questionsNine/QuestionsListNine'
 import { QuizNine } from './features/questionsNine/QuizNine'
+import { PracticeComponent } from './features/questions/PracticeComponent'
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
             <Navbar/>
                 <Routes>
                     <Route exact path='/' element={<QuestionsList/>}/>
+                    <Route path='/practice-code' element={<PracticeComponent/>}/>
                     {/*<Route exact path='/questions/:questionId' element={<SingleQuestionPage/>} />*/}
                     <Route exact path='/questions/quiz-one-test' element={<QuizOneTest/>}/>
                     {/*<Route exact path='/questions/quiz-one-test' element={<QuizOneTest/>}/>*/}

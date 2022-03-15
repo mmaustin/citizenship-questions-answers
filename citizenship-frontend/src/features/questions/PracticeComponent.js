@@ -5,4 +5,10 @@ export const PracticeComponent = () => {
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
+
+
+
+    return(
+        <></>
+    )
 }
