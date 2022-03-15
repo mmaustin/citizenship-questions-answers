@@ -5,6 +5,7 @@ export const PracticeComponent = () => {
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
+    //const [getAnswer, setGetAnswer] = useState([])
 
 
     const handleChange = (position) => {
@@ -31,7 +32,7 @@ export const PracticeComponent = () => {
             }
                 return s
         }
-    console.log(f())
+        console.log(f())
     
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
