@@ -6,7 +6,7 @@ export const PracticeComponent = () => {
         new Array(quizAnswers.length).fill(false)
     )
 
-    const handleOnChange = (position) => {
+    const handleChange = (position) => {
         const updatedCheckedState = checkedState.map((item, index) =>
           index === position ? !item : item
         );
@@ -17,7 +17,8 @@ export const PracticeComponent = () => {
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
             <p key={index}>
-                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleOnChange(index)}/>
+                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
+                <label htmlFor='answer'>{answer}</label>
             </p>
         )
     })
