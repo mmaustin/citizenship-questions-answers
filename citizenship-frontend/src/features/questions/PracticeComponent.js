@@ -5,8 +5,6 @@ export const PracticeComponent = () => {
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
-    const [getAnswer, setGetAnswer] = useState([])
-
 
     const handleChange = (position) => {
         const updatedCheckedState = checkedState.map((item, index) =>
@@ -33,8 +31,11 @@ export const PracticeComponent = () => {
                 return s
         }
         let g = f()
-        getAnswer.concat(g)
-        console.log(getAnswer)
+        /*
+        1) setting state should only take place inside of a function
+        2) i don't need to set the return value of this function to state, just use the value as the array that will be dispatched
+        */
+        console.log(g)
     
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
