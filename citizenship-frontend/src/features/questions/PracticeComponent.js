@@ -5,8 +5,14 @@ export const PracticeComponent = () => {
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
-
-
+    
+    const checkboxAnswers = quizAnswers.map((answer, index) => {
+        return(
+            <p key={index}>
+                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleOnChange(index)}/>
+            </p>
+        )
+    })
 
     return(
         <>
