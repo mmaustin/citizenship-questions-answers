@@ -14,6 +14,17 @@ export const PracticeComponent = () => {
         setCheckedState(updatedCheckedState);
     }
     
+    console.log(checkedState)
+
+    let array = []
+    let idx = checkedState.indexOf(true)
+    while(idx !== -1){
+        array.push(idx)
+        idx = array.indexOf(true, idx + 1);
+    }
+
+    console.log(array)
+
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
             <p key={index}>
