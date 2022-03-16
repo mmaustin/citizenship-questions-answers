@@ -8,26 +8,26 @@ const initialState = questionAnswerDisplay
     initialState,
     reducers: {
         addAnswer(state, action){
-            const {question, selectAnswer} = action.payload
+            const {question, g} = action.payload
             const foundQuestion = state.find(q => q.question === question)
             const foundQuestionAnswers = foundQuestion.answer.map(q => q.ans)
-            if(selectAnswer.length > 1){
-                const multiAnswers = selectAnswer.map(answer => {
+            if(g.length > 1){
+                const multiAnswers = g.map(answer => {
                     return foundQuestionAnswers.includes(answer)
                 })
                 if(multiAnswers.includes(false)){
-                    foundQuestion.displayAnswer = selectAnswer.join(' / ');
+                    foundQuestion.displayAnswer = g.join(' / ');
                     foundQuestion.value = 'Incorrect';
                 } else {
-                    foundQuestion.displayAnswer = selectAnswer.join(' / ');
+                    foundQuestion.displayAnswer = g.join(' / ');
                     foundQuestion.value = 'Correct';
                 }
             } else {
-                if (foundQuestionAnswers.includes(selectAnswer[0])){
-                    foundQuestion.displayAnswer = selectAnswer[0];
+                if (foundQuestionAnswers.includes(g[0])){
+                    foundQuestion.displayAnswer = g[0];
                     foundQuestion.value = 'Correct';
                 } else {
-                    foundQuestion.displayAnswer = selectAnswer[0];
+                    foundQuestion.displayAnswer = g[0];
                     foundQuestion.value = 'Incorrect';
                 }
             }
