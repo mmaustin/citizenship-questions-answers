@@ -149,9 +149,10 @@ export const QuizOneTest = () => {
         }*/
     }
 
-    /*const clearAnswerField = () => {
-        setSelectAnswer([])
-    }*/
+    const clearAnswerField = () => {
+        //setSelectAnswer([])
+        setCheckedState(new Array(quizAnswers.length).fill(false))
+    }
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -160,7 +161,7 @@ export const QuizOneTest = () => {
 
         removeSelectedQuestion()
         displayAddAnswer()
-        //clearAnswerField()
+        clearAnswerField()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
