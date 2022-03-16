@@ -19,6 +19,7 @@ export const QuizOneTest = () => {
     const [selectAnswer, setSelectAnswer] = useState([])
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
+
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
@@ -66,11 +67,14 @@ export const QuizOneTest = () => {
             <option key={idx} value={answer}>{answer}</option>
     ))*/
 
-    const handleChange = (e) => {
-        setSelectAnswer(arr => [...arr, e.target.value])
+    const handleChange = (position) => {
+        const updatedCheckedState = checkedState.map((item, index) =>
+          index === position ? !item : item
+        );
+    
+        setCheckedState(updatedCheckedState);
     }
 
-    console.log(selectAnswer)
 
     const answers = quizAnswers.map((answer, idx) => (
         <>
@@ -150,7 +154,7 @@ export const QuizOneTest = () => {
                     <label>
                         Select Your Answer:&nbsp;&nbsp;&nbsp;
                         {/*<select className='answer-selector' value={selectAnswer} onChange={handleChange}>*/}
-                            <option value=""></option>
+                            {/*<option value=""></option>*/}
                             {answers}
                         {/*</select>*/}
                     </label>&nbsp;&nbsp;&nbsp;
