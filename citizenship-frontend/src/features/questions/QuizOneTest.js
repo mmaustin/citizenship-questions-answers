@@ -75,6 +75,23 @@ export const QuizOneTest = () => {
         setCheckedState(updatedCheckedState);
     }
 
+    const indices = checkedState.map((c,i)=>{
+        if(c === true){
+            return i;
+          } else {
+            return c
+          }
+    })
+
+    let w = indices.filter(i=> typeof i === 'number')
+        const f = () => {
+            let s = []
+           for(let num of w){
+                s.push(quizAnswers[num])
+            }
+                return s
+        }
+        let g = f()
 
     const answers = quizAnswers.map((answer, idx) => (
         <>
