@@ -16,7 +16,7 @@ export const QuizOneTest = () => {
     const display = useSelector(state => state.displayQuestions)
     //const [isChecked, setIsChecked] = useState(false)
     const [question, setQuestion] = useState('');
-    const [selectAnswer, setSelectAnswer] = useState([])
+    //const [selectAnswer, setSelectAnswer] = useState([])
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
@@ -93,15 +93,24 @@ export const QuizOneTest = () => {
         }
         let g = f()
 
-    const answers = quizAnswers.map((answer, idx) => (
+    /*const answers = quizAnswers.map((answer, idx) => (
         <>
             <input type="checkbox" key={idx} value={answer} onChange={handleChange}/>
             <label key={idx + 1} htmlFor={idx}>{answer}</label>
         </>
-    ))
+    ))*/
+
+    const checkboxAnswers = quizAnswers.map((answer, index) => {
+        return(
+            <p key={index}>
+                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
+                <label htmlFor='answer'>{answer}</label>
+            </p>
+        )
+    })
 
     const displayAddAnswer = () => {
-        dispatch(addAnswer({question, selectAnswer}))
+        dispatch(addAnswer({question, g}))
     }
 
     /*
@@ -117,8 +126,8 @@ export const QuizOneTest = () => {
         //a ? setIncorrectAnswer(incorrectAnswer + 1) : setCorrectAnswer(correctAnswer + 1);
         //debugger
         const q = ques.answer.map(a => a.ans)
-        if(selectAnswer.length > 1){
-            const multiAnswers = selectAnswer.map(answer => {
+        if(g.length > 1){
+            const multiAnswers = g.map(answer => {
                 return q.includes(answer)
             })
             if(multiAnswers.includes(false)){
@@ -127,7 +136,7 @@ export const QuizOneTest = () => {
                 setCorrectAnswer(correctAnswer + 1)
             }
         } else {
-            if (q.includes(selectAnswer[0])){
+            if (q.includes(g[0])){
                 setCorrectAnswer(correctAnswer + 1)
             } else {
                 setIncorrectAnswer(incorrectAnswer + 1)
@@ -140,9 +149,9 @@ export const QuizOneTest = () => {
         }*/
     }
 
-    const clearAnswerField = () => {
+    /*const clearAnswerField = () => {
         setSelectAnswer([])
-    }
+    }*/
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -151,12 +160,12 @@ export const QuizOneTest = () => {
 
         removeSelectedQuestion()
         displayAddAnswer()
-        clearAnswerField()
+        //clearAnswerField()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 
-    const allowSubmit = Boolean(selectAnswer)
+    //const allowSubmit = Boolean(selectAnswer)   disabled={!allowSubmit}
 
     return(
         <div className='quiz-container'>
@@ -172,10 +181,10 @@ export const QuizOneTest = () => {
                         Select Your Answer:&nbsp;&nbsp;&nbsp;
                         {/*<select className='answer-selector' value={selectAnswer} onChange={handleChange}>*/}
                             {/*<option value=""></option>*/}
-                            {answers}
+                            {checkboxAnswers}
                         {/*</select>*/}
                     </label>&nbsp;&nbsp;&nbsp;
-                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
+                    <input className='submit-answer' type="submit" value="Submit"/>
                 </form>
             </div>    
             {listQuestions.length === 0 &&
