@@ -170,7 +170,7 @@ export const QuizOneTest = () => {
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 
-    //const allowSubmit = Boolean(selectAnswer)   disabled={!allowSubmit}
+    const allowSubmit = Boolean(g.length >= 1)   //disabled={!allowSubmit}
 
     return(
         <div className='quiz-container'>
@@ -189,7 +189,7 @@ export const QuizOneTest = () => {
                             {checkboxAnswers}
                         {/*</select>*/}
                     </label>&nbsp;&nbsp;&nbsp;
-                    <input className='submit-answer' type="submit" value="Submit"/>
+                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
                 </form>
             </div>    
             {listQuestions.length === 0 &&
