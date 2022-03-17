@@ -102,10 +102,10 @@ export const QuizOneTest = () => {
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
-            <p key={index}>
-                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
+            <>
+                <input key={index} type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
                 <label htmlFor='answer'>{answer}</label>
-            </p>
+            </>
         )
     })
 
