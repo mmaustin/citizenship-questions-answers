@@ -77,7 +77,7 @@ export const QuizOneTest = () => {
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
-            <p key={index}>
+            <p key={index} className='inputs'>
                 <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
                 <label htmlFor='answer'>{answer}</label>
             </p>
