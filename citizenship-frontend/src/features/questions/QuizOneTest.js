@@ -65,10 +65,11 @@ export const QuizOneTest = () => {
           }
     })
 
-    let w = indices.filter(i=> typeof i === 'number')
+    let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
+    
         const f = () => {
             let s = []
-           for(let num of w){
+           for(let num of arrayOfIndices){
                 s.push(quizAnswers[num])
             }
                 return s
