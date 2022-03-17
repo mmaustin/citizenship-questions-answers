@@ -57,11 +57,11 @@ export const QuizOneTest = () => {
         setCheckedState(updatedCheckedState);
     }
 
-    const indices = checkedState.map((c,i)=>{
-        if(c === true){
-            return i;
+    const indices = checkedState.map((status, index)=>{
+        if(status === true){
+            return index;
           } else {
-            return c
+            return status
           }
     })
 
@@ -145,10 +145,7 @@ export const QuizOneTest = () => {
                         Select Your Answers From The Options Below:
                     </h2>
                     <div>
-                        {/*<select className='answer-selector' value={selectAnswer} onChange={handleChange}>*/}
-                            {/*<option value=""></option>*/}
                         {checkboxAnswers}
-                        {/*</select>*/}
                     </div>
                     <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
                 </form>
