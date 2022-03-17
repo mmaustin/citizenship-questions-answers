@@ -4,19 +4,10 @@ import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
 import { addAnswer } from './displaySlice'
 
-/*
-Major remaining issues with checkbox
-1) how to fill the selectAnswer array with only the answers checked at submission--and not answers
-   previously checked and then unchecked
-2) clearing the checkbox fields on submission
-*/
-
 export const QuizOneTest = () => {
     const questions = useSelector(state => state.quizQuestions)
     const display = useSelector(state => state.displayQuestions)
-    //const [isChecked, setIsChecked] = useState(false)
     const [question, setQuestion] = useState('');
-    //const [selectAnswer, setSelectAnswer] = useState([])
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
@@ -30,11 +21,6 @@ export const QuizOneTest = () => {
         q.value === 'Correct'
         ? <div className='ternary-container'>
             <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='right'>{q.value}</span></p>
-            {/*<div className='correct-answers-container'>
-                {q.answer.map((a, idx) => (
-                    <p className='correct-answers' key={idx}>{a.ans}</p>
-                ))}
-            </div>*/}
         </div>
         : <div className='ternary-container'>
             <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.charAt(0).toUpperCase() + q.displayAnswer.slice(1)} &nbsp;<span className='wrong'>{q.value}</span></p>
@@ -63,10 +49,6 @@ export const QuizOneTest = () => {
         dispatch(removeQuestion(question))
     }
 
-    /*const answers = quizAnswers.map((answer, idx) => (
-            <option key={idx} value={answer}>{answer}</option>
-    ))*/
-
     const handleChange = (position) => {
         const updatedCheckedState = checkedState.map((item, index) =>
           index === position ? !item : item
@@ -93,13 +75,6 @@ export const QuizOneTest = () => {
         }
         let g = f()
 
-    /*const answers = quizAnswers.map((answer, idx) => (
-        <>
-            <input type="checkbox" key={idx} value={answer} onChange={handleChange}/>
-            <label key={idx + 1} htmlFor={idx}>{answer}</label>
-        </>
-    ))*/
-
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
             <p key={index}>
@@ -113,18 +88,8 @@ export const QuizOneTest = () => {
         dispatch(addAnswer({question, g}))
     }
 
-    /*
-    const check = () => {
-        const a = arrayTwo.find(letter =>{return !array.includes(letter)})
-        return a ? 'yes' : 'no'
-    }
-    */
-
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
-        //const a = selectAnswer.find(an => {return !ques.answer.includes(an)})
-        //a ? setIncorrectAnswer(incorrectAnswer + 1) : setCorrectAnswer(correctAnswer + 1);
-        //debugger
         const q = ques.answer.map(a => a.ans)
         if(g.length > 1){
             const multiAnswers = g.map(answer => {
@@ -142,15 +107,9 @@ export const QuizOneTest = () => {
                 setIncorrectAnswer(incorrectAnswer + 1)
             }
         }
-        /*if(q.includes(selectAnswer[0])){
-            setCorrectAnswer(correctAnswer + 1)
-        } else {
-            setIncorrectAnswer(incorrectAnswer + 1)
-        }*/
     }
 
     const clearAnswerField = () => {
-        //setSelectAnswer([])
         const resetCheckedState = checkedState.map((item) =>
         item === true ? !item : item
       );
