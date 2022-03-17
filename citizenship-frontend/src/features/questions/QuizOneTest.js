@@ -182,13 +182,15 @@ export const QuizOneTest = () => {
             </div>
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
-                    <label>
-                        Select Your Answer:&nbsp;&nbsp;&nbsp;
+                    <h2>
+                        Select Your Answers From The Options Below:
+                    </h2>
+                    <div>
                         {/*<select className='answer-selector' value={selectAnswer} onChange={handleChange}>*/}
                             {/*<option value=""></option>*/}
-                            {checkboxAnswers}
+                        {checkboxAnswers}
                         {/*</select>*/}
-                    </label>&nbsp;&nbsp;&nbsp;
+                    </div>
                     <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
                 </form>
             </div>    
