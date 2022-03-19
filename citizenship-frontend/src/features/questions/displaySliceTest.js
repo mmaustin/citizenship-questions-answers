@@ -37,17 +37,4 @@ const initialState = questionAnswerDisplay
   
   export const {addAnswer} = displaySlice.actions
 
-/*
-  const b = arrayTwo.map((letter, ind) => {
-    //console.log(array)
-    return array.includes(letter)
-  })
-  if(b.includes(false)){
-    return 'nope';
-  } else{
-    return arrayTwo.join(' and ').toUpperCase()
-  }
-}
-*/
-
   export default displaySlice.reducer
