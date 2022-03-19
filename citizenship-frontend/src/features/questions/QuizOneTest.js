@@ -130,7 +130,7 @@ export const QuizOneTest = () => {
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 
-    const allowSubmit = Boolean(g.length >= 1)   //disabled={!allowSubmit}
+    const allowSubmit = Boolean(g.length >= 1)
 
     return(
         <div className='quiz-container'>
