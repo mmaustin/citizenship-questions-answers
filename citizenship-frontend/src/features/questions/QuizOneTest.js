@@ -91,10 +91,10 @@ export const QuizOneTest = () => {
 
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
-        const q = ques.answer.map(a => a.ans)
+        const checkAnswersArray = ques.answer.map(a => a.ans)
         if(answersHolder.length > 1){
             const multiAnswers = answersHolder.map(answer => {
-                return q.includes(answer)
+                return checkAnswersArray.includes(answer)
             })
             if(multiAnswers.includes(false)){
                 setIncorrectAnswer(incorrectAnswer + 1)
@@ -102,7 +102,7 @@ export const QuizOneTest = () => {
                 setCorrectAnswer(correctAnswer + 1)
             }
         } else {
-            if (q.includes(answersHolder[0])){
+            if (checkAnswersArray.includes(answersHolder[0])){
                 setCorrectAnswer(correctAnswer + 1)
             } else {
                 setIncorrectAnswer(incorrectAnswer + 1)
