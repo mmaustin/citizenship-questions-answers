@@ -67,14 +67,14 @@ export const QuizOneTest = () => {
 
     let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
     
-    const getQuizAnswers = () => {
+    const getQuestionAnswers = () => {
         let answerHolder = []
         for(let index of arrayOfIndices){
             answerHolder.push(quizAnswers[index])
         }
         return answerHolder
     }
-    let g = getQuizAnswers()
+    let g = getQuestionAnswers()
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
@@ -126,6 +126,7 @@ export const QuizOneTest = () => {
         removeSelectedQuestion()
         displayAddAnswer()
         clearAnswerField()
+        getRandomQuestion()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
