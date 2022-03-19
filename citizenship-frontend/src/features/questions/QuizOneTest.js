@@ -74,7 +74,7 @@ export const QuizOneTest = () => {
         }
         return answerHolder
     }
-    let g = getQuestionAnswers()
+    let answersHolder = getQuestionAnswers()
 
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
@@ -86,14 +86,14 @@ export const QuizOneTest = () => {
     })
 
     const displayAddAnswer = () => {
-        dispatch(addAnswer({question, g}))
+        dispatch(addAnswer({question, answersHolder}))
     }
 
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const q = ques.answer.map(a => a.ans)
-        if(g.length > 1){
-            const multiAnswers = g.map(answer => {
+        if(answersHolder.length > 1){
+            const multiAnswers = answersHolder.map(answer => {
                 return q.includes(answer)
             })
             if(multiAnswers.includes(false)){
@@ -102,7 +102,7 @@ export const QuizOneTest = () => {
                 setCorrectAnswer(correctAnswer + 1)
             }
         } else {
-            if (q.includes(g[0])){
+            if (q.includes(answersHolder[0])){
                 setCorrectAnswer(correctAnswer + 1)
             } else {
                 setIncorrectAnswer(incorrectAnswer + 1)
@@ -130,7 +130,7 @@ export const QuizOneTest = () => {
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 
-    const allowSubmit = Boolean(g.length >= 1)
+    const allowSubmit = Boolean(answersHolder.length >= 1)
 
     return(
         <div className='quiz-container'>
