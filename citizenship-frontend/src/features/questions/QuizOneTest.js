@@ -44,7 +44,6 @@ export const QuizOneTest = () => {
             setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
         }
     }
-    getRandomQuestion()
 
     const removeSelectedQuestion = () => {
         dispatch(removeQuestion(question))
