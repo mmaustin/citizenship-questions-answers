@@ -13,8 +13,6 @@ answer: [{ans: 'fought for women\'s rights'}, {ans: 'fought for civil rights'}]}
 answer: [{ans: 'world war I'}, {ans: 'world war II'}, {ans: 'the korean war'}, 
 {ans: 'the vietnam war'}, {ans: 'persian gulf war'}]}]
 
-//skipped question 64
-
 export const quizAnswersSeven = ['persian gulf war', 'freed slaves in most southern states', 'world war I', 'fought for women\'s rights', 'slavery',
 'mexican-american war', 'freed slaves in the confederacy', 'the korean war', 'the louisiana territory', 'the civil war', 'economic reasons', 'saved or preserved the union',
 'george washington', 'led the united states during the civil war', 'the vietnam war', 'states\' rights', 'spanish-american war', 'world war II',
