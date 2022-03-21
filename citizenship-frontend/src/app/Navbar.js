@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className='nav-link-container'>
                     <div className='quiz-pair'>
                         <Link className='nav-link-text' to='/'>Quiz One Q&A</Link>
-                        <Link className='nav-link-text' to='/questions/quiz-one-test'>Quiz One</Link>
+                        <Link className='nav-link-text' to='/questions/quiz-one'>Quiz One</Link>
                     </div>
                     <div className='quiz-pair'>
                         <Link className='nav-link-text' to='/questions/questions-two'>Quiz Two Q&A</Link>
