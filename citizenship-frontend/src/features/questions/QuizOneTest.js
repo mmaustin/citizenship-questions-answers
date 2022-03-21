@@ -37,8 +37,6 @@ export const QuizOneTest = () => {
         q.question
     ))
 
-
-
     const getRandomQuestion = () => {
         if (listQuestions.length !== 0){
             setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
