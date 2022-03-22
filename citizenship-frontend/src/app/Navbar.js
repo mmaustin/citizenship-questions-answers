@@ -8,6 +8,9 @@ const Navbar = () => {
             <section className='nav-section'>
                 <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
                 <div className='nav-link-container'>
+                <div className='quiz-pair'>
+                        <Link className='nav-link-text' to='/'>Home Page</Link>
+                    </div>
                     <div className='quiz-pair'>
                         <Link className='nav-link-text' to='/questions-one'>Quiz One Q&A</Link>
                         <Link className='nav-link-text' to='/quiz-one'>Quiz One</Link>
