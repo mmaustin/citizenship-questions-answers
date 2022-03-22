@@ -1,9 +1,9 @@
 import React from 'react'
+import { HomePage } from './features/homePage/HomePage'
 import { QuestionsList } from './features/questions/QuestionsList'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './app/Navbar'
 import { QuizOne } from './features/questions/QuizOne'
-//import { QuizOneTest } from './features/questions/QuizOneTest'
 import { QuestionsListTwo } from './features/questionsTwo/QuestionsListTwo'
 import { QuizTwo } from './features/questionsTwo/QuizTwo'
 import { QuestionsListThree } from './features/questionsThree/QuestionsListThree'
@@ -27,11 +27,9 @@ const App = () => {
         <Router>
             <Navbar/>
                 <Routes>
+                    <Route exact path='/' element={<HomePage/>}/>
                     <Route exact path='/questions-one' element={<QuestionsList/>}/>
                     <Route exact path='/quiz-one' element={<QuizOne/>}/>
-                    {/*<Route exact path='/questions/questions-one' element={<QuestionsList/>}/>
-                    <Route exact path='/questions/quiz-one' element={<QuizOne/>}/>*/}
-                    {/*<Route exact path='/questions/quiz-one-test' element={<QuizOneTest/>}/>*/}
                     <Route exact path='/questions/questions-two' element={<QuestionsListTwo/>}/>
                     <Route exact path='/questions/quiz-two' element={<QuizTwo/>}/>
                     <Route exact path='/questions/questions-three' element={<QuestionsListThree/>}/>
