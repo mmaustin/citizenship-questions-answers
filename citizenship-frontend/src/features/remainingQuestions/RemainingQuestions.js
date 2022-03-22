@@ -3,7 +3,7 @@ import React from 'react'
 export const RemainingQuestions = () => {
     return(
         <>
-            <p>Component for the remaining questions</p>
+            <h3>Component for the remaining questions</h3>
         </>
     )
 }
