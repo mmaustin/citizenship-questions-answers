@@ -47,6 +47,9 @@ const Navbar = () => {
                         <Link className='nav-link-text' to='/questions-nine'>Quiz Nine Q&A</Link>
                         <Link className='nav-link-text' to='/quiz-nine'>Quiz Nine</Link>
                     </div>
+                    <div className='quiz-pair'>
+                        <Link className='nav-link-text' to='/remaining-questions'>More Questions</Link>
+                    </div>
                 </div>
             </section>
         </nav>
