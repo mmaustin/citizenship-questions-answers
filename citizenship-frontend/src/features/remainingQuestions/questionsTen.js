@@ -7,7 +7,8 @@ answer: [{ans: 'answers will vary'}]}, {id: nanoid(), question: 'what are two ca
 {ans: 'secretary of the treasury'}, {ans: 'secretary of veterans affairs'}, {ans: 'the attorney general'}, {ans: 'the vice president'}]}, {id: nanoid(), question: 'who is the governor of your state now?',
 answer: [{ans: 'answers will vary'}]}, {id: nanoid(), question: 'what is the capital of your state', answer: [{ans: 'answers will vary'}]}, 
 {id: nanoid(), question: 'what is the political party of the president now?',
-answer: [{ans: 'this answer is subject to change'}]}, {id: nanoid(), question: 'what major event happened on september 11, 2001, in the united states?', answer: [{ans: 'terrorists attacked the united states'}]}, 
-{id: nanoid(), question: 'name one of the two longest rivers in the united states',
-answer: [{ans: 'missouri river'}, {ans: 'mississippi river'}]}, {id: nanoid(), question: 'what ocean is on the west coast of the united states?',
+answer: [{ans: 'click the above link for the answer'}]}, {id: nanoid(), question: 'what is the name of the speaker of the house of representatives now?', answer: [{ans: 'click the above link for the answer'}]}, 
+{id: nanoid(), question: 'there were thirteen original states. name three.',
+answer: [{ans: 'new hampshire'}, {ans: 'massachusetts'}, {ans: 'rhode island'}, {ans: 'connecticut'}, {ans: 'new york'}, {ans: 'new jersey'}, {ans: 'pennslyvania'}, {ans: 'delaware'}, {ans: 'maryland'}, {ans: 'virginia'}, {ans: 'north carolina'},
+{ans: 'south carolina'}, {ans: 'georgia'}]}, {id: nanoid(), question: 'what ocean is on the west coast of the united states?',
 answer: [{ans: 'pacific ocean'}]}]
