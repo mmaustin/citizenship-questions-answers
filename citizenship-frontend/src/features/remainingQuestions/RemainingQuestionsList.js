@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import { questionsTen } from './questionsTen'
 
 export const RemainingQuestionsList = () => {
@@ -19,7 +18,9 @@ export const RemainingQuestionsList = () => {
 
     return(
         <>
-            <p></p>
+            <p>
+                Please visit the following link for answers to questions below: <a rel="noopener noreferrer" target="_blank" href='https://www.uscis.gov/citizenship/testupdates' >Click Me</a>
+            </p>
             <section className='question-answer-panel'>
                 {questionsAnswers}
             </section>
