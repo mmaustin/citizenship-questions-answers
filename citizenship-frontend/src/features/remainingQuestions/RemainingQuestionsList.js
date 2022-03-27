@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { questionsTen } from './questionsTen'
 
 export const RemainingQuestionsList = () => {
@@ -17,9 +18,12 @@ export const RemainingQuestionsList = () => {
     ))
 
     return(
-        <section className='question-answer-panel'>
-            {questionsAnswers}
-        </section>
+        <>
+            <p></p>
+            <section className='question-answer-panel'>
+                {questionsAnswers}
+            </section>
+        </>
     )
 
 }
