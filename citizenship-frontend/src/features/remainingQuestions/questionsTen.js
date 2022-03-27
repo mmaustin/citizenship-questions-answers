@@ -10,5 +10,9 @@ answer: [{ans: 'answers will vary'}]}, {id: nanoid(), question: 'what is the cap
 answer: [{ans: 'click the above link for the answer'}]}, {id: nanoid(), question: 'what is the name of the speaker of the house of representatives now?', answer: [{ans: 'click the above link for the answer'}]}, 
 {id: nanoid(), question: 'there were thirteen original states. name three.',
 answer: [{ans: 'new hampshire'}, {ans: 'massachusetts'}, {ans: 'rhode island'}, {ans: 'connecticut'}, {ans: 'new york'}, {ans: 'new jersey'}, {ans: 'pennslyvania'}, {ans: 'delaware'}, {ans: 'maryland'}, {ans: 'virginia'}, {ans: 'north carolina'},
-{ans: 'south carolina'}, {ans: 'georgia'}]}, {id: nanoid(), question: 'what ocean is on the west coast of the united states?',
-answer: [{ans: 'pacific ocean'}]}]
+{ans: 'south carolina'}, {ans: 'georgia'}]}, {id: nanoid(), question: 'name one american indian tribe in the united states',
+answer: [{ans: 'cherokee'}, {ans: 'navajo'}, {ans: 'sioux'}, {ans: 'chippewa'}, {ans: 'choctaw'}, {ans: 'pueblo'}, {ans: 'apache'}, {ans: 'iroquois'}, {ans: 'creek'}, {ans: 'blackfoot'}, {ans: 'seminole'}, {ans: 'cheyenne'},
+{ans: 'arawak'}, {ans: 'shawnee'}, {ans: 'mohegan'}, {ans: 'huron'}, {ans: 'oneida'}, {ans: 'lakota'}, {ans: 'crow'}, {ans: 'teton'}, {ans: 'hopi'}, {ans: 'inuit'}]},
+[{id: nanoid(), question: 'name one state that borders canada.', answer: [{ans: 'maine'}, {ans: 'new hampshire'}, {ans: 'vermont'}, {ans: 'new york'}, {ans: 'pennslyvania'}, {ans: 'ohio'}, {ans: 'michigan'}, {ans: 'minnesota'}, {ans: 'north dakota'},
+{ans: 'montana'}, {ans: 'idaho'}, {ans: 'washington'}, {ans: 'alaska'}]}], {id: nanoid(), question: 'name three national u.s. holidays.', answer: [{ans: 'new year\'s day'}, {ans: 'martin luther king, jr. day'}, {ans: 'president\'s day (washington\'s birthday)'},
+{ans: 'memorial day'}, {ans: 'juneteenth'}, {ans: 'independence day'}, {ans: 'labor day'}, {ans: 'columbus day'}, {ans: 'veterans day'}, {ans: 'thanksgiving day'}, {ans: 'christmas day'}]}]
