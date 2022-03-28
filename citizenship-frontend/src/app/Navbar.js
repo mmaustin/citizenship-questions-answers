@@ -81,7 +81,8 @@ const Navbar = () => {
                     <Link className='nav-link-text' to='/quiz-nine'>Quiz Nine</Link>
                     <Link className='nav-link-text' to='/remaining-questions'>More Questions</Link>
                 </div>
-            </div>    
+            </div>
+            <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>  
         </nav>
     )
 
