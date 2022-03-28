@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
-    return(
+    /*return(
         <nav>
             <section className='nav-section'>
                 <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
@@ -52,6 +52,12 @@ const Navbar = () => {
                     </div>
                 </div>
             </section>
+        </nav>
+    )*/
+
+    return(
+        <nav>
+            
         </nav>
     )
 
