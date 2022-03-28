@@ -57,6 +57,7 @@ const Navbar = () => {
 
     return(
         <nav>
+            <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
             <div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
                 <div class="dropdown-content">
@@ -82,7 +83,6 @@ const Navbar = () => {
                     <Link className='nav-link-text' to='/remaining-questions'>More Questions</Link>
                 </div>
             </div>
-            <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>  
         </nav>
     )
 
