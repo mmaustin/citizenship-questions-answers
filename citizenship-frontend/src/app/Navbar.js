@@ -59,7 +59,7 @@ const Navbar = () => {
         <nav>
             <h2 className='nav-heading'>Citizenship Test Prep: Questions, Answers, Quizzes</h2>
             <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
                     <Link className='nav-link-text' to='/'>Home Page</Link>
                     <Link className='nav-link-text' to='/questions-one'>Quiz One Q&A</Link>
