@@ -225,7 +225,7 @@ nav {
     background-color: #04AA6D;
     color: white;
     padding: 16px;
-    font-size: 25px;
+    font-size: 20px;
     border: none;
   }
   
@@ -250,19 +250,20 @@ nav {
   .dropdown-content a{
     color: white;
     background-color: black;
-    padding: 12px 16px;
+    padding-left: 30px;
+    padding-top: 2px;
     text-decoration: none;
     display: block;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: black;}
+  .dropdown-content a:hover {background-color: #0e23df;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #0e23df;}
 
   .inputs {
       margin: 0;
@@ -270,7 +271,7 @@ nav {
 
   .nav-link-text {
     border-bottom: 1px solid white;
-    height: 5px;
+    height: 25px;
     /*text-decoration: none;*/
     font-family: 'Times New Roman', Times, serif;
     color: black;
