@@ -55,13 +55,7 @@ nav {
     flex-flow: column;
 }
 
-.nav-link-text {
-    height: 25px;
-    /*text-decoration: none;*/
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-weight: bold;
-}
+
 
 .nav-heading {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -273,3 +267,11 @@ nav {
   .inputs {
       margin: 0;
   }
+
+  .nav-link-text {
+    height: 5px;
+    /*text-decoration: none;*/
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+}
