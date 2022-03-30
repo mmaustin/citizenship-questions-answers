@@ -27,16 +27,7 @@ nav {
     flex-flow: row wrap;
 }
 
-.nav-section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
-.nav-heading, .nav-link-container, .nav-link-text {
+.nav-heading, .nav-link-text {
     margin: 0;
     width: 100%;
     height: 35%;
@@ -45,17 +36,6 @@ nav {
     align-items: center;
     flex-flow: row;
 }
-
-.nav-link-container {
-    justify-content: space-evenly;
-}
-
-.quiz-pair {
-    height: 100%;
-    flex-flow: column;
-}
-
-
 
 .nav-heading {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
