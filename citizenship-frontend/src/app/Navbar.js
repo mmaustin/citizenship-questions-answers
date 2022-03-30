@@ -80,7 +80,7 @@ const Navbar = () => {
                     <Link className='nav-link-text' to='/quiz-eight'>Quiz Eight</Link>
                     <Link className='nav-link-text' to='/questions-nine'>Quiz Nine Q&A</Link>
                     <Link className='nav-link-text' to='/quiz-nine'>Quiz Nine</Link>
-                    <Link className='nav-link-text' to='/remaining-questions'>More Questions</Link>
+                    <Link className='nav-link-text' to='/remaining-questions'>Remaining Questions</Link>
                 </div>
             </div>
         </nav>
