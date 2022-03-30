@@ -43,9 +43,10 @@ export const QuizOne = () => {
         }
     }*/
 
-    useEffect(()=> {
+    useEffect((e)=> {
         if (listQuestions.length !== 0){
             setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+            e.preventDefault()
         }
     }, [listQuestions])
 
