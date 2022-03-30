@@ -130,6 +130,7 @@ export const QuizOne = () => {
         removeSelectedQuestion()
         displayAddAnswer()
         clearAnswerField()
+        getRandomQuestion()
     }
 
     const questionsAnswered = correctAnswer + incorrectAnswer
