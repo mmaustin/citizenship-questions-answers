@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeQuestion } from './quizQuestionsSlice'
 import { quizAnswers } from './questions'
@@ -37,17 +37,17 @@ export const QuizOne = () => {
         q.question
     ))
 
-    /*const getRandomQuestion = () => {
+    const getRandomQuestion = () => {
         if (listQuestions.length !== 0){
             setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
         }
-    }*/
+    }
 
-    useEffect(()=> {
+    /*useEffect(()=> {
         if (listQuestions.length !== 0){
             setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
         }
-    }, [listQuestions])
+    }, [listQuestions])*/
 
     const removeSelectedQuestion = () => {
         dispatch(removeQuestion(question))
@@ -142,7 +142,7 @@ export const QuizOne = () => {
                 <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
                 <p className='questions-answered'>Questions Answered: {questionsAnswered}</p>
                 <p className='selected-question'>{question.toUpperCase()}</p>
-                {/*<button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button>*/}
+                <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button>
             </div>
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
