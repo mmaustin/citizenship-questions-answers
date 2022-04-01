@@ -14,6 +14,12 @@ body {
     flex-flow: column;   
 }
 
+/*Homepage*/
+
+#home-container, #home-welcome, #home-instructions {
+    border: 1px solid blue;
+}
+
 /*Navigation Bar CSS*/
 
 nav {
