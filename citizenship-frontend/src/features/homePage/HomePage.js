@@ -4,11 +4,11 @@ export const HomePage = () => {
     return(
         <div id='home-container'>
             <div id='home-welcome'>
-                <h3>Become A United States Citizen</h3>
+                <h3>eeee</h3>
                 <p>ffff</p>
             </div>
             <div id='home-instructions'>
-                <p>ggg</p>
+                <p>gggg</p>
             </div>
         </div>
     )
