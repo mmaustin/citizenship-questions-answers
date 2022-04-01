@@ -29,25 +29,25 @@ const App = () => {
             <Navbar/>
                 <Routes>
                     <Route exact path='/homepage' element={<HomePage/>}/>
-                    <Route exact path='/questions-one' element={<QuestionsList/>}/>
-                    <Route exact path='/quiz-one' element={<QuizOne/>}/>
-                    <Route exact path='/questions-two' element={<QuestionsListTwo/>}/>
-                    <Route exact path='/quiz-two' element={<QuizTwo/>}/>
-                    <Route exact path='/questions-three' element={<QuestionsListThree/>}/>
-                    <Route exact path='/quiz-three' element={<QuizThree/>}/>
-                    <Route exact path='/questions-four' element={<QuestionsListFour/>}/>
-                    <Route exact path='/quiz-four' element={<QuizFour/>}/>
-                    <Route exact path='/questions-five' element={<QuestionsListFive/>}/>
-                    <Route exact path='/quiz-five' element={<QuizFive/>}/>
-                    <Route exact path='/questions-six' element={<QuestionsListSix/>}/>
-                    <Route exact path='/quiz-six' element={<QuizSix/>}/>
-                    <Route exact path='/questions-seven' element={<QuestionsListSeven/>}/>
-                    <Route exact path='/quiz-seven' element={<QuizSeven/>}/>
-                    <Route exact path='/questions-eight' element={<QuestionsListEight/>}/>
-                    <Route exact path='/quiz-eight' element={<QuizEight/>}/>
-                    <Route exact path='/questions-nine' element={<QuestionsListNine/>}/>
-                    <Route exact path='/quiz-nine' element={<QuizNine/>}/>
-                    <Route exact path='/remaining-questions' element={<RemainingQuestionsList/>}/>
+                    <Route  path='/questions-one' element={<QuestionsList/>}/>
+                    <Route  path='/quiz-one' element={<QuizOne/>}/>
+                    <Route  path='/questions-two' element={<QuestionsListTwo/>}/>
+                    <Route  path='/quiz-two' element={<QuizTwo/>}/>
+                    <Route  path='/questions-three' element={<QuestionsListThree/>}/>
+                    <Route  path='/quiz-three' element={<QuizThree/>}/>
+                    <Route  path='/questions-four' element={<QuestionsListFour/>}/>
+                    <Route  path='/quiz-four' element={<QuizFour/>}/>
+                    <Route  path='/questions-five' element={<QuestionsListFive/>}/>
+                    <Route  path='/quiz-five' element={<QuizFive/>}/>
+                    <Route  path='/questions-six' element={<QuestionsListSix/>}/>
+                    <Route  path='/quiz-six' element={<QuizSix/>}/>
+                    <Route  path='/questions-seven' element={<QuestionsListSeven/>}/>
+                    <Route  path='/quiz-seven' element={<QuizSeven/>}/>
+                    <Route  path='/questions-eight' element={<QuestionsListEight/>}/>
+                    <Route  path='/quiz-eight' element={<QuizEight/>}/>
+                    <Route  path='/questions-nine' element={<QuestionsListNine/>}/>
+                    <Route  path='/quiz-nine' element={<QuizNine/>}/>
+                    <Route  path='/remaining-questions' element={<RemainingQuestionsList/>}/>
                     <Route path="*" element={<p>There's Nothing At This Address!</p> }/>
                 </Routes>
         </Router>
