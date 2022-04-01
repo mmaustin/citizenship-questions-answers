@@ -28,6 +28,15 @@ body {
     flex-flow: column;    
 }
 
+#home-welcome, #home-instructions {
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 /*Navigation Bar CSS*/
 
 nav {
