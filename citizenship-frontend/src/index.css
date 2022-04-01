@@ -20,6 +20,14 @@ body {
     border: 1px solid blue;
 }
 
+#home-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;    
+}
+
 /*Navigation Bar CSS*/
 
 nav {
