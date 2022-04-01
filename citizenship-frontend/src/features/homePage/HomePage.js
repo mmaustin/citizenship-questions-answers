@@ -2,8 +2,13 @@ import React from 'react'
 
 export const HomePage = () => {
     return(
-        <>
-            <h3>This will be the homepage!</h3>
-        </>
+        <div id='home-container'>
+            <div id='home-welcome'>
+
+            </div>
+            <div id='home-instructions'>
+
+            </div>
+        </div>
     )
 }
