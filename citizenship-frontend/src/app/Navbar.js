@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="dropdown">
                 <button className="dropbtn">Menu</button>
                 <div className="dropdown-content">
-                    <Link className='nav-link-text' to='/homepage'>Home Page</Link>
+                    <Link className='nav-link-text' to='/'>Home Page</Link>
                     <Link className='nav-link-text' to='/questions-one'>Quiz One Q&A</Link>
                     <Link className='nav-link-text' to='/quiz-one'>Quiz One</Link>
                     <Link className='nav-link-text' to='/questions-two'>Quiz Two Q&A</Link>
