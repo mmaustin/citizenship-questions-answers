@@ -141,7 +141,7 @@ export const QuizFive= () => {
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
                     <h2>
-                        Select Your Answers From The Options Below:
+                        Select Your Answers From The Options Below: <span className='instructions-two'>(Step 2)</span>
                     </h2>
                     <div>
                         {checkboxAnswers}
