@@ -136,7 +136,7 @@ export const QuizFive= () => {
                 <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
                 <p className='questions-answered'>Questions Answered: {questionsAnswered}</p>
                 <p className='selected-question'>{question.toUpperCase()}</p>
-                <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button>
+                <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button><span className='instructions-one'>(Step 1)</span>
             </div>
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
