@@ -146,7 +146,7 @@ export const QuizTwo = () => {
                     <div>
                         {checkboxAnswers}
                     </div>
-                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/>
+                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/><span className='instructions-three'>&nbsp;&nbsp;(Step 3 & Repeat)</span>
                 </form>
             </div>    
             {listQuestions.length === 0 &&
