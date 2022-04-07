@@ -147,8 +147,8 @@ export const QuizOne = () => {
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
                     <h2>
-                        Select Your Answers From The Options Below: 
-                    </h2><span id='instructions-two'>(Step Two)</span>
+                        Select Your Answers From The Options Below: <span id='instructions-two'>(Step Two)</span>
+                    </h2>
                     <div>
                         {checkboxAnswers}
                     </div>

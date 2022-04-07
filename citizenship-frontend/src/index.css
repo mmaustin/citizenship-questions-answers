@@ -280,3 +280,7 @@ nav {
     color: black;
     font-weight: bold;
 }
+
+#instructions-one, #instructions-two, #instructions-three {
+    margin: 0;
+}
