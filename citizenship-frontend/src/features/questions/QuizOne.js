@@ -142,17 +142,17 @@ export const QuizOne = () => {
                 <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
                 <p className='questions-answered'>Questions Answered: {questionsAnswered}</p>
                 <p className='selected-question'>{question.toUpperCase()}</p>
-                <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question </button><span id='instructions-one'>(Step 1)</span>
+                <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question </button><span className='instructions-one'>(Step 1)</span>
             </div>
             <div className='sub-container-two'>
                 <form onSubmit={e => handleSubmit(e)}>
                     <h2>
-                        Select Your Answers From The Options Below: <span id='instructions-two'>(Step 2)</span>
+                        Select Your Answers From The Options Below: <span className='instructions-two'>(Step 2)</span>
                     </h2>
                     <div>
                         {checkboxAnswers}
                     </div>
-                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/><span id='instructions-three'>&nbsp;&nbsp;(Step 3 & Repeat)</span>
+                    <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/><span className='instructions-three'>&nbsp;&nbsp;(Step 3 & Repeat)</span>
                 </form>
             </div>    
             {listQuestions.length === 0 &&

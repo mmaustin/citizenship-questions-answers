@@ -281,7 +281,7 @@ nav {
     font-weight: bold;
 }
 
-#instructions-one, #instructions-two, #instructions-three {
+.instructions-one, .instructions-two, .instructions-three {
     margin: 0;
     font-size: 14px;
     color: #04AA6D;
