@@ -283,4 +283,7 @@ nav {
 
 #instructions-one, #instructions-two, #instructions-three {
     margin: 0;
+    font-size: 14px;
+    color: #04AA6D;
+    font-weight: bold;
 }
