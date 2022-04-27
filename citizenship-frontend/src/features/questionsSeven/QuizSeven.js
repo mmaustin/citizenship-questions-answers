@@ -133,7 +133,7 @@ export const QuizSeven = () => {
     return(
         <div className='quiz-container'>
             <div className='sub-container-one'>
-                <h3 className='pass-requirement'>You must correctly answer 7 out of 10 questions to pass this quiz.</h3>
+                <h3 className='pass-requirement'>You must correctly answer 6 out of 10 questions to pass this quiz.</h3>
                 <p className='questions-answered'>Questions Answered: {questionsAnswered}</p>
                 <p className='selected-question'>{question.toUpperCase()}</p>
                 <button className='question-selector' onClick={getRandomQuestion}>Click to Select a Question</button><span className='instructions-one'>(Step 1)</span>
@@ -155,7 +155,7 @@ export const QuizSeven = () => {
                     <h2 className='results-header'>RESULTS:</h2>
                     <p className='answer-count'>Correct Answers: {correctAnswer}</p>
                     <p className='answer-count'>Incorrect Answers: {incorrectAnswer}</p>
-                    {correctAnswer >= 7 
+                    {correctAnswer >= 6 
                         ? <h3 className='result-statement'>Congratulations! You Passed!!</h3>
                         : <h3 className='result-statement'>Don't fret! Keep studying and practicing!</h3>
                     }
