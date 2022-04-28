@@ -16,9 +16,7 @@ body {
 
 /*Homepage*/
 
-#home-container, #home-welcome, #home-instructions {
-    border: 1px solid blue;
-}
+/* #home-container, #home-welcome, #home-instructions {}
 
 #home-container {
     width: 100%;
