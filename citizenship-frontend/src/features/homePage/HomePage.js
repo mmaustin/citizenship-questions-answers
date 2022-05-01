@@ -4,9 +4,8 @@ export const HomePage = () => {
     return(
         <div id='home-container'>
             <div id='home-welcome'>
-                <h3 id='welcome'>Welcome! Your Pathway To Citizenship Begins Here!</h3>
-                <h4 id='welcome-start'>Let's Get Started!
-                </h4>
+                <h2 id='welcome'>Welcome! Your Pathway To Citizenship Begins Here!</h2>
+                <h3 id='welcome-start'>Let's Get Started!</h3>
             </div>
             <div id='home-instructions'>
                 <h3 id='home-banner'>Instructions and other useful information:</h3>
