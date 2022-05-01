@@ -38,6 +38,7 @@ body {
 .list-items {
     font-variant: small-caps;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 /*Navigation Bar CSS*/
