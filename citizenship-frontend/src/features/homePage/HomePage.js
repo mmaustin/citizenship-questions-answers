@@ -13,6 +13,7 @@ export const HomePage = () => {
                 <ol id='unordered-list'>
                     <li class='list-items'>Hover over the green Menu button.</li>
                     <li class='list-items'>Select a Q&A, and study the questions and answers.</li>
+                    <li class='list-items'>Study the questions and answers.</li>
                     <li class='list-items'>Select the accompanying quiz.</li>
                     <li class='list-items'>Repeat as necessary.</li>
                     <li class='list-items'>Don't forget to study the "Remaining Questions!"</li>
