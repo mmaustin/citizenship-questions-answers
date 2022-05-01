@@ -35,6 +35,11 @@ body {
     flex-flow: column;
 }
 
+.list-items {
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
 /*Navigation Bar CSS*/
 
 nav {
