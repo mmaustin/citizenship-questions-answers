@@ -35,6 +35,15 @@ body {
     flex-flow: column;
 }
 
+#welcome-start {
+    margin-bottom: 35px;
+}
+
+#home-banner {
+    text-decoration: underline;
+    color: #04AA6D;
+}
+
 ul {
     width: 70%;
 }
