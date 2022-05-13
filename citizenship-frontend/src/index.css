@@ -27,6 +27,7 @@ body {
 }
 
 #home-welcome, #home-instructions, ul {
+    border: 1px solid red;
     margin: 0;
     width: 50%;
     display: flex;
@@ -40,6 +41,8 @@ ul {
 }
 
 .list-items {
+    border: 1px solid red;
+    color: blue;
     font-variant: small-caps;
     font-weight: 500;
     margin-bottom: 15px;
