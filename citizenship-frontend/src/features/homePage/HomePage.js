@@ -9,14 +9,14 @@ export const HomePage = () => {
             </div>
             <div id='home-instructions'>
                 <h3 id='home-banner'>Instructions and other useful information:</h3>
-                <ol id='unordered-list'>
+                <ul id='unordered-list'>
                     <li className='list-items'>HOVER OVER THE GREEN MENU BUTTON.</li>
                     <li className='list-items'>SELECT A Q&A.</li>
                     <li className='list-items'>STUDY THE QUESTIONS AND ANSWERS.</li>
                     <li className='list-items'>TAKE THE ACCOMPANYING QUIZ.</li>
-                    <li className='list-items'>REPEAT AS NECESSARY.</li>
                     <li className='list-items'>STUDY THE "REMAINING QUESTIONS!"</li>
-                </ol>
+                    <li className='list-items'>REPEAT AS NECESSARY.</li>
+                </ul>
 
             </div>
         </div>
