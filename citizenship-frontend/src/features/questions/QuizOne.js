@@ -43,12 +43,6 @@ export const QuizOne = () => {
         }
     }
 
-    /*useEffect(()=> {
-        if (listQuestions.length !== 0){
-            setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
-        }
-    }, [listQuestions])*/
-
     const removeSelectedQuestion = () => {
         dispatch(removeQuestion(question))
     }
