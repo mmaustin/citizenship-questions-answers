@@ -15,7 +15,6 @@ answer: [{ans: 'eighteen (18) and older'}]}, {id: nanoid(), question: 'what are 
 answer: [{ans: 'april 15'}]},
 {id: nanoid(), question: 'when must all men register for the selective service?', answer: [{ans: 'at age eighteen (18)'}, {ans: 'between eighteen (18) and twenty-six (26)'}]}]
 
-//skipped questions 46, 47 displayAnswer: 'Pending', value: ''
 
 export const quizAnswersFive = ['join a political party', 'freedom of assembly', 'write to a newspaper', 'obey the laws of the united states', 'be loyal to the united states', 'a male citizen of any race can vote', 'freedom of religion', 'call senators and representatives',
 'vote in a federal election', 'citizens eighteen (18) and over can vote', 'freedom of speech', 'between eighteen (18) and twenty-six (26)', 'help with a campaign', 'give an elected offical your opinion on an issue', 'run for office',

@@ -13,7 +13,6 @@ answer: [{ans: 'james madison'}, {ans: 'alexander hamilton'}, {ans: 'john jay'},
 answer: [{ans: 'u.s diplomat'}, {ans: 'oldest member of the constitutional convention'}, {ans: 'first postmaster general of the united states'}, 
 {ans: 'writer of "poor richard\'s almanac"'}, {ans: 'started the first free libraries'}]}]
 
-//skipped question 64
 
 export const quizAnswersSix = ['james madison', 'oldest member of the constitutional convention', 'because the british army stayed in their houses (boarding, quartering)', 'thomas jefferson', 'economic opportunity', 'africans',
 'escape persecution', 'native americans', 'the founding fathers wrote the constitution', 'john jay', 'first postmaster general of the united states', 'because of high taxes (taxation without representation)', 'july 4, 1776',

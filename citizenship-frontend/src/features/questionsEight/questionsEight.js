@@ -11,7 +11,6 @@ answer: [{ans: 'fought for civil rights'}, {ans: 'worked for equality for all am
 answer: [{ans: 'missouri river'}, {ans: 'mississippi river'}]}, {id: nanoid(), question: 'what ocean is on the west coast of the united states?',
 answer: [{ans: 'pacific ocean'}]}]
 
-//skipped question 87
 
 export const quizAnswersEight = ['mississippi river', 'woodrow wilson', 'civil rights movement',
 'world war II', 'communism', 'worked for equality for all americans',

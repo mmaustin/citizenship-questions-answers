@@ -11,9 +11,7 @@ answer: [{ans: 'the president'}]}, {id: nanoid(), question: 'who makes federal l
 answer: [{ans: 'the senate and the house of representatives'}]}, {id: nanoid(), question: 'how many u.s. senators are there?', answer: [{ans: 'one hundred (100)'}]}, 
 {id: nanoid(), question: 'we elect a u.s. senator for how many years?',
 answer: [{ans: 'six (6)'}]}, {id: nanoid(), question: 'the house of representatives has how many voting members?',
-answer: [{ans: 'four hundred thirty-five (435)'}]}
-]
-//skipped question 20 from official list 
+answer: [{ans: 'four hundred thirty-five (435)'}]}]
 
 export const quizAnswersTwo = ['the courts', 'the senate and the house of representatives', 'leaders must obey the law', 'checks and balances',
 'no one is above the law', 'congress', 'one hundred (100)', 'six (6)', 'executive', 'capitalist economy', 'judicial', 'government must obey the law', 'separation of powers',

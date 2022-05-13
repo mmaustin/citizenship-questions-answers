@@ -11,7 +11,6 @@ answer: [{ans: 'the speaker of the house'}]}, {id: nanoid(), question: 'who is t
 answer: [{ans: 'the president'}]}, {id: nanoid(), question: 'who vetoes bills?',
 answer: [{ans: 'the president'}]}]
 
-//skipped questions 23, 28, 29
 
 export const quizAnswersThree = ['because of the state\'s population', 'four (4)', 'the vice president', 'all people of the state', 'two (2)',
 'the speaker of the house', 'because some states have more people', 'november', 'the president', 'because they have more people']

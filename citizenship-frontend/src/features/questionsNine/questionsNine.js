@@ -9,7 +9,6 @@ answer: [{ans: 'new york (harbor)'}, {ans: 'liberty island'}]}, {id: nanoid(), q
 answer: [{ans: 'because there is one star for each state'}, {ans: 'because each star represents a state'}, {ans: 'because there are 50 states'}]},
 {id: nanoid(), question: 'what is the name of the national anthem?', answer: [{ans: 'the star spangled banner'}]}]
 
-//skipped questions 92, 100 
 
 export const quizAnswersNine = ['because there were 13 original colonies', 'u.s. virgin islands', 'liberty island', 'california', 'because there are 50 states',
 'puerto rico', 'arizona', 'guam', 'washington d.c.', 'because each star represents a state',
