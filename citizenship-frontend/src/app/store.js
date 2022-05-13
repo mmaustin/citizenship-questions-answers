@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import quizQuestionsReducer from '../features/questions/quizQuestionsSlice'
 import displaySliceReducer from '../features/questions/displaySlice';
-//import displaySliceTest from '../features/questions/displaySliceTest';
 import quizQuestionsReducerTwo from '../features/questionsTwo/quizQuestionsSliceTwo';
 import displaySliceReducerTwo from '../features/questionsTwo/displaySliceTwo';
 import quizQuestionsReducerThree from '../features/questionsThree/quizQuestionsSliceThree';
