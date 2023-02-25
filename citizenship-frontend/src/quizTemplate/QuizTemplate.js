@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
-const QuizTemplate = ({}) => {
+const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, display}) => {
 
     const [question, setQuestion] = useState('');
     const [correctAnswer, setCorrectAnswer] = useState(0)
