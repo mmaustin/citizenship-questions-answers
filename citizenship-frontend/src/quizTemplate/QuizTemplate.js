@@ -38,29 +38,29 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         setCheckedState(updatedCheckedState);
     }
         
-        const indices = checkedState.map((status, index)=>{
-            if(status === true){
-                return index;
-            } else {
-                return status
-            }
-        })
-        
-        let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
-        
-        const getQuestionAnswers = () => {
-            let answerHolder = []
-            for(let index of arrayOfIndices){
-                answerHolder.push(quizAnswers[index])
-            }
-            return answerHolder
+    const indices = checkedState.map((status, index)=>{
+        if(status === true){
+            return index;
+        } else {
+            return status
         }
-        let answersHolder = getQuestionAnswers()
+    })
         
-        const checkboxAnswers = quizAnswers.map((answer, index) => {
-            return(
-                <p key={index} className='inputs'>
-                <input type='checkbox' id={answer} name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
+    let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
+        
+    const getQuestionAnswers = () => {
+        let answerHolder = []
+        for(let index of arrayOfIndices){
+            answerHolder.push(quizAnswers[index])
+        }
+        return answerHolder
+    }
+    let answersHolder = getQuestionAnswers()
+        
+    const checkboxAnswers = quizAnswers.map((answer, index) => {
+        return(
+            <p key={index} className='inputs'>
+                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
                 <label htmlFor='answer'>{answer}</label>
             </p>
         )
