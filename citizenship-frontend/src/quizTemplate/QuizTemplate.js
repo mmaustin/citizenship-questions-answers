@@ -14,28 +14,29 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
     const dispatch = useDispatch()
 
     
-    
+    //State quiz questions derived from quizQuestionsSlice(Number) that will eventually be altered with the
+    //removeQuestion action.
     const listQuestions = questions.map(q => (
         q.question
-        ))
-        
-        const getRandomQuestion = () => {
-            if (listQuestions.length !== 0){
-                setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
-            }
+    ))
+    //Select a question at random when clicking the associated button   
+    const getRandomQuestion = () => {
+        if (listQuestions.length !== 0){
+            setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
         }
-        
-        const removeSelectedQuestion = () => {
-            dispatch(removeQuestion(question))
-        }
-        
-        const handleChange = (position) => {
-            const updatedCheckedState = checkedState.map((item, index) =>
-            index === position ? !item : item
-            );
+    }
+    //Removes an answered question via the removeQuestion action from quizQuestionSlice(Number)  
+    const removeSelectedQuestion = () => {
+        dispatch(removeQuestion(question))
+    }
+    //Checks or unchecks the checkbox beside an answer by altering checkState   
+    const handleChange = (position) => {
+        const updatedCheckedState = checkedState.map((item, index) =>
+        index === position ? !item : item
+        );
             
-            setCheckedState(updatedCheckedState);
-        }
+        setCheckedState(updatedCheckedState);
+    }
         
         const indices = checkedState.map((status, index)=>{
             if(status === true){
@@ -59,7 +60,7 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         const checkboxAnswers = quizAnswers.map((answer, index) => {
             return(
                 <p key={index} className='inputs'>
-                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
+                <input type='checkbox' id={answer} name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
                 <label htmlFor='answer'>{answer}</label>
             </p>
         )
@@ -108,6 +109,8 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         clearAnswerField()
     }
     
+    //State from displaySlice(Number) to be displayed at the end of the quiz, after being altered with the
+    //addAnswer action from the aforemention slice.
     const displayArray = display.map((q, idx) => (
         q.value === 'Correct'
         ? <div className='ternary-container'>
