@@ -13,76 +13,62 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
 
     const dispatch = useDispatch()
 
-    const displayArray = display.map((q, idx) => (
-        q.value === 'Correct'
-        ? <div className='ternary-container'>
-            <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.toLowerCase()} &nbsp;<span className='right'>{q.value}</span></p>
-        </div>
-        : <div className='ternary-container'>
-            <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.toLowerCase()} &nbsp;<span className='wrong'>{q.value}</span></p>
-            <div className='wrong-answers-container'>
-                {q.answer.map((a, idx) => (
-                    <p key={idx} className='quiz-answers-display'>• {a.ans}</p>
-                ))}
-            </div>
-        </div>
-    ))
     
-
+    
     const listQuestions = questions.map(q => (
         q.question
-    ))
-
-    const getRandomQuestion = () => {
-        if (listQuestions.length !== 0){
-            setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+        ))
+        
+        const getRandomQuestion = () => {
+            if (listQuestions.length !== 0){
+                setQuestion(listQuestions[Math.floor(Math.random() * listQuestions.length)]);
+            }
         }
-    }
-
-    const removeSelectedQuestion = () => {
-        dispatch(removeQuestion(question))
-    }
-
-    const handleChange = (position) => {
-        const updatedCheckedState = checkedState.map((item, index) =>
-          index === position ? !item : item
-        );
-    
-        setCheckedState(updatedCheckedState);
-    }
-
-    const indices = checkedState.map((status, index)=>{
-        if(status === true){
-            return index;
-          } else {
-            return status
-          }
-    })
-
-    let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
-    
-    const getQuestionAnswers = () => {
-        let answerHolder = []
-        for(let index of arrayOfIndices){
-            answerHolder.push(quizAnswers[index])
+        
+        const removeSelectedQuestion = () => {
+            dispatch(removeQuestion(question))
         }
-        return answerHolder
-    }
-    let answersHolder = getQuestionAnswers()
-
-    const checkboxAnswers = quizAnswers.map((answer, index) => {
-        return(
-            <p key={index} className='inputs'>
+        
+        const handleChange = (position) => {
+            const updatedCheckedState = checkedState.map((item, index) =>
+            index === position ? !item : item
+            );
+            
+            setCheckedState(updatedCheckedState);
+        }
+        
+        const indices = checkedState.map((status, index)=>{
+            if(status === true){
+                return index;
+            } else {
+                return status
+            }
+        })
+        
+        let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
+        
+        const getQuestionAnswers = () => {
+            let answerHolder = []
+            for(let index of arrayOfIndices){
+                answerHolder.push(quizAnswers[index])
+            }
+            return answerHolder
+        }
+        let answersHolder = getQuestionAnswers()
+        
+        const checkboxAnswers = quizAnswers.map((answer, index) => {
+            return(
+                <p key={index} className='inputs'>
                 <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
                 <label htmlFor='answer'>{answer}</label>
             </p>
         )
     })
-
+    
     const displayAddAnswer = () => {
         dispatch(addAnswer({question, answersHolder}))
     }
-
+    
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const checkAnswersArray = ques.answer.map(a => a.ans)
@@ -103,24 +89,39 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
             }
         }
     }
-
+    
     const clearAnswerField = () => {
         const resetCheckedState = checkedState.map((item) =>
         item === true ? !item : item
-      );
-  
-      setCheckedState(resetCheckedState);
+        );
+        
+        setCheckedState(resetCheckedState);
     }
-
+    
     const handleSubmit = e => {
         e.preventDefault()
-
+        
         tabulation()
-
+        
         removeSelectedQuestion()
         displayAddAnswer()
         clearAnswerField()
     }
+    
+    const displayArray = display.map((q, idx) => (
+        q.value === 'Correct'
+        ? <div className='ternary-container'>
+            <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.toLowerCase()} &nbsp;<span className='right'>{q.value}</span></p>
+        </div>
+        : <div className='ternary-container'>
+            <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.toLowerCase()} &nbsp;<span className='wrong'>{q.value}</span></p>
+            <div className='wrong-answers-container'>
+                {q.answer.map((a, idx) => (
+                    <p key={idx} className='quiz-answers-display'>• {a.ans}</p>
+                ))}
+            </div>
+        </div>
+    ))
 
     const questionsAnswered = correctAnswer + incorrectAnswer
 

@@ -35,6 +35,5 @@ import { questionAnswerDisplayEight } from "./questionsEight";
     }
   })
   
-  export const {addAnswer} = displaySliceEight.actions
-
-  export default displaySliceEight.reducer  
+export const {addAnswer} = displaySliceEight.actions
+ export default displaySliceEight.reducer  
