@@ -14,7 +14,6 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
 
     const dispatch = useDispatch()
 
-    
     //State quiz questions derived from quizQuestionsSlice(Number) that will eventually be altered with the
     //removeQuestion action.
     const listQuestions = questions.map(q => (
@@ -47,7 +46,6 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
             return status
         }
     })
-    
     //Places the above indices in a separate array
     let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
     
@@ -66,7 +64,7 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         return(
             <p key={index} className='inputs'>
                 <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
-                <label htmlFor='answer'>{answer}</label>
+                <label htmlFor='answer' className="capitalize">{answer}</label>
             </p>
         )
     })
@@ -125,10 +123,10 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
     const displayArray = display.map((q, idx) => (
         q.value === 'Correct'
         ? <div key={idx} className='ternary-container'>
-            <p className='display-right-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='right'>Your Answer:</span> {q.displayAnswer.toLowerCase()} &nbsp;<span className='right'>{q.value}</span></p>
+            <p className='display-right-answer capitalize' key={idx}>{q.question} <span className='right'>Your Answer:</span> {q.displayAnswer} &nbsp;<span className='right'>{q.value}</span></p>
         </div>
         : <div key={idx} className='ternary-container'>
-            <p className='display-wrong-answer' key={idx}>{q.question.charAt(0).toUpperCase() + q.question.slice(1)} <span className='wrong'>Your Answer:</span> {q.displayAnswer.toLowerCase()} &nbsp;<span className='wrong'>{q.value}</span></p>
+            <p className='display-wrong-answer capitalize' key={idx}>{q.question} <span className='wrong'>Your Answer:</span> {q.displayAnswer} &nbsp;<span className='wrong'>{q.value}</span></p>
             <div className='wrong-answers-container'>
                 {q.answer.map((a, idx) => (
                     <p key={idx} className='quiz-answers-display'>• {a.ans}</p>

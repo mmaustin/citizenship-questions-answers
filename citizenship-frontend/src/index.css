@@ -305,3 +305,7 @@ nav {
     color: #04AA6D;
     font-weight: bold;
 }
+
+.capitalize {
+    text-transform: capitalize;
+}
