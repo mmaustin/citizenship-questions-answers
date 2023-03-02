@@ -309,3 +309,7 @@ nav {
 .capitalize {
     text-transform: capitalize;
 }
+
+.number-green {
+    color: #037048;
+}

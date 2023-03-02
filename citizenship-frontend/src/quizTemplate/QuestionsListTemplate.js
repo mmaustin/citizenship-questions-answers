@@ -6,7 +6,7 @@ const QuestionsListTemplate = ({questions}) => {
             <p className='question'>{question.question}</p>
             {question.answer.map((a, index) => (
                 <div className='answers-div' key={index}>
-                    <p className='answers'>{index +1}) {a.ans}</p>
+                    <p className='answers capitalize'><span className="number-green">{index +1})</span> {a.ans}</p>
                 </div>
 
             ))}
