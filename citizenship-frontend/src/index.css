@@ -254,7 +254,7 @@ nav {
   .dropdown {
     border: 2px solid black;
     position: relative;
-    display: inline-block;
+    display: inline-block;  
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -284,7 +284,7 @@ nav {
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #0e23df;}
+  .dropdown:hover .dropbtn {background-color: black;}
 
   .inputs {
       margin: 0;

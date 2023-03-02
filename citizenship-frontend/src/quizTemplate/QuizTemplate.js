@@ -129,7 +129,7 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
             <p className='display-wrong-answer capitalize' key={idx}>{q.question} <span className='wrong'>Your Answer:</span> {q.displayAnswer} &nbsp;<span className='wrong'>{q.value}</span></p>
             <div className='wrong-answers-container'>
                 {q.answer.map((a, idx) => (
-                    <p key={idx} className='quiz-answers-display'>• {a.ans}</p>
+                    <p key={idx} className='quiz-answers-display capitalize'>• {a.ans}</p>
                 ))}
             </div>
         </div>
