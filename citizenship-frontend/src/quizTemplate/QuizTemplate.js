@@ -7,6 +7,7 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
     const [correctAnswer, setCorrectAnswer] = useState(0)
     const [incorrectAnswer, setIncorrectAnswer] = useState(0)
 
+    //State array for the boolean value of a checkbox: false = unchecked, true = checked, default is false
     const [checkedState, setCheckedState] = useState(
         new Array(quizAnswers.length).fill(false)
     )
@@ -37,7 +38,8 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
             
         setCheckedState(updatedCheckedState);
     }
-        
+    
+    //Creates an array with the index number of a true checked box placed in the position of the checked box
     const indices = checkedState.map((status, index)=>{
         if(status === true){
             return index;
@@ -45,9 +47,11 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
             return status
         }
     })
-        
+    
+    //Places the above indices in a separate array
     let arrayOfIndices = indices.filter(idx => typeof idx === 'number')
-        
+    
+    //Pushes the answer(s) of a question into an array named answersHolder
     const getQuestionAnswers = () => {
         let answerHolder = []
         for(let index of arrayOfIndices){
@@ -56,7 +60,8 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         return answerHolder
     }
     let answersHolder = getQuestionAnswers()
-        
+    
+    //Checkboxes and answers
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
             <p key={index} className='inputs'>
@@ -66,10 +71,12 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         )
     })
     
+    //Dispatches the answered question and the answers in an array to the displaySlice slice, to be worked by the addAnswer action
     const displayAddAnswer = () => {
         dispatch(addAnswer({question, answersHolder}))
     }
     
+    //Tabulates the amount of correct and incorrect answers
     const tabulation = () => {
         const ques = questions.find(q => q.question === question)
         const checkAnswersArray = ques.answer.map(a => a.ans)
@@ -91,6 +98,7 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         }
     }
     
+    //Clears all checked checkboxes on submittion of an answer
     const clearAnswerField = () => {
         const resetCheckedState = checkedState.map((item) =>
         item === true ? !item : item
@@ -99,6 +107,9 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         setCheckedState(resetCheckedState);
     }
     
+    //On submission of an answers: 1) prevents default 2) tabulates right/wrong answer 3) removes the answered question from
+    //quiz questions slice(number) state 4) alters displayAnswer and value properties of items in questionsAnswers state array
+    //in displaySlice(number) 5) clears all checked boxes
     const handleSubmit = e => {
         e.preventDefault()
         
@@ -148,7 +159,8 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
                     </div>
                     <input className='submit-answer' type="submit" value="Submit" disabled={!allowSubmit}/><span className='instructions-three'>&nbsp;&nbsp;(Step 3 & Repeat)</span>
                 </form>
-            </div>    
+            </div>
+            {/* Displays the results of the quiz after all questions have been answered */}
             {listQuestions.length === 0 &&
             <>
                 <div className='sub-container-three'>
