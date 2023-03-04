@@ -118,7 +118,9 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         removeSelectedQuestion()
         displayAddAnswer()
         clearAnswerField()
-        console.log(questionsAnswered + 1);
+        if(questionsAnswered + 1 > 0){
+            getRandomQuestion();
+        }
     }
     
     //State from displaySlice(Number) to be displayed at the end of the quiz, after being altered with the
