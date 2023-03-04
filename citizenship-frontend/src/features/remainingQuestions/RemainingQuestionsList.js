@@ -9,7 +9,7 @@ export const RemainingQuestionsList = () => {
             <p className='question'>{question.question}</p>
             {question.answer.map((a, index) => (
                 <div className='answers-div' key={index}>
-                    <p className='answers'>{index +1}) {a.ans}</p>
+                    <p className='answers capitalize'>{index +1}) {a.ans}</p>
                 </div>
 
             ))}
@@ -19,7 +19,7 @@ export const RemainingQuestionsList = () => {
     return(
         <>
             <p>
-                Please visit the following link for answers to questions below: <a rel="noopener noreferrer" target="_blank" href='https://www.uscis.gov/citizenship/testupdates' >Click Me</a>
+                Please visit the following link for answers to the starred questions below: <a rel="noopener noreferrer" target="_blank" href='https://www.uscis.gov/citizenship/testupdates' >USCIS</a>
             </p>
             <section className='question-answer-panel'>
                 {questionsAnswers}
