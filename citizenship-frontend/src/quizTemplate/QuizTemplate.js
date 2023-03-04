@@ -105,6 +105,8 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         setCheckedState(resetCheckedState);
     }
     
+    const questionsAnswered = correctAnswer + incorrectAnswer
+
     //On submission of an answers: 1) prevents default 2) tabulates right/wrong answer 3) removes the answered question from
     //quiz questions slice(number) state 4) alters displayAnswer and value properties of items in questionsAnswers state array
     //in displaySlice(number) 5) clears all checked boxes
@@ -116,6 +118,7 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         removeSelectedQuestion()
         displayAddAnswer()
         clearAnswerField()
+        console.log(questionsAnswered + 1);
     }
     
     //State from displaySlice(Number) to be displayed at the end of the quiz, after being altered with the
@@ -135,7 +138,6 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
         </div>
     ))
 
-    const questionsAnswered = correctAnswer + incorrectAnswer
 
     const allowSubmit = Boolean(answersHolder.length >= 1)
 
