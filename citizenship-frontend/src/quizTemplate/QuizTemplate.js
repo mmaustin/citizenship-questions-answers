@@ -111,16 +111,13 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
     //quiz questions slice(number) state 4) alters displayAnswer and value properties of items in questionsAnswers state array
     //in displaySlice(number) 5) clears all checked boxes
     const handleSubmit = e => {
-        e.preventDefault()
+        e.preventDefault();
         
-        tabulation()
+        tabulation();
         
-        removeSelectedQuestion()
-        displayAddAnswer()
-        clearAnswerField()
-        if(questionsAnswered + 1 > 0){
-            getRandomQuestion();
-        }
+        removeSelectedQuestion();
+        displayAddAnswer();
+        clearAnswerField();
     }
     
     //State from displaySlice(Number) to be displayed at the end of the quiz, after being altered with the
