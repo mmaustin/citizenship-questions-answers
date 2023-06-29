@@ -63,8 +63,8 @@ const QuizTemplate = ({removeQuestion, quizAnswers, addAnswer, questions, displa
     const checkboxAnswers = quizAnswers.map((answer, index) => {
         return(
             <p key={index} className='inputs'>
-                <input type='checkbox' name={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
-                <label htmlFor='answer' className="capitalize">{answer}</label>
+                <input type='checkbox' id={answer} value={answer} checked={checkedState[index]} onChange={()=> handleChange(index)}/>
+                <label htmlFor={answer} className="capitalize">{answer}</label>
             </p>
         )
     })
