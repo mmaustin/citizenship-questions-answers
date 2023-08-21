@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { questionAnswerDisplay } from "./questions";
 
-const initialState = questionAnswerDisplay
+
+const initialState =  questionAnswerDisplay
   
   const displaySlice = createSlice({
     name: 'displayQuestions',

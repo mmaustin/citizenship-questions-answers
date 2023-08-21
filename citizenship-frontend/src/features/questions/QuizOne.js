@@ -7,7 +7,7 @@ import QuizTemplate from '../../quizTemplate/QuizTemplate';
 export const QuizOne = () => {
     const questions = useSelector(state => state.quizQuestions)
     const display = useSelector(state => state.displayQuestions)
-
+    
     return(
         <QuizTemplate
             removeQuestion={removeQuestion}
