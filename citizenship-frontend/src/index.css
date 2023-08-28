@@ -14,10 +14,6 @@ body {
     flex-flow: column;
 }
 
-/*Homepage*/
-
-/* #home-container, #home-welcome, #home-instructions {} */
-
 #home-container {
     width: 100%;
     display: flex;
@@ -55,7 +51,6 @@ ul {
     width: 80%;
 }
 
-/*Navigation Bar CSS*/
 
 nav {
     border-bottom: 4px solid black;
@@ -82,7 +77,6 @@ nav {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*Quiz One Questions and Answers CSS*/
 
 .question-answer-panel {
     margin: 0;
@@ -130,6 +124,7 @@ nav {
 
 .answers-div {
     height:fit-content;
+    justify-content: center;
 }
 
 .answers {
@@ -142,7 +137,6 @@ nav {
     color: blue;
 }
 
-/*Quiz One CSS*/
 
 .quiz-container, .sub-container-one, .sub-container-two, .sub-container-three,
 .sub-container-four, .wrong-answers-container, .ternary-container {
@@ -205,7 +199,6 @@ nav {
     margin-top: 10px;
 }
 
-/* Question & Answer display*/
 
 .right {
     color: green;
@@ -238,10 +231,6 @@ nav {
     border-bottom: 4px double black;
 }
 
-
-
-
-/* Dropdown Button */
 .dropbtn {
     background-color: #04AA6D;
     color: white;
@@ -250,14 +239,12 @@ nav {
     border: none;
   }
   
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     border: 2px solid black;
     position: relative;
     display: inline-block;  
   }
   
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -267,7 +254,6 @@ nav {
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a{
     color: white;
     background-color: #04AA6D;
@@ -277,13 +263,10 @@ nav {
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #0e23df;}
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
+
   .dropdown:hover .dropbtn {background-color: black;}
 
   .inputs {
@@ -293,7 +276,6 @@ nav {
   .nav-link-text {
     border-bottom: 1px solid white;
     height: 25px;
-    /*text-decoration: none;*/
     font-family: 'Times New Roman', Times, serif;
     color: black;
     font-weight: bold;
@@ -312,4 +294,10 @@ nav {
 
 .number-green {
     color: #037048;
+}
+
+@media (max-width: 750px) {
+    .answers-div {
+        justify-content: flex-start;
+    }
 }
